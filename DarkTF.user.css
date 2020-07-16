@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @preprocessor stylus
@@ -44,7 +44,7 @@ html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subsc
 .editor__title, .ce-block,.subsite_subscribe_button, .dropdown2__search, .comments__item__self--author .comments__item__user__name .approved_user, .creation_button{
     background:none !important;
 }
-.main_menu__write, .profile_comment_favorite:after, .booster-unit__button, .subsites_tune_widget__link, .col_entry .vacancy_footer__create, .ui-button--5, .comments__reply_form__textarea, .comments_form__textarea, .email_subscribe_form__input, .gsc-input, .text__input, .ui-limited-input textarea, .ui_form textarea, .ui_tabs__scrollable, .search_bar__field, .feed_header .ui-tabs--overflown:before, .feed_header .ui-tabs--overflown:after, .teaserPodcast .teaserPodcast__button, .feed_header .ui-tabs, .daily-promo-unit__button, .push_offer, .aside-search input, .chat-form__textarea, .email_subscribe_vue__form input, .vote .vote__value:hover .vote__users--not-empty:before /*всё ещё не стыдно*/, .search input, .subsite_head__description, .emoji-picker__tabs, .neural-tooltip__button--filled{
+.main_menu__write, .profile_comment_favorite:after, .booster-unit__button, .subsites_tune_widget__link, .col_entry .vacancy_footer__create, .ui-button--5, .comments__reply_form__textarea, .comments_form__textarea, .email_subscribe_form__input, .gsc-input, .text__input, .ui-limited-input textarea, .ui_form textarea, .ui_tabs__scrollable, .search_bar__field, .feed_header .ui-tabs--overflown:before, .feed_header .ui-tabs--overflown:after, .teaserPodcast .teaserPodcast__button, .feed_header .ui-tabs, .daily-promo-unit__button, .push_offer, .aside-search input, .chat-form__textarea, .email_subscribe_vue__form input, .vote .vote__value:hover .vote__users--not-empty:before /*всё ещё не стыдно*/, .search input, .subsite_head__description, .emoji-picker__tabs, .neural-tooltip__button--filled, .live{
     background: transparent !important;
 }
 .live:not(:empty):after, .main_menu__container:before{
@@ -505,6 +505,20 @@ if size{
     }
     .layout--content.layout--colu-bmn-left-on.layout--column-right-on.layout--ad-blocked.layout--adlocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--b {
 	    width: 90% !important;
+    }
+}
+else{
+    .layout__content{
+        max-width: 1020px !important;
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .layout__right-column{
+        margin-right: auto !important;
+    }
+    .layout__left-column{
+        margin-left: auto !important;    
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
+        margin: 0 auto;
     }
 }
 
