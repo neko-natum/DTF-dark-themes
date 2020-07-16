@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name           PureTF
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Ничего лишнего, только контент
+@author         Neko Natum
+==/UserStyle== */
+
+@-moz-document domain("dtf.ru") {
+body, .main_menu, .live_head{
+    background: #fff;
+}
+.sidebar, .live, .layout--bg, .search__input, .widget_wrapper--type-blue, .content-image--with_background, .island--blogs_entriesб .block-quote--centered, .block-quote--default, .island--blogs_entries{
+    background: transparent;
+}
+
+.sidebar, .live{
+    border-color: transparent;
+}
+.creation_button, .creation_button:hover{
+    border-color: #000;
+}
+
+.sidebar__tree-list__title{
+    color: #000;
+    font-size: 15px !important;
+    line-height: 26px;
+}
+.search__field .icon--search, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon{
+    color: #000;
+}
+.head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon{
+    fill: #000;
+}
+
+.layout__spacer{
+    width: calc((100% - 1520px)*.94);
+}
+.layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked #page_wrapper, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority #page_wrapper, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--ad-blocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--entry-wide .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--entry-wide .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--entry-wide .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--entry-wide .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--b{
+    max-width:640px;
+}
+.vacancies_widget, .propaganda, .sidebar__tree-list--limited>a, .sidebar__tree-list__button, .sidebar__footer, .daily-promo-unit, .daily-promo-unit-label--target-feed, .authorCard, .content-footer, .comments, .widget_wrapper, .comments_counter{
+    display: none !important;
+}
+.sidebar, .live{
+    opacity: 0;
+}
+.main .layout__column--left:hover .sidebar, .main .layout__column--right:hover .live{
+    opacity: 1;
+    transition: 0.5s;
+}
+.live_head__signal:after{
+    animation: none;
+}
+}
