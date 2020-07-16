@@ -1,9 +1,10 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.1.0
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
+@author         Pegasus Plus
 @preprocessor stylus
 
 @var            checkbox  scroll  "Скролл" 1
@@ -504,7 +505,33 @@ if size{
         max-width: 90% !important;
     }
     .layout--content.layout--colu-bmn-left-on.layout--column-right-on.layout--ad-blocked.layout--adlocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--ad-blocked.layout--propaganda-off .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--ad-blocked .layout--b, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--a, .layout--content.layout--column-left-on.layout--column-right-on.layout--live-priority.layout--propaganda-off .layout--b {
-	    width: 90% !important;
+        width: 90% !important;
+    }
+/*новые правки*/
+    .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked #page_wrapper, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live #page_wrapper {
+max-width: -webkit-fill-available;
+    }
+    .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper{
+        width: auto;
+        padding: 20px;
+    }
+    .content-image--thin_feed {
+        width: auto;
+    }
+    .feed__item {
+        padding-bottom: 15px;
+    }
+    .l-entry__banner {
+        width: 0px;
+    }
+    .content-header__title, .content-header__info, .andropov_image, .andropov_video {
+        margin: auto;
+    }
+    .content div:first-child:not(.block-html) p, .content-header__title {
+        text-align: center;
+    }
+    .content .l-mv-20+div p {
+        text-align: inherit;
     }
 }
 else{
