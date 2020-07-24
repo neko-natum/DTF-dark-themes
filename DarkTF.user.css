@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.3
+@version        1.1.4
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -11,6 +11,7 @@
 @var            checkbox  shadow  "Затемнение изображений" 0
 @var            checkbox  size  "Увеличение размеров" 0
 @var            checkbox  brand  "Золотой цвет брендирования DTF" 1
+@var            checkbox  comments  "Показывать блок комментариев" 1
 ==/UserStyle== */
 
 @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") {
@@ -546,6 +547,11 @@ else{
     }
     .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
         margin: 0 auto;
+    }
+}
+if not comments{
+    .comments, .widget_wrapper, .comments_counter{
+        display: none !important;
     }
 }
 
