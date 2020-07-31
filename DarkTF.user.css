@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.4
+@version        1.1.5
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -539,10 +539,10 @@ else{
     .layout__content{
         max-width: 1020px !important;
     }
-    .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .layout__right-column{
+    .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .layout__right-column, .site-header__item:nth-child(10n){
         margin-right: auto !important;
     }
-    .layout__left-column{
+    .layout__left-column, .site-header__item--burger{
         margin-left: auto !important;    
     }
     .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
