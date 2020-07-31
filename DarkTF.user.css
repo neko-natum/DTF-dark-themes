@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.11
+@version        1.1.12
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -547,7 +547,7 @@ if size == compact{
     .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .app--content-feed.app--left-column-on.app--right-column-on.app--live-auto .layout__right-column, .site-header__item:nth-child(10n), .app--content-feed.app--left-column-on.app--right-column-on.app--live-forcibly-collapsed .layout__content, .app--content-entry.app--left-column-off.app--right-column-on.app--entry-priority-live.app--live-forcibly-collapsed .layout__content, .app--content-feed.app--left-column-off.app--right-column-on.app--live-forcibly-collapsed .layout__content, .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked.app--live-auto .layout__right-column, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live.app--live-auto .layout__right-column{
         margin-right: auto !important;
     }
-    .app--content-feed.app--left-column-on.app--right-column-on .layout__left-column, .site-header__item--burger, .app--content-entry.app--left-column-off.app--right-column-on.app--ad-blocked .layout__content, .app--content-entry.app--left-column-off.app--right-column-on.app--entry-priority-live .layout__content, .app--content-full.app--left-column-off .layout__content, .app--content-feed.app--left-column-off.app--right-column-on .layout__content, .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked .layout__left-column, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live .layout__left-column{
+    .app--content-feed.app--left-column-on.app--right-column-on .layout__left-column, .site-header__item--burger, .app--content-entry.app--left-column-off.app--right-column-on.app--ad-blocked .layout__content, .app--content-entry.app--left-column-off.app--right-column-on.app--entry-priority-live .layout__content, .app--content-full.app--left-column-off .layout__content, .app--content-feed.app--left-column-off.app--right-column-on .layout__content, .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked .layout__left-column, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live .layout__left-column, .app--content-full.app--left-column-on .layout__left-column{
         margin-left: auto !important;    
     }
     .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
