@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.9
+@version        1.1.10
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -9,10 +9,14 @@
 
 @var            checkbox  scroll  "Скролл" 1
 @var            checkbox  shadow  "Затемнение изображений" 0
-@var            checkbox  size  "Увеличение размеров" 0
+@var            select    size  "Изменение размеров" [
+    "default:Дефолт",
+    "compact:Прижать",
+    "wide:Расширить"
+]
 @var            checkbox  brand  "Золотой цвет брендирования DTF" 1
 @var            checkbox  comments  "Показывать блок комментариев" 1
-@var            range     margining "Сдвиг в шапке" [240, 100, 500, 10, "px"]
+@var            range     margining "Сдвиг в шапке для Прижать" [240, 100, 500, 10, "px"]
 ==/UserStyle== */
 
 @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") {
@@ -499,7 +503,7 @@ if shadow{
     }
 }
 
-if size{
+if size == wide{
     .layout--feed.layout--column-left-on.layout--column-right-on #page_wrapper{
         width: 90% !important;
     }
@@ -536,7 +540,7 @@ max-width: -webkit-fill-available;
         text-align: inherit;
     }
 }
-else{
+if size == compact{
     .layout__content{
         max-width: 1020px !important;
     }
