@@ -1,9 +1,13 @@
 /* ==UserStyle==
 @name           DarkerTF
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.1.0
 @description    Тёмная тема с палитрой из мобильного приложения
 @author         Neko Natum
+@preprocessor   stylus
+
+@var            checkbox  size  "Уменьшение размеров" 0
+
 ==/UserStyle== */
 
 @-moz-document domain("dtf.ru"), domain("vc.ru"), domain("tjournal.ru") 
@@ -119,6 +123,21 @@ a:not(.vote__users__item):hover, .main_menu__item:hover, .head-notifies--showed 
 }
     ::-webkit-scrollbar-corner{
     background-color:#191919;
+}
+    
+if size{
+    .layout__content{
+        max-width: 1020px !important;
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .layout__right-column, .site-header__item:nth-child(10n){
+        margin-right: auto !important;
+    }
+    .layout__left-column, .site-header__item--burger{
+        margin-left: auto !important;    
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
+        margin: 0 auto;
+    }
 }
 }
 
