@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.13
+@version        1.1.15
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -677,6 +677,68 @@ html[stylus-iframe*="dtf.ru"] a.ViewProfileButton, html[stylus-iframe*="dtf.ru"]
 html[stylus-iframe*="vc.ru"] a.ViewProfileButton, html[stylus-iframe*="vc.ru"] a.FollowButton{
     background-color: var(--vc_main);
     color: #000 !important;
+}
+
+:root {
+    --tj_main: #e8a427;
+    --tj_sec: #fff4e2;
+    --vc_main: #e25a76;
+    --vc_sec: #feebef;
+    --dtf_main: #fef7cf;
+    --dtf_sec: #c9e7f2;
+}
+}
+@-moz-document domain("tiktok.com") {
+/*время сломать всё к хуям ещё сильней*/
+html[stylus-iframe*="tjournal.ru"] body,  html[stylus-iframe*="vc.ru"] body,html[stylus-iframe*="dtf.ru"] body, html[stylus-iframe*="tjournal.ru"] .main-body,  html[stylus-iframe*="vc.ru"] .main-body,html[stylus-iframe*="dtf.ru"] .main-body{
+    background: #000 !important;
+    color: #bfbfbf !important;
+}
+html[stylus-iframe*="tjournal.ru"] ._embed_video_card-info a{
+    color: var(--tj_sec);
+}
+  html[stylus-iframe*="vc.ru"] ._embed_video_card-info a{
+    color: var(--vc_sec);
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_card-info a{
+    color: var(--dtf_sec);
+}
+html[stylus-iframe*="tjournal.ru"] div{
+    border-color: var(--tj_main);
+}
+html[stylus-iframe*="dtf.ru"] div{
+    border-color: var(--dtf_main);
+}
+html[stylus-iframe*="vc.ru"] div{
+    border-color: var(--vc_main);
+}
+
+html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link, html[stylus-iframe*="dtf.ru"] ._embed_video_button-link, html[stylus-iframe*="vc.ru"] ._embed_video_button-link{
+    background-color: #000 !important;
+}
+html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link:hover, html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover, html[stylus-iframe*="vc.ru"] ._embed_video_button-link:hover{
+    color: #000 !important;
+}
+html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link{
+    color: var(--tj_main);
+    border: 1px solid var(--tj_main); 
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link{
+    color: var(--dtf_main);
+    border: 1px solid var(--dtf_main); 
+}
+html[stylus-iframe*="vc.ru"] ._embed_video_button-link{
+    color: var(--vc_main);
+    border: 1px solid var(--vc_main); 
+}
+html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link:hover{
+    background-color: var(--tj_main) !important;
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover{
+    background-color: var(--dtf_main) !important;
+}
+html[stylus-iframe*="vc.ru"] ._embed_video_button-link:hover{
+    background-color: var(--vc_main) !important;
 }
 
 :root {

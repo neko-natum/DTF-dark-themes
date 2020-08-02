@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.0.4
+@version        1.0.5
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -220,6 +220,38 @@ html[stylus-iframe*="dtf.ru"] #react-root, html[stylus-iframe*="dtf.ru"] article
 html[stylus-iframe*="dtf.ru"] a.ViewProfileButton, html[stylus-iframe*="dtf.ru"] a.FollowButton{
     background-color: var(--dtf_main);
     color: #000 !important;
+}
+
+:root {
+    --dtf_main: #f90;
+    --dtf_sec: #c9e7f2;
+}
+}
+@-moz-document domain("tiktok.com") {
+/*время сломать всё к хуям ещё сильней*/
+html[stylus-iframe*="dtf.ru"] body, html[stylus-iframe*="dtf.ru"] .main-body{
+    background: #000 !important;
+    color: #bfbfbf !important;
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_card-info a{
+    color: var(--dtf_sec);
+}
+html[stylus-iframe*="dtf.ru"] div{
+    border-color: var(--dtf_main);
+}
+
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link{
+    background-color: #000 !important;
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover{
+    color: #000 !important;
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link{
+    color: var(--dtf_main);
+    border: 1px solid var(--dtf_main); 
+}
+html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover{
+    background-color: var(--dtf_main) !important;
 }
 
 :root {
