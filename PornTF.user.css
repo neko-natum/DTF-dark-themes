@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.0.5
+@version        1.0.6
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -197,11 +197,11 @@ img#qr-cmnt-btn{
 .main_menu__logo, .site-header__item--logo{
     width: 142px;
     height: 50px;
-    background: url(https://leonardo.osnova.io/04326baf-7d08-e1df-14b2-d29528ba17ed/-/preview/150x50/center/) 0px 3px;
+    background: url(https://leonardo.osnova.io/04326baf-7d08-e1df-14b2-d29528ba17ed/-/preview/150x50/center/);
     background-position: cover;
 }
 .main_menu__logo svg, .site-header__item--logo svg{
-    display:none;
+    color: transparent;
 }
 }
 
