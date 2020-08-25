@@ -57,7 +57,7 @@ html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subsc
 .live:not(:empty):after, .main_menu__container:before{
     background-image: none;
 }
-.marked-text, .messenger .aside, .table__row--me, .contacts:not(.contacts--disabled) .contacts__item:hover{
+.marked-text, .messenger .aside, .table__row--me, .contacts:not(.contacts--disabled) .contacts__item:hover, .vb>.vb-dragger>.vb-dragger-styler{
     background: rgba(0,0,0,0.5) !important;
 }
 .pswp__bg{
