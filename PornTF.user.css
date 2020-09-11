@@ -89,6 +89,12 @@ a:hover, .u-notification__content__button:hover, .andropov_telegram__text__more:
 .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .comments_counter--has_new .comments_counter__count__ico svg, .comments_counter--has_new .comments_counter__count__value_new svg, .comments_updates, .comments_counter:hover .comments_counter__count__ico svg, .ui_modal_window__close:hover .icon, .cdx-plugin-settings__item svg, .etc-controls__dropdownIcon .icon svg g, #ui_twitch path, .v-list-tab--active svg, .v-list-tab:hover svg, .aside__header-button svg g path, .new-entries-horizon svg path:nth-of-type(1){
     fill: #f90 !important;
 }
+.new-entries-horizon svg path:nth-of-type(6){
+    stroke: #000 !important;
+}
+.new-entries-horizon svg path:nth-of-type(4){
+    stroke: #f90 !important;
+}
 .v-list-tab svg, .chat__header-back .icon g path{
     fill: #cacaca;
 }
