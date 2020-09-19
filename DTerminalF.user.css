@@ -1,0 +1,180 @@
+/* ==UserStyle==
+@name           DTerminalF
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    консолька бгггггг
+@author         Neko Natum
+==/UserStyle== */
+
+@-moz-document domain("dtf.ru") {
+    body, .sidebar, .live, .site-header, .etc_control__list, .vote .vote__users, .v-tabs-navigation, .updown:after, .reposters_list, .v-button, .bubble, .search-dropdown, .comments__item__user__status, .comments_form, .comments_updates, .comments_updates__counter, .channel-item--current, .channel-item:hover, .chat-messages__day span, .message--selected .message__actions-select, .message--selected, .emoji-picker__panel, .emoji-picker__tabs, .emoji-picker__panel-list-section-name, .etc-controls__dropdown, .messenger-panel__down, .head-notifies__panel, .u-notification--hover:hover, .u-notification__avatar-icon, .v-create-button__dropdown, .shares__item, .shares--desktop .shares__close, .shares--desktop .shares__open, .audio_player__control__slider__bg, .audio_player__control__panel, .floating_player, .comments__item__space--with-donate
+    {
+        background: #000 !important;    
+    }
+    .l-island-bg, .sidebar__tree-list__item--active, .sidebar__tree-list__item:hover, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .new_entries__counter, .sidebar__tree-list__item__badge, .v-create-button, .content-image--with_background, .ui-rounded-button__link:hover, .etc_control__list:before, .etc_control__item:hover, .quiz, .gall, .block-quote--centered, .block-quote--default, .v-tabs--overflown::after, .v-tabs--overflown::before, .v-plus-badge, .sidebar__footer__item--sponsor span, .attachButton, .miniEditor__avatar, .ui-dropdown__item:hover, .bubble[arrow-alignment^="top"]:before, .item--selected, .item--focused, .item:hover, .item__badge, .search--active .search__input, .search--filled .search__input, .authorCard, .plus-badge, .vacancies_widget, .comments__item .vote--sum-positive .vote__value, .comments__item__self--author .comments__item__user__name .user_name.comments__item__space--pinned, .comments__item__space--new, .comments__item__space--highlighted, .vote--comment .vote__value, .thesis__attach_something, .ui-button, .comments__item__self--author .comments__item__user__name .user_name, .vacancies_widget__new, .comments_pseudo_form, .comments_pseudo_form__button, .widget_wrapper--type-blue, .ui-rounded-button__indicator, .messenger, .aside__list-heading, .aside-search input, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover, .aside-search input, .chat-info__search, .ui-input, .chat-info__bottom, .b--submit, .chat-info-form__picture, .chat-form__textarea, .message__picture, .emoji-picker__panel::after, .etc-controls__dropdownItem:hover, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .block-incut, .block-code, .block-number, .donate-display, .comments__item__expand, .comments__item__more--inner
+    {
+        background: transparent !important;
+    }
+    .site-header-user-profile__avatar-image, .v-list__image, .v-header-avatar, .v-header-cover
+    {
+        background-color: transparent !important;
+    }
+    .v-tab--active .v-tab__label::after, .v-create-button__select::before, .vote .vote__value:hover .vote__users--not-empty:before, .vote .vote__users__item:before, .quiz__item__progressbar__runner, .quiz__item__progressbar, .reposters_list:before, .reposters_list__item:after, .ui-tab--active .ui-tab__label:after, .aside-placeholder__picture, .aside-placeholder__line1, .aside-placeholder__line2, .site-header-progressbar__runner, .audio_player__control__slider__bar
+    {
+        background: #4af626 !important;
+    }
+    .gall--5 .gall__item[data-more]::after
+    {
+        background: #000000c9 !important;
+    }
+    
+    html, a, .new_entries__counter, .sidebar__tree-list__item__badge, .head-notifies__toggler, .live__item--comment .live__item__content .live__item__text, .live__item--comment .live__item__user__name, .sidebar__tree-list__button, .sidebar__tree-list__item__favourite, .sidebar__footer__icon--twitch, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .etc_control, .t-link:hover, .t-link:hover time, .etc_control__item, .comments_counter__count__value_new, .comments_counter__count__unit, .comments_counter__count__value, .repost_button__button, .favorite_marker__count, .favorite_marker__title, .vote .vote__value, .vote--content .vote__button, .quiz__panel__button, .quiz__item__voted__count, .gall--5 .gall__item[data-more]::after, .v-island__counter, .email_subscribe_vue__before, .email_subscribe_vue__done, .email_subscribe_vue__before .icon, .updown__icons, .content-header-pin, .comments__subscribe__label, .content-editorial-tick span, .content-header-pin__label, .subsite_head__description--edit span, .ui-bubble, .attachButton, .miniEditor__text, .v-button, .v-header__stat .icon, .v-number-change, .site-header-user-profile__toggle, .item, .item__badge, ::-webkit-input-placeholder, .search--active .search__field .icon--search, .search--filled .search__field .icon--search, .search-dropdown__title, .search__field > .icon--search, .andropov_link_mini, .ui-tab:hover, .ui-tab--active .ui-tab__label, .comments__item .vote--sum-positive .vote__value, .vote .vote__button .icon, .comments__item__reply, .comments__item__ico, .thesis__attach_something, .ui-button, .comments_updates__counter, .andropov_link, .andropov_link__host, .comments_pseudo_form__text, .thesis__placeholder, .widget_wrapper--type-blue .widget_wrapper__title, .widget_comment__label, .new-entries-horizon, .content-editorial-tick, .subsite_head__karma--negative, .aside__list-heading, .aside-search svg, .chat-placeholder__content, .aside__button, .b--submit, .b, .chat-info-form__picture svg, .chat-info__label, .channel-item__time, .channel-item__status, .chat-form__attach, .channel-item--current, .chat-messages__day, .message__time, .message__status--read, .chat-bottom-actions__button, .chat-bottom-actions__right, .chat-bottom-actions__right-button, .chat-header-info__subline, .emoji-picker__invoker, .emoji-picker__panel, .emoji-picker__tabs, .emoji-picker__panel-list-section-name, .chat-form__send, .messenger-panel__down, .head-notifies__panel, .u-notification__avatar-icon, .u-notification__content__button, .u-notification__content__date, .content-footer-watchers, .content-header-author__repost, .table__row--header .table__cell:not(:first-child), .table__row--footer:hover, .subsite__trend .icon--ui_arrow_up, .v-header-description__more, .v-list-subsites__more, .v-list__more, .authorCard__karma, .shares--desktop .shares__close, .shares--desktop .shares__open, .content-header-number, .site-header__item, .live__toggle, .content .content-image-caption__author, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .audio_player__control--listens, .audio_player__control--listens .icon, .audio_player__control--duration, .with-icon-gray, .floating_player__close, .audio_player__control__rate[data-current="0"], .audio_player__control__volume, .audio_player__control--download, .audio_player__control--download:hover, .comments__subscribe--active, .comments__item__expand, .comments__item__more--inner, .news_widget__toggle, .news_widget__toggle .icon, .news_item .time
+    {
+        color: #4af626 !important;
+    }
+    .sidebar__footer__item--sponsor span
+    {
+        -webkit-text-fill-color: #4af626 !important;
+    }
+    
+    .sidebar__tree-list__item--active, .sidebar__tree-list__item:hover, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .new_entries__counter, .sidebar__tree-list__item__badge, .v-create-button, .ui-rounded-button__link:hover, .etc_control__list, .vote .vote__users, .l-island-bg:not(.ui-tabs), .v-tabs-navigation, .v-plus-badge, .comments__subscribe__label, .content-editorial-tick span, .content-header-pin__label, .subsite_head__description--edit span, .ui-bubble, .reposters_list, .attachButton, .v-button, .bubble, .item__badge, .search-dropdown, .search__field, .authorCard, .plus-badge, .vacancies_widget, .comments__item .vote--sum-positive .vote__value, .comments__item__self--author .comments__item__user__name .user_name, .comments__item__space--pinned, .comments__item__space--new, .comments__item__space--highlighted, .vote--comment .vote__value, .comments_form, .thesis__attach_something, .ui-button, .comments_updates__counter, .andropov_link, .vacancies_widget__new, .comments_updates, .comments_pseudo_form, .comments_pseudo_form__button, .widget_wrapper--type-blue, .ui-rounded-button__indicator, .messenger, .chat-info__search, .ui-input, .b--submit, .chat-info-form__picture, .chat-messages__day span, .message--selected .message__actions-select, .emoji-picker__panel, .etc-controls__dropdown, .messenger-panel__down, .head-notifies__panel, .u-notification__avatar-icon, .v-create-button__dropdown, .shares__item, .shares--desktop .shares__close, .shares--desktop .shares__open, .floating_player, .donate-display, .comments__item__space--with-donate
+    {
+        border: 1px dashed #4af626 !important;
+    }
+    .quiz__item__check, .quiz__panel__button__label, .comments__item__user__status, .comments__item__children, .widget_wrapper--type-blue .widget_wrapper__item, .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat-bottom-actions__right-button, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-header-description a:not(.t-link-inline), .v-list__label a, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio
+    {
+        border-color: #4af626 !important;
+    }
+    .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio
+    {
+        border-style: dashed !important;
+    }
+    .channel-item--current, .channel-item:hover, .message--selected, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header
+    {
+        border-bottom: 1px;
+    }
+    .message--selected, .table__row--me, .v-list-tab--active, .v-list-tab:hover
+    {
+        border-top: 1px;
+    }
+    .gall--5 .gall__item--3, .gall--5 .gall__item--1, .gall--5 .gall__item--0, .block-person a, .block-quote a, .block-warning a, .comments__item__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .gall--2 .gall__item--1, .gall--2 .gall__item--0, .head-notifies--showed .head-notifies__toggler::after
+    {
+        border-color: transparent !important;
+    }
+    .v-header-avatar{
+        box-shadow: 0 0 0 4px #4af626, inset 0 0 0 1px rgba(0,0,0,0.1);
+    }
+    .emoji-picker__panel-list-section-name, .etc-controls__dropdown{
+        box-shadow: none !important;
+    }
+    .v-header, .v-header-cover, .v-button, .v-plus-badge, .v-header-avatar, .sidebar__tree-list__item__badge, .sidebar__tree-list__item, .v-island, .v-tabs-navigation, .etc_control__list, .ui-rounded-button__link, .attachButton, .l-island-round, .bubble, .plus-badge, .thesis__attach_something, .ui-button, .comments__item__self--author .comments__item__user__name .user_name, .comments_updates, .comments_updates__counter, .vacancies_widget__new, .comments_pseudo_form__button, .site-header-user-profile__avatar-image, .live__item--comment .live__item__user__image, .sidebar__tree-list__item__image, .ui-rounded-button__indicator, .b--submit, .chat-info-form__picture, .chat-messages__day span, .message__picture, .m-photo img, .message--selected .message__actions-select, .emoji-picker__panel, .etc-controls__dropdown, .u-notification__avatar-icon, .item__badge, .v-create-button, .v-create-button__dropdown, .shares__item, .shares--desktop .shares__close, .shares--desktop .shares__open
+    {
+        border-radius: 0px !important;
+    }
+    
+    a span, a:hover span, .t-link:hover, .etc_control__item:hover, .item--selected, .item--focused, .item:hover, .andropov_link_mini, .ui-tab:hover, .ui-tab--active .ui-tab__label, .ui-button:hover, .andropov_link__host, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover, .b--submit:hover, .b:hover, .etc-controls__dropdownItem:hover, .u-notification--hover:hover, .u-notification__content a, .t-link, .v-list-subsites__more, .v-list__more
+    {
+        text-decoration: underline;
+    }
+    
+    .v-create-button__select svg, #ui_twitch path, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .comments_counter--has_new .comments_counter__count__ico svg, .comments_counter--has_new .comments_counter__count__value_new svg, .favorite_marker .icon, .comments_counter__count__ico svg, #entry_quote path, .attachButton .icon--attach-link, .attachButton .icon, #ui_blank path, .comments_updates svg, #updates_arrows path, .comments_pseudo_form__button svg, .new-entries-horizon svg path:nth-of-type(1), .aside__button svg g path, .aside__header-button svg g path, .chat__header-back--showed svg g path, .no-tap svg path, .shares__item svg
+    {
+        fill: #4af626 !important;
+    }
+    .new-entries-horizon svg path:nth-of-type(6)
+    {
+        stroke: #000 !important;
+    }
+    .new-entries-horizon svg path:nth-of-type(4)
+    {
+        stroke: #4af626 !important;
+    }
+    
+    .vote .vote__users .icon, .vote .vote__users--overflowed .vote__users__content_wrapper:after, .reposters_list .icon, .site-header-logo svg, .etc-controls__dropdown:before
+    {
+        display: none;
+    }
+    .vote .vote__users__item--minus p::before
+    {
+        content: "- ";
+    }
+    .vote .vote__users__item--plus p::before
+    {
+        content: "+ ";
+    }
+    
+    img, .gall__item, .site-header-user-profile__avatar-image, .v-list__image, .v-header-cover, .v-header-avatar:not(:last-child), .approved_user .icon, .v-list-subsites-item__image, .andropov_video iframe, .andropov_video video, .andropov_preview--movie, .andropov_preview--video, .andropov_video
+    {
+        filter: sepia(100%) contrast(100%) saturate(500%) hue-rotate(423deg);
+    }
+    
+    .comments_updates svg, .v-create-button-option__icon svg, .v-list-tab svg
+    {
+        filter: invert(86%) sepia(33%) saturate(5411%) hue-rotate(58deg) brightness(107%) contrast(94%);
+    }
+    
+    body, .messenger
+    {
+        font-family: consolas !important;    
+    }
+    
+    .site-header-logo:before
+    {
+        content: "DTF";
+        font-size: 50px;
+        font-stretch: ultra-expanded;
+        font-weight: bold;
+    }
+    ::-webkit-scrollbar
+    {
+	    width:12px;
+	    background-color:#000;
+    }
+    ::-webkit-scrollbar:horizontal
+    {
+	    height:12px;
+    }
+    ::-webkit-scrollbar-track
+    {
+	    border:1px #000 solid;
+	    border-radius:0px;
+	    -webkit-box-shadow:0 0 6px #000 inset;
+    }
+    ::-webkit-scrollbar-thumb
+    {
+	    background-color:#4af626;
+	    border:1px solid #4af626;
+	    border-radius:0px;
+    }
+    ::-webkit-scrollbar-thumb:hover
+    {
+	    background-color:#4af626;
+	    border:1px solid #4af626;
+    }
+    ::-webkit-scrollbar-thumb:active
+    {
+	    background-color:#4af626;
+	    border:1px solid #4af626;
+    }
+    ::-webkit-scrollbar-corner
+    {
+        background-color:#000;
+    }
+    .layout__content{
+        max-width: 1020px !important;
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .layout__content, .app--content-full.app--right-column-off .layout__content, .app--content-feed.app--left-column-on.app--right-column-on.app--live-auto .layout__right-column, .site-header__item:nth-child(10n), .app--content-feed.app--left-column-on.app--right-column-on.app--live-forcibly-collapsed .layout__content, .app--content-entry.app--left-column-off.app--right-column-on.app--entry-priority-live.app--live-forcibly-collapsed .layout__content, .app--content-feed.app--left-column-off.app--right-column-on.app--live-forcibly-collapsed .layout__content, .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked.app--live-auto .layout__right-column, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live.app--live-auto .layout__right-column, .app--content-2cols-fixed.app--left-column-on.app--right-column-on.app--live-auto .layout__right-column, .app--content-feed.app--left-column-off.app--right-column-on.app--live-auto .layout__right-column
+    {
+        margin-right: auto !important;
+    }
+    .app--content-feed.app--left-column-on.app--right-column-on .layout__left-column, .site-header__item--burger, .app--content-entry.app--left-column-off.app--right-column-on.app--ad-blocked .layout__content, .app--content-entry.app--left-column-off.app--right-column-on.app--entry-priority-live .layout__content, .app--content-full.app--left-column-off .layout__content, .app--content-feed.app--left-column-off.app--right-column-on .layout__content, .app--content-entry.app--left-column-on.app--right-column-on.app--ad-blocked .layout__left-column, .app--content-entry.app--left-column-on.app--right-column-on.app--entry-priority-live .layout__left-column, .app--content-full.app--left-column-on .layout__left-column, .app--content-2cols-fixed.app--left-column-on.app--right-column-on .layout__left-column
+    {
+        margin-left: auto !important;    
+    }
+    .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
+        margin: 0 auto;
+    }
+    .site-header__spacer{
+        width: margining;
+    }
+}
