@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DTerminalF
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    консолька бгггггг
 @author         Neko Natum
 ==/UserStyle== */
@@ -72,7 +72,7 @@
         border-radius: 0px !important;
     }
     
-    a span, a:hover span, .t-link:hover, .etc_control__item:hover, .item--selected, .item--focused, .item:hover, .andropov_link_mini, .ui-tab:hover, .ui-tab--active .ui-tab__label, .ui-button:hover, .andropov_link__host, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover, .b--submit:hover, .b:hover, .etc-controls__dropdownItem:hover, .u-notification--hover:hover, .u-notification__content a, .t-link, .v-list-subsites__more, .v-list__more, .t-link-inline
+    a span, a:hover span, .t-link:hover, .etc_control__item:hover, .item--selected, .item--focused, .item:hover, .andropov_link_mini, .ui-tab:hover, .ui-tab--active .ui-tab__label, .ui-button:hover, .andropov_link__host, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover, .b--submit:hover, .b:hover, .etc-controls__dropdownItem:hover, .u-notification--hover:hover, .u-notification__content a, .t-link, .v-list-subsites__more, .v-list__more, .t-link-inline, .block-person a, .block-quote a, .block-warning a, .comments__item__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic
     {
         text-decoration: underline;
     }
