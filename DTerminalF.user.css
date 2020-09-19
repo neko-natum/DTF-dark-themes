@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DTerminalF
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    консолька бгггггг
 @author         Neko Natum
 ==/UserStyle== */
@@ -41,15 +41,15 @@
     {
         border: 1px dashed #4af626 !important;
     }
-    .quiz__item__check, .quiz__panel__button__label, .comments__item__user__status, .comments__item__children, .widget_wrapper--type-blue .widget_wrapper__item, .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat-bottom-actions__right-button, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-header-description a:not(.t-link-inline), .v-list__label a, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio, .notify-new-items-label
+    .quiz__item__check, .quiz__panel__button__label, .comments__item__user__status, .comments__item__children, .widget_wrapper--type-blue .widget_wrapper__item, .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat-bottom-actions__right-button, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-header-description a:not(.t-link-inline), .v-list__label a, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio, .notify-new-items-label, .comments__item .vote--voted-negative .vote__button--minus, .comments__item .vote--voted-positive .vote__button--plus
     {
         border-color: #4af626 !important;
     }
-    .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio, .notify-new-items-label, .andropov_uploader__preview_item__remove
+    .aside__header, .aside, .chat-info__bottom, .channel-item--current, .channel-item:hover, .message--selected, .chat__header, .messenger-panel__down-head, .messenger-panel .channel-item__info, .messenger-panel__down-footer, .head-notifies__header, .u-notification--border, .head-notifies__footer, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header, .block-code, .block-audio, .notify-new-items-label, .andropov_uploader__preview_item__remove, .comments__item .vote--voted-negative .vote__button--minus, .comments__item .vote--voted-positive .vote__button--plus
     {
         border-style: dashed !important;
     }
-    .channel-item--current, .channel-item:hover, .message--selected, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header, .notify-new-items-label
+    .channel-item--current, .channel-item:hover, .message--selected, .table__row--me, .v-list-tab--active, .v-list-tab:hover, .site-header, .notify-new-items-label, .comments__item .vote--voted-negative .vote__button--minus, .comments__item .vote--voted-positive .vote__button--plus
     {
         border-bottom: 1px;
     }
@@ -115,7 +115,7 @@
     
     body, .messenger
     {
-        font-family: consolas !important;    
+        font-family: consolas, monospace !important;    
     }
     
     .site-header-logo:before
