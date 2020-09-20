@@ -71,7 +71,7 @@
     {
         border-top: 1px;
     }
-    .gall--5 .gall__item--3, .gall--5 .gall__item--1, .gall--5 .gall__item--0, .block-person a, .block-quote a, .block-warning a, .comments__item__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .gall--2 .gall__item--1, .gall--2 .gall__item--0, .head-notifies--showed .head-notifies__toggler::after, .ce-settings:before, .ce-settings:after, .cdx-helper:before, .ui-border--bottom
+    .gall--5 .gall__item--3, .gall--5 .gall__item--1, .gall--5 .gall__item--0, .block-person a, .block-quote a, .block-warning a, .comments__item__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .gall--2 .gall__item--1, .gall--2 .gall__item--0, .head-notifies--showed .head-notifies__toggler::after, .ce-settings:before, .ce-settings:after, .cdx-helper:before, .ui-border--bottom, .live, .sidebar
     {
         border-color: transparent !important;
     }
