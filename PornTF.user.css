@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.2.5
+@version        1.2.6
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -23,7 +23,8 @@ body, .search__field, .block-incut, .content-image--with_background, .main_menu_
     {
     background: #1c1c1c !important;
 }
-.sidebar__tree-list__item__badge, .u-notification--blue .u-notification__avatar-icon, .quiz__item__progressbar__runner, .ui-tab--active .ui-tab__label:after, .dropdown_list__item__badge, .comments_updates__counter, .new_entries__counter, .channel-item--current .channel-item__online, .ui-tab__counter--notify, .main_progressbar__runner, .plus-badge, .ui_toggle--on .ui_toggle__zone, .ui_toggle__handle, .audio_player__control__slider__bar, .ui_preloader .ui_preloader__dot, .item--selected, .item--focused, .item:hover, .item__badge, .cdx-inline-toolbar, .tab--active .tab__label:after, .channel-item__unread-count, .comments__item__self--author .comments__item__user__name .user_name, .vue-slider-dot-handle, .article-75846__table th, .ad-contacts__user:after, .ui_form input[type=submit]:hover, .yap-inventory__block-bd > div, .yap-inventory__hint, .yap-inventory__toggle::before, .yap-inventory__toggle::after, .v-create-button__select::before, .site-header-progressbar__runner, .reposters_list__item:after, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button:hover .ui-rounded-button__link, .v-tab--active .v-tab__label::after, .v-button:hover, .aside-placeholder__picture, .aside-placeholder__line1, .aside-placeholder__line2{
+.sidebar__tree-list__item__badge, .u-notification--blue .u-notification__avatar-icon, .quiz__item__progressbar__runner, .ui-tab--active .ui-tab__label:after, .dropdown_list__item__badge, .comments_updates__counter, .new_entries__counter, .channel-item--current .channel-item__online, .ui-tab__counter--notify, .main_progressbar__runner, .plus-badge, .ui_toggle--on .ui_toggle__zone, .ui_toggle__handle, .audio_player__control__slider__bar, .ui_preloader .ui_preloader__dot, .item--selected, .item--focused, .item:hover, .item__badge, .cdx-inline-toolbar, .tab--active .tab__label:after, .channel-item__unread-count, .comments__item__self--author .comments__item__user__name .user_name, .vue-slider-dot-handle, .article-75846__table th, .ad-contacts__user:after, .ui_form input[type=submit]:hover, .yap-inventory__block-bd > div, .yap-inventory__hint, .yap-inventory__toggle::before, .yap-inventory__toggle::after, .v-create-button__select::before, .site-header-progressbar__runner, .reposters_list__item:after, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button:hover .ui-rounded-button__link, .v-tab--active .v-tab__label::after, .v-button:hover, .aside-placeholder__picture, .aside-placeholder__line1, .aside-placeholder__line2, .sidebar-tree-list-item__child-item--with-badge::after
+    {
     background: #f90 !important;
 }
 .channel-item:hover, .channel-item--focused, .u-notification--hover:hover, .u-notification--unread, .content mark, .profile_comment_favorite__text mark, .profile_comment_self__text mark, .u-notification--unread.u-notification--hover:hover, .channel-item--current, .ui-checkbox--disabled, .audio_player__control__slider__bar, .audio_player__control__slider__bg, .upload-button, .vue-slider-rail, .creation_button:hover, .v-create-button:hover, .b--submit:hover, .ui-filters--responsive .ui-filters__inner, .sidebar-tree-list-item__child-item:hover, .sidebar-tree-list-item:hover

@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkerTF
 @namespace      github.com/openstyles/stylus
-@version        1.2.4
+@version        1.2.5
 @description    Тёмная тема с палитрой из мобильного приложения
 @author         Neko Natum
 @preprocessor   stylus
@@ -34,7 +34,7 @@ body, .bubble, .bubble[arrow-alignment^="top"]:before, .etc_control__list, .etc_
 .sidebar, .live, .daily-promo-unit__button, .main_menu__write-button, .content-image--with_background, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .comments__item__more--root--1, .ui-button--1, .vote__value, .vacancies_widget__new, .email_subscribe_vue__form, .email_subscribe_vue__form input, .attachButton, .aside-search input, .chat-form__textarea, .rolled-up-text__label, .avatar-grid__item img, .avatar-grid__item, .subsites_catalog__search__bar, .block-code, .page--editor input, .writing-title, .form-text-input, .input, html body .ce-redactor a.andropov_link, .cdx-input, .code-tool, .form-text-input, .quiz-tool-input, .andropov_preview, .more-tv-teaser__button, .events_widget__new, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select, .input-suggestion input, .comments__link_to_all, .comments__item__expand, .comments__item__more--inner, .contentFiltersDropdown .dropdown__input, .v-ui-checkbox, .form2__field--text .text__input, .form2__field--text .text, .authorCard, .creation_button, .form2__field--advanced_list .text__input, .v-create-button, .tg-header__details-item, .tg-header__type-switcher, .v-button, .v-tabs--overflown::after, .v-tabs--overflown::before{
     background: transparent !important;
 }
-.new_entries__counter, .sidebar__tree-list__item__badge, .item__badge, .ui-tab--active .ui-tab__label:after, .comments__item__self--author .comments__item__user__name .user_name, .comments_updates__counter, .ui-tab__counter--notify, .chat-messages__day span, .audio_player__control__slider__bar, .shares--desktop .shares__close, .shares--desktop .shares__open, .block-special-button a, .ui_preloader .ui_preloader__dot, .v-form-range .vue-slider-dot-handle, .v-form-range .vue-slider-mark, .site-header-progressbar__runner, .v-tab--active .v-tab__label::after{
+.new_entries__counter, .sidebar__tree-list__item__badge, .item__badge, .ui-tab--active .ui-tab__label:after, .comments__item__self--author .comments__item__user__name .user_name, .comments_updates__counter, .ui-tab__counter--notify, .chat-messages__day span, .audio_player__control__slider__bar, .shares--desktop .shares__close, .shares--desktop .shares__open, .block-special-button a, .ui_preloader .ui_preloader__dot, .v-form-range .vue-slider-dot-handle, .v-form-range .vue-slider-mark, .site-header-progressbar__runner, .v-tab--active .v-tab__label::after, .sidebar-tree-list-item__child-item--with-badge::after{
     background: var(--branding) !important;
 }
 .advice__list li::before{
