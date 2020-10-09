@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.2.7
+@version        1.2.8
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -110,10 +110,12 @@ a:hover, .u-notification__content__button:hover, .andropov_telegram__text__more:
 .vote .vote__users .icon, .vote .vote__users--overflowed .vote__users__content_wrapper:after, .main_menu #qr-btn, #qr-cmnt-btn, .reposters_list .icon, .reposters_list--overflowed:after{
     filter: invert(84%);
 }
-.icon--updates_arrows, .icon--toggle-down, .icon--maximize, .icon--writing-typograph, .cdx-icon--settings, .ce-toolbar__plus, .ce-toolbar__tools-item-icon, .cdx-icon--cover, .ce-settings__anchor-hash, .cdx-icon--remove-block, .cdx-icon--arrow-up, .cdx-icon--arrow-down, .etc-controls__dropdownIcon, .layout--editor #qr-btn, .layout--editor #reply-btn, .main_menu #qr-btn:hover, .thesis__attach_something #reply-btn, #qr-cmnt-btn:hover, #reply-btn, .v-create-button-option__icon{
+.icon--updates_arrows, .icon--toggle-down, .icon--maximize, .icon--writing-typograph, .cdx-icon--settings, .ce-toolbar__plus, .ce-toolbar__tools-item-icon, .cdx-icon--cover, .ce-settings__anchor-hash, .cdx-icon--remove-block, .cdx-icon--arrow-up, .cdx-icon--arrow-down, .etc-controls__dropdownIcon, .layout--editor #qr-btn, .layout--editor #reply-btn, .main_menu #qr-btn:hover, .thesis__attach_something #reply-btn, #qr-cmnt-btn:hover, #reply-btn, .v-create-button-option__icon, #qr-btn
+    {
     filter: invert(59%) sepia(70%) saturate(1930%) hue-rotate(359deg) brightness(102%) contrast(107%);
 }
-.approved_user{
+.approved_user
+    {
     filter: invert(59%) sepia(70%) saturate(1930%) hue-rotate(359deg) brightness(102%) contrast(77%);
 }
 .ui-tabs--overflown:after{
