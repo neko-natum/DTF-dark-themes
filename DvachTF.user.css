@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DvachTF
 @namespace      github.com/openstyles/stylus
-@version        1.1.0
+@version        1.1.1
 @description    Лучшая полуанонимная имиджборда для анимешных девочек
 @author         Neko Natum
 ==/UserStyle== */
@@ -29,7 +29,8 @@ body, .sidebar, .live, .main_menu, .live_head, .comments__item__self--author .co
 .comments__item__space--new, .notification:hover, .comments__item__space--highlighted, .u-notification--unread.u-notification--hover:hover, .u-notification--hover:hover, .channel-item:hover, .channel-item--focused, .channel-item--current, .new_entries:hover, .comments__item__space--highlighted, .table__row--me, .chat-messages__day span, .m-floating__header:hover, .channel-item__name .searched, .message--selected, .notify-new-items-label, .comments__item__space--pinned, .u-notification--unread, .aside__button:hover, .contacts__item:hover{
     background: #ff700036 !important;
 }
-.comments_updates__counter, .comments__item__more--root--1, .ui-button--1, .sidebar__tree-list__item__badge, .ui-tab--active .ui-tab__label:after, .dropdown_list__item__badge, .ui_toggle--on .ui_toggle__zone, .quiz__item__progressbar__runner, .new_entries__counter, .main_progressbar__runner, .message--selected .message__actions-select, .item__badge, .v-tab--active .v-tab__label::after{
+.comments_updates__counter, .comments__item__more--root--1, .ui-button--1, .sidebar__tree-list__item__badge, .ui-tab--active .ui-tab__label:after, .dropdown_list__item__badge, .ui_toggle--on .ui_toggle__zone, .quiz__item__progressbar__runner, .new_entries__counter, .main_progressbar__runner, .message--selected .message__actions-select, .item__badge, .v-tab--active .v-tab__label::after, .sidebar-tree-list-item__child-item--with-badge::after
+    {
     background: #FF7000 !important;
 }
 .comments__item__more--root--1.comments__item__more--root--hovered, .comments__item__more--root--1:hover, .ui-button--1.ui-button--hovered, .ui-button--1:hover, .quiz__item__progressbar{
@@ -132,158 +133,162 @@ a:hover, .live__item--comment .live__item__date:hover, .live__item--comment .liv
 }
 
 /* Шутка юмора */
-.sidebar__tree-list a[href="/"] p, .sidebar__tree-list a[href="/new"] p, .sidebar__tree-list a[href="/job"] p, .sidebar__tree-list a[href="https://dtf.ru/games"] p, .sidebar__tree-list a[href="https://dtf.ru/gameindustry"] p, .sidebar__tree-list a[href="https://dtf.ru/flood"] p, .sidebar__tree-list a[href="https://dtf.ru/ask"] p, .sidebar__tree-list a[href="https://dtf.ru/anime"] p, .sidebar__tree-list a[href="https://dtf.ru/gamedev"] p, .sidebar__tree-list a[href="https://dtf.ru/life"] p, .sidebar__tree-list a[href="https://dtf.ru/gamedev"] p, .sidebar__tree-list a[href="https://dtf.ru/bugs"] p, .sidebar__tree-list a[href="https://dtf.ru/music"] p, .sidebar__tree-list a[href="https://dtf.ru/team"] p, .sidebar__tree-list a[href="https://dtf.ru/hard"] p, .sidebar__tree-list a[href="https://dtf.ru/cinema"] p, .sidebar__tree-list a[href="https://dtf.ru/indie"] p, .sidebar__tree-list a[href="https://dtf.ru/sale"] p, .sidebar__tree-list a[href="https://dtf.ru/shaurmashaverma"] p, .sidebar__tree-list a[href="https://dtf.ru/kek"] p, .sidebar__tree-list a[href="https://dtf.ru/read"] p, .sidebar__tree-list a[href="https://dtf.ru/retro"] p, .sidebar__tree-list a[href="https://dtf.ru/avi"] p, .sidebar__tree-list a[href="https://dtf.ru/guest"] p, .sidebar__tree-list a[href="https://dtf.ru/science"] p, .sidebar__tree-list a[href="https://dtf.ru/podcasts"] p, .sidebar__tree-list a[href="https://dtf.ru/mobile"] p, .sidebar__tree-list a[href="https://dtf.ru/apitest"] p, .sidebar__tree-list a[href="https://dtf.ru/boardgames"] p, .sidebar__tree-list a[href="https://dtf.ru/contest"] p, .sidebar__tree-list a[href="https://dtf.ru/howto"] p, .sidebar__tree-list a[href="https://dtf.ru/nenanimalsia"] p, .sidebar__tree-list a[href="https://dtf.ru/craft"] p, .sidebar__tree-list a[href="https://dtf.ru/barter"] p, .sidebar__tree-list a[href="https://dtf.ru/photo"] p, .sidebar__tree-list a[href="https://dtf.ru/dramaqueen"] p, .sidebar__tree-list a[href="/rating"] p, .sidebar__tree-list__title a[data-gtm="Sidebar — Subscriptions — Title"], .sidebar__tree-list a[href="https://dtf.ru/gloss"] p, .sidebar__tree-list a[href="https://dtf.ru/aboutporn"] p, .sidebar__tree-list a[href="https://dtf.ru/ideas"] p, .sidebar__tree-list a[href="/m"] p,
+.sidebar-tree-list-item a[href="/"] p, .sidebar-tree-list-item a[href="/new"] p, .sidebar-tree-list-item a[href="/job"] p, .sidebar-tree-list-item a[href="https://dtf.ru/games"] p, .sidebar-tree-list-item a[href="https://dtf.ru/gameindustry"] p, .sidebar-tree-list-item a[href="https://dtf.ru/flood"] p, .sidebar-tree-list-item a[href="https://dtf.ru/ask"] p, .sidebar-tree-list-item a[href="https://dtf.ru/anime"] p, .sidebar-tree-list-item a[href="https://dtf.ru/gamedev"] p, .sidebar-tree-list-item a[href="https://dtf.ru/life"] p, .sidebar-tree-list-item a[href="https://dtf.ru/gamedev"] p, .sidebar-tree-list-item a[href="https://dtf.ru/bugs"] p, .sidebar-tree-list-item a[href="https://dtf.ru/music"] p, .sidebar-tree-list-item a[href="https://dtf.ru/team"] p, .sidebar-tree-list-item a[href="https://dtf.ru/hard"] p, .sidebar-tree-list-item a[href="https://dtf.ru/cinema"] p, .sidebar-tree-list-item a[href="https://dtf.ru/indie"] p, .sidebar-tree-list-item a[href="https://dtf.ru/sale"] p, .sidebar-tree-list-item a[href="https://dtf.ru/shaurmashaverma"] p, .sidebar-tree-list-item a[href="https://dtf.ru/kek"] p, .sidebar-tree-list-item a[href="https://dtf.ru/read"] p, .sidebar-tree-list-item a[href="https://dtf.ru/retro"] p, .sidebar-tree-list-item a[href="https://dtf.ru/avi"] p, .sidebar-tree-list-item a[href="https://dtf.ru/guest"] p, .sidebar-tree-list-item a[href="https://dtf.ru/science"] p, .sidebar-tree-list-item a[href="https://dtf.ru/podcasts"] p, .sidebar-tree-list-item a[href="https://dtf.ru/mobile"] p, .sidebar-tree-list-item a[href="https://dtf.ru/apitest"] p, .sidebar-tree-list-item a[href="https://dtf.ru/boardgames"] p, .sidebar-tree-list-item a[href="https://dtf.ru/contest"] p, .sidebar-tree-list-item a[href="https://dtf.ru/howto"] p, .sidebar-tree-list-item a[href="https://dtf.ru/nenanimalsia"] p, .sidebar-tree-list-item a[href="https://dtf.ru/craft"] p, .sidebar-tree-list-item a[href="https://dtf.ru/barter"] p, .sidebar-tree-list-item a[href="https://dtf.ru/photo"] p, .sidebar-tree-list-item a[href="https://dtf.ru/dramaqueen"] p, .sidebar-tree-list-item a[href="/rating"] p, .sidebar-tree-list-item__title a[data-gtm="Sidebar — Subscriptions — Title"], .sidebar-tree-list-item a[href="https://dtf.ru/gloss"] p, .sidebar-tree-list-item a[href="https://dtf.ru/aboutporn"] p, .sidebar-tree-list-item a[href="https://dtf.ru/ideas"] p, .sidebar-tree-list-item a[href="/m"] p,
 .subsite_card_simple_short a[href="https://dtf.ru/games"] span, .subsite_card_simple_short a[href="https://dtf.ru/gameindustry"] span, .subsite_card_simple_short a[href="https://dtf.ru/flood"] span, .subsite_card_simple_short a[href="https://dtf.ru/ask"] span, .subsite_card_simple_short a[href="https://dtf.ru/anime"] span, .subsite_card_simple_short a[href="https://dtf.ru/gamedev"] span, .subsite_card_simple_short a[href="https://dtf.ru/life"] span, .subsite_card_simple_short a[href="https://dtf.ru/bugs"] span, .subsite_card_simple_short a[href="https://dtf.ru/music"] span, .subsite_card_simple_short a[href="https://dtf.ru/sale"] span, .subsite_card_simple_short a[href="https://dtf.ru/team"] span, .subsite_card_simple_short a[href="https://dtf.ru/hard"] span, .subsite_card_simple_short a[href="https://dtf.ru/cinema"] span, .subsite_card_simple_short a[href="https://dtf.ru/indie"] span, .subsite_card_simple_short a[href="https://dtf.ru/shaurmashaverma"] span, .subsite_card_simple_short a[href="https://dtf.ru/kek"] span, .subsite_card_simple_short a[href="https://dtf.ru/read"] span, .subsite_card_simple_short a[href="https://dtf.ru/retro"] span, .subsite_card_simple_short a[href="https://dtf.ru/avi"] span, .subsite_card_simple_short a[href="https://dtf.ru/guest"] span, .subsite_card_simple_short a[href="https://dtf.ru/science"] span, .subsite_card_simple_short a[href="https://dtf.ru/podcasts"] span, .subsite_card_simple_short a[href="https://dtf.ru/mobile"] span, .subsite_card_simple_short a[href="https://dtf.ru/apitest"] span, .subsite_card_simple_short a[href="https://dtf.ru/boardgames"] span, .subsite_card_simple_short a[href="https://dtf.ru/contest"] span, .subsite_card_simple_short a[href="https://dtf.ru/howto"] span, .subsite_card_simple_short a[href="https://dtf.ru/nenanimalsia"] span, .subsite_card_simple_short a[href="https://dtf.ru/craft"] span, .subsite_card_simple_short a[href="https://dtf.ru/barter"] span, .subsite_card_simple_short a[href="https://dtf.ru/photo"] span, .subsite_card_simple_short a[href="https://dtf.ru/dramaqueen"] span, .subsite_card_simple_short a[href="https://dtf.ru/ideas"] span, .subsite_card_simple_short a[href="https://dtf.ru/gloss"] span, .subsite_card_simple_short a[href="https://dtf.ru/aboutporn"] span,
-.content-header-author[href="https://dtf.ru/games"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gameindustry"] .content-header-author__name, .content-header-author[href="https://dtf.ru/flood"] .content-header-author__name, .content-header-author[href="https://dtf.ru/ask"] .content-header-author__name, .content-header-author[href="https://dtf.ru/anime"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gamedev"] .content-header-author__name, .content-header-author[href="https://dtf.ru/life"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gamedev"] .content-header-author__name, .content-header-author[href="https://dtf.ru/bugs"] .content-header-author__name, .content-header-author[href="https://dtf.ru/music"] .content-header-author__name, .content-header-author[href="https://dtf.ru/team"] .content-header-author__name, .content-header-author[href="https://dtf.ru/hard"] .content-header-author__name, .content-header-author[href="https://dtf.ru/cinema"] .content-header-author__name, .content-header-author[href="https://dtf.ru/indie"] .content-header-author__name, .content-header-author[href="https://dtf.ru/sale"] .content-header-author__name, .content-header-author[href="https://dtf.ru/shaurmashaverma"] .content-header-author__name, .content-header-author[href="https://dtf.ru/kek"] .content-header-author__name, .content-header-author[href="https://dtf.ru/read"] .content-header-author__name, .content-header-author[href="https://dtf.ru/retro"] .content-header-author__name, .content-header-author[href="https://dtf.ru/avi"] .content-header-author__name, .content-header-author[href="https://dtf.ru/guest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/science"] .content-header-author__name, .content-header-author[href="https://dtf.ru/podcasts"] .content-header-author__name, .content-header-author[href="https://dtf.ru/mobile"] .content-header-author__name, .content-header-author[href="https://dtf.ru/apitest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/boardgames"] .content-header-author__name, .content-header-author[href="https://dtf.ru/contest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/howto"] .content-header-author__name, .content-header-author[href="https://dtf.ru/nenanimalsia"] .content-header-author__name, .content-header-author[href="https://dtf.ru/craft"] .content-header-author__name, .content-header-author[href="https://dtf.ru/barter"] .content-header-author__name, .content-header-author[href="https://dtf.ru/photo"] .content-header-author__name, .content-header-author[href="https://dtf.ru/dramaqueen"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gloss"] .content-header-author__name, .content-header-author[href="https://dtf.ru/aboutporn"] .content-header-author__name
+.content-header-author[href="https://dtf.ru/games"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gameindustry"] .content-header-author__name, .content-header-author[href="https://dtf.ru/flood"] .content-header-author__name, .content-header-author[href="https://dtf.ru/ask"] .content-header-author__name, .content-header-author[href="https://dtf.ru/anime"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gamedev"] .content-header-author__name, .content-header-author[href="https://dtf.ru/life"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gamedev"] .content-header-author__name, .content-header-author[href="https://dtf.ru/bugs"] .content-header-author__name, .content-header-author[href="https://dtf.ru/music"] .content-header-author__name, .content-header-author[href="https://dtf.ru/team"] .content-header-author__name, .content-header-author[href="https://dtf.ru/hard"] .content-header-author__name, .content-header-author[href="https://dtf.ru/cinema"] .content-header-author__name, .content-header-author[href="https://dtf.ru/indie"] .content-header-author__name, .content-header-author[href="https://dtf.ru/sale"] .content-header-author__name, .content-header-author[href="https://dtf.ru/shaurmashaverma"] .content-header-author__name, .content-header-author[href="https://dtf.ru/kek"] .content-header-author__name, .content-header-author[href="https://dtf.ru/read"] .content-header-author__name, .content-header-author[href="https://dtf.ru/retro"] .content-header-author__name, .content-header-author[href="https://dtf.ru/avi"] .content-header-author__name, .content-header-author[href="https://dtf.ru/guest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/science"] .content-header-author__name, .content-header-author[href="https://dtf.ru/podcasts"] .content-header-author__name, .content-header-author[href="https://dtf.ru/mobile"] .content-header-author__name, .content-header-author[href="https://dtf.ru/apitest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/boardgames"] .content-header-author__name, .content-header-author[href="https://dtf.ru/contest"] .content-header-author__name, .content-header-author[href="https://dtf.ru/howto"] .content-header-author__name, .content-header-author[href="https://dtf.ru/nenanimalsia"] .content-header-author__name, .content-header-author[href="https://dtf.ru/craft"] .content-header-author__name, .content-header-author[href="https://dtf.ru/barter"] .content-header-author__name, .content-header-author[href="https://dtf.ru/photo"] .content-header-author__name, .content-header-author[href="https://dtf.ru/dramaqueen"] .content-header-author__name, .content-header-author[href="https://dtf.ru/gloss"] .content-header-author__name, .content-header-author[href="https://dtf.ru/aboutporn"] .content-header-author__name, .sidebar-tree-list-item a[href="/subs"]  p
 {
     display: none;
 }
-.sidebar__tree-list a[href="/"]:before{
+.sidebar-tree-list-item a[href="/"]:after{
     content: "/news/";
 }
-.sidebar__tree-list a[href="/new"]:before{
-    content: "/all/";
-}
-.sidebar__tree-list__item__badge{
+.sidebar-tree-list-item__badge{
     display:block !important;
 }
-.sidebar__tree-list a[href="/job"]:before{
+.sidebar-tree-list-item a[href="/job"]:after{
     content: "/job/";
 }
-.sidebar__tree-list a[href="/rating"]:before{
+.sidebar-tree-list-item a[href="/rating"]:after{
     content: "/rating/";
 }
-.sidebar__tree-list a[href="/m"]:before{
+.sidebar-tree-list-item a[href="/m"]:after{
     content: "/ls/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/games"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/games"]:before, .content-header-author[href="https://dtf.ru/games"]:after{
+.sidebar-tree-list-item a[href="/subs"]:after{
+    content: "/boards/";
+}
+.sidebar-tree-list-item a[href="https://dtf.ru/games"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/games"]:before, .content-header-author[href="https://dtf.ru/games"]:after{
     content: "/vg/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/gameindustry"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gameindustry"]:before, .content-header-author[href="https://dtf.ru/gameindustry"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/gameindustry"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gameindustry"]:before, .content-header-author[href="https://dtf.ru/gameindustry"]:after{
     content: "/biz/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/flood"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/flood"]:before, .content-header-author[href="https://dtf.ru/flood"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/flood"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/flood"]:before, .content-header-author[href="https://dtf.ru/flood"]:after{
     content: "/b/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/ask"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/ask"]:before, .content-header-author[href="https://dtf.ru/ask"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/ask"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/ask"]:before, .content-header-author[href="https://dtf.ru/ask"]:after{
     content: "/r/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/anime"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/anime"]:before, .content-header-author[href="https://dtf.ru/anime"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/anime"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/anime"]:before, .content-header-author[href="https://dtf.ru/anime"]:after{
     content: "/a/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/gamedev"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gamedev"]:before, .content-header-author[href="https://dtf.ru/gamedev"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/gamedev"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gamedev"]:before, .content-header-author[href="https://dtf.ru/gamedev"]:after{
     content: "/gd/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/life"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/life"]:before, .content-header-author[href="https://dtf.ru/life"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/life"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/life"]:before, .content-header-author[href="https://dtf.ru/life"]:after{
     content: "/irl/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/bugs"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/bugs"]:before, .content-header-author[href="https://dtf.ru/bugs"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/bugs"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/bugs"]:before, .content-header-author[href="https://dtf.ru/bugs"]:after{
     content: "/d/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/music"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/music"]:before, .content-header-author[href="https://dtf.ru/music"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/music"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/music"]:before, .content-header-author[href="https://dtf.ru/music"]:after{
     content: "/mu/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/team"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/team"]:before, .content-header-author[href="https://dtf.ru/team"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/team"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/team"]:before, .content-header-author[href="https://dtf.ru/team"]:after{
     content: "/dtf/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/hard"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/hard"]:before, .content-header-author[href="https://dtf.ru/hard"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/hard"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/hard"]:before, .content-header-author[href="https://dtf.ru/hard"]:after{
     content: "/hw/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/cinema"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/cinema"]:before, .content-header-author[href="https://dtf.ru/cinema"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/cinema"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/cinema"]:before, .content-header-author[href="https://dtf.ru/cinema"]:after{
     content: "/mov/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/indie"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/indie"]:before, .content-header-author[href="https://dtf.ru/indie"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/indie"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/indie"]:before, .content-header-author[href="https://dtf.ru/indie"]:after{
     content: "/v/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/sale"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/sale"]:before, .content-header-author[href="https://dtf.ru/sale"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/sale"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/sale"]:before, .content-header-author[href="https://dtf.ru/sale"]:after{
     content: "/sale/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/shaurmashaverma"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/shaurmashaverma"]:before, .content-header-author[href="https://dtf.ru/shaurmashaverma"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/shaurmashaverma"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/shaurmashaverma"]:before, .content-header-author[href="https://dtf.ru/shaurmashaverma"]:after{
     content: "/di/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/kek"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/kek"]:before, .content-header-author[href="https://dtf.ru/kek"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/kek"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/kek"]:before, .content-header-author[href="https://dtf.ru/kek"]:after{
     content: "/kek/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/read"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/read"]:before, .content-header-author[href="https://dtf.ru/read"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/read"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/read"]:before, .content-header-author[href="https://dtf.ru/read"]:after{
     content: "/bo/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/retro"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/retro"]:before, .content-header-author[href="https://dtf.ru/retro"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/retro"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/retro"]:before, .content-header-author[href="https://dtf.ru/retro"]:after{
     content: "/retro/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/avi"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/avi"]:before, .content-header-author[href="https://dtf.ru/avi"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/avi"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/avi"]:before, .content-header-author[href="https://dtf.ru/avi"]:after{
     content: "/webm/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/guest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/guest"]:before, .content-header-author[href="https://dtf.ru/guest"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/guest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/guest"]:before, .content-header-author[href="https://dtf.ru/guest"]:after{
     content: "/soc/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/science"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/science"]:before, .content-header-author[href="https://dtf.ru/science"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/science"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/science"]:before, .content-header-author[href="https://dtf.ru/science"]:after{
     content: "/sci/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/podcasts"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/podcasts"]:before, .content-header-author[href="https://dtf.ru/podcasts"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/podcasts"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/podcasts"]:before, .content-header-author[href="https://dtf.ru/podcasts"]:after{
     content: "/pod/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/mobile"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/mobile"]:before, .content-header-author[href="https://dtf.ru/mobile"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/mobile"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/mobile"]:before, .content-header-author[href="https://dtf.ru/mobile"]:after{
     content: "/mobi/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/apitest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/apitest"]:before, .content-header-author[href="https://dtf.ru/apitest"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/apitest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/apitest"]:before, .content-header-author[href="https://dtf.ru/apitest"]:after{
     content: "/api/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/boardgames"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/boardgames"]:before, .content-header-author[href="https://dtf.ru/boardgames"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/boardgames"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/boardgames"]:before, .content-header-author[href="https://dtf.ru/boardgames"]:after{
     content: "/bg/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/contest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/contest"]:before, .content-header-author[href="https://dtf.ru/contest"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/contest"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/contest"]:before, .content-header-author[href="https://dtf.ru/contest"]:after{
     content: "/contest/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/howto"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/howto"]:before, .content-header-author[href="https://dtf.ru/howto"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/howto"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/howto"]:before, .content-header-author[href="https://dtf.ru/howto"]:after{
     content: "/howto/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/nenanimalsia"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/nenanimalsia"]:before, .content-header-author[href="https://dtf.ru/nenanimalsia"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/nenanimalsia"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/nenanimalsia"]:before, .content-header-author[href="https://dtf.ru/nenanimalsia"]:after{
     content: "/links/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/craft"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/craft"]:before, .content-header-author[href="https://dtf.ru/craft"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/craft"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/craft"]:before, .content-header-author[href="https://dtf.ru/craft"]:after{
     content: "/diy/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/barter"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/barter"]:before, .content-header-author[href="https://dtf.ru/barter"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/barter"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/barter"]:before, .content-header-author[href="https://dtf.ru/barter"]:after{
     content: "/barter/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/photo"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/photo"]:before, .content-header-author[href="https://dtf.ru/photo"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/photo"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/photo"]:before, .content-header-author[href="https://dtf.ru/photo"]:after{
     content: "/p/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/dramaqueen"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/dramaqueen"]:before, .content-header-author[href="https://dtf.ru/dramaqueen"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/dramaqueen"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/dramaqueen"]:before, .content-header-author[href="https://dtf.ru/dramaqueen"]:after{
     content: "/bb/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/ideas"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/ideas"]:before, .content-header-author[href="https://dtf.ru/ideas"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/ideas"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/ideas"]:before, .content-header-author[href="https://dtf.ru/ideas"]:after{
     content: "/ideas/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/gloss"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gloss"]:before, .content-header-author[href="https://dtf.ru/gloss"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/gloss"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/gloss"]:before, .content-header-author[href="https://dtf.ru/gloss"]:after{
     content: "/fa/";
 }
-.sidebar__tree-list a[href="https://dtf.ru/aboutporn"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/aboutporn"]:before, .content-header-author[href="https://dtf.ru/aboutporn"]:after{
+.sidebar-tree-list-item a[href="https://dtf.ru/aboutporn"]:after, .subsite_card_simple_short .subsite_card_simple_short__title[href="https://dtf.ru/aboutporn"]:before, .content-header-author[href="https://dtf.ru/aboutporn"]:after{
     content: "/sex/";
 }
-.sidebar__tree-list__item__favourite{
+.sidebar-tree-list-item__favourite{
     margin-left: 0px !important;
 }
 .sidebar__tree-list__title:before{
     content: "Доски";
 }
 /*Заготовка*/
-.comments__item__replied_to:after, .vote .vote__users__item__name:after{
+.comments__item__replied_to:after, .vote .vote__users__item__name:after
+    {
     font-size: 12px;
 }
-.comments__item__replied_to, .vote .vote__users__item__name, .subsite_head__row .subsite_head__name:not(:only-child){
+.comments__item__replied_to, .vote .vote__users__item__name, .subsite_head__row .subsite_head__name:not(:only-child)
+    {
     font-size: 0px !important;
 }
 .comments__item__replied_to .icon{
     vertical-align: top;
 }
-.comments__item__user:before, .content-header-author--user:before, .content-header-author--subsite[href*="/u/"]:after, .live__item__user:after, .u-notification__content__title a[href*="/u/"]:first-of-type:after, .u-notification__content__reply-text p:last-child:before, .widget_comment__author::before, .live .u-notification__content__title:before, .vote .vote__users__item__name:after, .subsite_head__row .subsite_head__name:not(:only-child)::after, .profile_comment_favorite__user::after, .subsite_card_simple_short .subsite_card_simple_short__title:before{
+.comments__item__user:before, .content-header-author--user:before, .content-header-author--subsite[href*="/u/"]:after, .live__item__user:after, .u-notification__content__title a[href*="/u/"]:first-of-type:after, .u-notification__content__reply-text p:last-child:before, .widget_comment__author::before, .live .u-notification__content__title:before, .vote .vote__users__item__name:after, .subsite_head__row .subsite_head__name:not(:only-child)::after, .profile_comment_favorite__user::after, .subsite_card_simple_short .subsite_card_simple_short__title:before
+    {
     content:"Аноним";    
 }
 .comments__item__replied_to:after{
     content:"Анониму";
 }
-.subsite_head__row .subsite_head__name:not(:only-child)::after{
+.subsite_head__row .subsite_head__name:not(:only-child)::after
+    {
     line-height:34px !important;
     font-size:30px !important;
     font-weight: 600 !important;
