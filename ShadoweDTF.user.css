@@ -6,7 +6,7 @@
 @author         Neko Natum
 @preprocessor   stylus
 @var            checkbox    glass  "Остеклить?" 0
-@var            text     blur "Степень прозрачности 0px-9px" 9px
+@var            text     blur "Степень прозрачности 0px-9px" blur(9px)
 @var            text     backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'"
 ==/UserStyle== */
 
@@ -106,12 +106,12 @@
         .sidebar, .live, .site-header, .l-island-bg, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .v-tab:hover span, .sidebar-tree-list-item--active, .v-split-button, .widget_wrapper--type-blue, .vacancies_widget, .special-job-teaser, .sidebar-tree-list__show-more-button.sticky-on, .new-entries-horizon
         {
             background: #f2f2f29e !important;
-            backdrop-filter: blur(9px);
+            backdrop-filter: blur;
         }
         .head-notifies__panel, .messenger-panel__down, .bubble__container
         {
             background: #f2f2f2f2 !important;
-            backdrop-filter: blur(blur);
+            backdrop-filter: blur;
         }
         .sidebar-tree-list__show-more-button
         {
