@@ -1,12 +1,24 @@
 /* ==UserStyle==
 @name           ShadoweDTF
 @namespace      github.com/openstyles/stylus
-@version        0.0.1
+@version        0.1.0
 @description    Pizdec
 @author         Neko Natum
+@preprocessor   stylus
+@var            checkbox    glass  "Остеклить?" 0
+@var            text     blur "Степень прозрачности 0px-9px" 9px
+@var            text     backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'"
 ==/UserStyle== */
 
 @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") {
+    /*body
+    {
+        background: url("https://i.pximg.net/img-original/img/2020/10/24/13/50/48/85204622_p0.jpg");    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: 20% 20%;
+    }*/
     .site-header{
         max-width: 1320px !important;
         border-radius: 0px 0px 8px 8px;
@@ -20,12 +32,6 @@
     {
         margin-left: auto;
         margin-right: auto;
-    }
-    
-    .sidebar, .live
-    {
-        margin-top: 10px !important;
-        border-radius: 8px 8px 8px 8px;
     }
     
     .sidebar ::-webkit-scrollbar
@@ -47,7 +53,7 @@
         width: auto !important;
     }
     
-    .l-entry, .l-island-round:not(:last-of-type), .special-job-teaser, .v-header:first-child, .v-header-cover, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-list__image, .sidebar-tree-list-item__image, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .subsites_catalog .ui-tabs, .site-header-user-profile__avatar-image, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, figure .l-island-b, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .entry_stub, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .u-notification__link
+    .sidebar, .live, .l-entry, .l-island-round:not(:last-of-type), .special-job-teaser, .v-header:first-child, .v-header-cover, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-list__image, .sidebar-tree-list-item__image, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .subsites_catalog .ui-tabs, .site-header-user-profile__avatar-image, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, figure .l-island-b, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .entry_stub, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .u-notification__link, .v-tab:hover span, .new-entries-horizon
     {
         border-radius: 8px 8px 8px 8px !important;
     }
@@ -57,7 +63,7 @@
         border-radius: 8px 8px 0px 0px !important;
     }
     
-    .new_entries, .page>.l-island-round:last-child, .site-header, .sidebar, .live, .l-entry, .l-island-round:not(:last-of-type), .special-job-teaser, .v-header:first-child, .miniEditor, .attachButton, .v-island, .v-button, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-tabs-navigation, .v-list__image, .sidebar-tree-list-item__image, .ui-rounded-button--active a, .ui-rounded-button:hover a, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .messenger, .subsite_head, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .sidebar-tree-list-item:hover, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .m-floating, .ui-rounded-button--active .ui-rounded-button__link, .site-header-user-profile__avatar-image, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .u-notification__link, .head-notifies__badge
+    .new_entries, .page>.l-island-round:last-child, .site-header, .sidebar, .live, .l-entry, .l-island-round:not(:last-of-type), .special-job-teaser, .v-header:first-child, .miniEditor, .attachButton, .v-island, .v-button, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-tabs-navigation, .v-list__image, .sidebar-tree-list-item__image, .ui-rounded-button--active a, .ui-rounded-button:hover a, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .messenger, .subsite_head, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .sidebar-tree-list-item:hover, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .m-floating, .ui-rounded-button--active .ui-rounded-button__link, .site-header-user-profile__avatar-image, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .u-notification__link, .head-notifies__badge, .v-tab:hover span, .new-entries-horizon
     {
         box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, .7) !important;
     }
@@ -79,17 +85,44 @@
     .app--content-entry.app--left-column-off.app--right-column-off .main .layout__content{
         margin: 0 auto;
     }
-    .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog
+    .sidebar, .live, .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog
     {
-        margin-top: 10px !important; 
+        margin-top: 20px !important; 
     }
     .app--content-feed #page_wrapper
     {
         padding-top: 0px;
     }
-    .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned
+    .comments__item__space
     {
         margin-bottom: 5px;
     }
-    
+    .sidebar-tree-list__show-more-button.sticky-on
+    {
+        bottom: 10px !important;
+    }
+    if glass
+    {
+        .sidebar, .live, .site-header, .l-island-bg, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .v-tab:hover span, .sidebar-tree-list-item--active, .v-split-button, .widget_wrapper--type-blue, .vacancies_widget, .special-job-teaser, .sidebar-tree-list__show-more-button.sticky-on, .new-entries-horizon
+        {
+            background: #f2f2f29e !important;
+            backdrop-filter: blur(9px);
+        }
+        .head-notifies__panel, .messenger-panel__down, .bubble__container
+        {
+            background: #f2f2f2f2 !important;
+            backdrop-filter: blur(blur);
+        }
+        .sidebar-tree-list__show-more-button
+        {
+            background: transparent !important;
+        }
+        body
+        {
+            background: url(backimg) !important;
+            background-size: cover !important;
+            background-repeat: no-repeat !important;
+            background-attachment: fixed !important;
+        }
+    }
 }
