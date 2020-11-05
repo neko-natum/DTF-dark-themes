@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           ShadoweDTF
 @namespace      github.com/openstyles/stylus
-@version        0.1.1
+@version        0.1.2
 @description    Pizdec
 @author         Neko Natum
 @preprocessor   stylus
@@ -25,7 +25,7 @@
         border-radius: 0px 0px 8px 8px;
     }
     
-    .main
+    .main, .app--content-entry.app--left-column-off.app--right-column-off #page_wrapper
     {
         max-width: 1320px !important;
     }
@@ -44,7 +44,7 @@
     {
         max-width: 1080px !important;
     }
-    .page, .special-job-teaser, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper
+    .page--entry, .special-job-teaser, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper
     {
         max-width: 750px !important;
     }
@@ -104,7 +104,7 @@
     }
     if glass
     {
-        .sidebar, .live, .site-header, .l-island-bg, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .v-tab:hover span, .sidebar-tree-list-item--active, .v-split-button, .widget_wrapper--type-blue, .vacancies_widget, .special-job-teaser, .sidebar-tree-list__show-more-button.sticky-on, .new-entries-horizon
+        .sidebar, .live, .site-header, .l-island-bg, .new_entries, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .v-tab:hover span, .sidebar-tree-list-item--active, .v-split-button, .widget_wrapper--type-blue, .vacancies_widget, .special-job-teaser, .sidebar-tree-list__show-more-button.sticky-on, .new-entries-horizon, .island--blogs_entries
         {
             background: #f2f2f29e !important;
             backdrop-filter: blur;
