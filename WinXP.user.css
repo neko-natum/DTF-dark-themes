@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Windows XP
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Windows XP ui-ripoff
 @author         Neko Natum
 ==/UserStyle== */
@@ -33,7 +33,7 @@
     {
         top: 0px !important;
     }
-    .live, .sidebar, .head-notifies__panel, .messenger-panel__down, .search-dropdown, .site-header-user .bubble, .feed__item .l-island-bg, .l-entry, .comments__body, .vacancies_widget, .v-mini-header, .v-island, .v-header, .etc_control__list, .bubble, .authorCard, .widget_wrapper, .entry_stub, .new-entries-horizon, .vote .vote__users, .reposters_list, .miniEditor, .subsites_catalog, .l-island-bg:not(.comments__navigation):not(.ui-tabs)
+    .live, .sidebar, .head-notifies__panel, .messenger-panel__down, .search-dropdown, .site-header-user .bubble, .feed__item .l-island-bg, .l-entry, .comments__body, .vacancies_widget, .v-mini-header, .v-island, .v-header, .etc_control__list, .bubble, .authorCard, .widget_wrapper, .entry_stub, .new-entries-horizon, .vote .vote__users, .reposters_list, .miniEditor, .subsites_catalog, .l-island-bg:not(.comments__navigation):not(.ui-tabs), .ui-sorting--with-tabs, .ui-sorting--with-tags, .m-floating, .etc-controls__dropdown
     {
         box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd !important;
         border-radius: 8px 8px 0 0 !important;
@@ -42,10 +42,10 @@
     {
         height: calc(100vh - 45px);
     }
-    .live, .content-header--short .content-header__info, .content-header-author__repost, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .l-entry__header .content-header__info, .comments__title, .v-island__header
+    .live, .content-header--short, .content-header-author__repost, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .l-entry__header .content-header__info, .comments__title, .v-island__header, .m-floating__header, .l-entry__header
     {
         border-radius: 8px 8px 0 0 !important;
-        padding: 3px 5px 3px 3px;
+        padding: 3px 3px 3px 3px;
         border-top: 1px solid #0831d9;
         border-left: 1px solid #0831d9;
         border-right: 1px solid #001ea0;
@@ -54,17 +54,18 @@
     {
         border: none;
     }
-    .content-header--short .content-header__info, .content-header-author__repost, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .l-entry__header .content-header__info, .live__caption, .comments__title, .v-island__header
+    .content-header--short, .content-header-author__repost, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .l-entry__header .content-header__info, .live__caption, .comments__title, .v-island__header, .m-floating__header, .l-entry__header
     {
-        background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+        background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7) !important;
     }
     .search, .v-split-button
     {
-        background: #4a8bef;
+        background: linear-gradient(0deg, rgba(41,125,250,1) 44%, rgba(54,134,255,1) 86%);
         border-radius: 5px;
         color: #bfeafb;
+        box-shadow: inset -1px -1px #00309b;
     }
-    .live__content, .vacancies_widget, .new-entries-horizon
+    .live__content, .vacancies_widget, .new-entries-horizon, .ui-sorting--with-tabs, .sidebar, .sidebar-tree-list__show-more-button, .ui-sorting--with-tags
     {
         background: #f4f3ee;
     }
@@ -72,30 +73,38 @@
     {
         background: #000 !important;
     }
-    .comments__navigation, .sidebar-tree-list-item__child-item, .ui-dropdown__item-inner, .vote .vote__users__item:before, .reposters_list__item:after
+    .comments__navigation, .sidebar-tree-list-item__child-item, .ui-dropdown__item-inner, .vote .vote__users__item:before, .reposters_list__item:after, .v-tab--active .v-tab__label::after
     {
         background: transparent !important;
     }
-    .sidebar, .sidebar-tree-list__show-more-button
+    /*.sidebar, .sidebar-tree-list__show-more-button
     {
         background: #d3e5fb !important;
         color: #0d2348;
-    }
+    }*/
     .site-header
     {
-        background: linear-gradient(180deg,#0997ff,#0053ee 8%,#0050ee 40%,#06f 88%,#06f 93%,#005bff 95%,#003dd7 96%,#003dd7);
+        background: linear-gradient(0deg, rgba(38,95,221,1) 44%, rgba(66,132,217,1) 86%);
     }
     .site-header__item--burger, .site-header__item--logo
     {
         color: #fff;
         text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.71);
-        background: #399834;
+        background: linear-gradient(0deg, rgba(54,147,50,1) 44%, rgba(84,155,83,1) 86%);
     }
     .site-header-messenger, .head-notifies, .site-header-user
     {
         background: rgb(19,134,223);
-        background: linear-gradient(0deg, rgba(19,134,223,1) 48%, rgba(25,158,233,1) 89%);
+        background: linear-gradient(0deg, rgba(19,134,223,1) 44%, rgba(25,158,233,1) 86%);
         color: #bfeafb;
+    }
+    .search:not(.search--active) .search__input::placeholder
+    {
+        color: #bfeafb;
+    }
+    .search:not(.search--active) .search__field svg
+    {
+        fill: #bfeafb;
     }
     .site-header-messenger
     {
@@ -107,19 +116,30 @@
         border-radius: 0 15px 15px 0 !important; 
         border-right: 2px solid #16603d;
     }
-    .live__toggle, .content-header__info .etc_control
+    .live__toggle, .content-header__info .etc_control, .mf-header__close
     {
-        /*background: rgb(196,84,47);
-        background: linear-gradient(0deg, rgba(196,84,47,1) 48%, rgba(248,161,141,1) 89%);*/
         width: 25px !important;
         height: 25px !important;
-        margin: auto 5px auto 160px !important;
-        /*text-align: center !important;
-        vertical-align: super !important;
-        padding: 0px !important;*/
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -0.5 21 21' shape-rendering='crispEdges'%3E%3Cpath stroke='%23b3c4ef' d='M1 0h1m17 0h1M0 1h1m19 0h1M0 19h1m19 0h1M1 20h1m17 0h1'/%3E%3Cpath stroke='%23f4f6fd' d='M2 0h1m17 2h1M0 18h1m17 2h1'/%3E%3Cpath stroke='%23fff' d='M3 0h16M0 2h1M0 3h1m19 0h1M0 4h1m19 0h1M0 5h1m5 0h1m7 0h1m5 0h1M0 6h1m4 0h3m5 0h3m4 0h1M0 7h1m5 0h3m3 0h3m5 0h1M0 8h1m6 0h3m1 0h3m6 0h1M0 9h1m7 0h5m7 0h1M0 10h1m8 0h3m8 0h1M0 11h1m7 0h5m7 0h1M0 12h1m6 0h3m1 0h2m7 0h1M0 13h1m5 0h3m3 0h3m5 0h1M0 14h1m4 0h3m5 0h3m4 0h1M0 15h1m5 0h1m7 0h1m5 0h1M0 16h1m19 0h1M0 17h1m19 0h1m-1 1h1M2 20h16'/%3E%3Cpath stroke='%23fae1dc' d='M1 1h1'/%3E%3Cpath stroke='%23eb8b73' d='M2 1h1'/%3E%3Cpath stroke='%23e97b60' d='M3 1h1'/%3E%3Cpath stroke='%23e77155' d='M4 1h1'/%3E%3Cpath stroke='%23e66a4d' d='M5 1h1M1 6h1m5 4h1'/%3E%3Cpath stroke='%23e56648' d='M6 1h1'/%3E%3Cpath stroke='%23e46142' d='M7 1h1'/%3E%3Cpath stroke='%23e46344' d='M8 1h1m5 3h1M2 12h1'/%3E%3Cpath stroke='%23e45f3e' d='M9 1h2'/%3E%3Cpath stroke='%23e35c3b' d='M11 1h2'/%3E%3Cpath stroke='%23e25633' d='M13 1h2'/%3E%3Cpath stroke='%23e25330' d='M15 1h1'/%3E%3Cpath stroke='%23e04d28' d='M16 1h1'/%3E%3Cpath stroke='%23dc451f' d='M17 1h1'/%3E%3Cpath stroke='%23d05334' d='M18 1h1'/%3E%3Cpath stroke='%23efd8d2' d='M19 1h1'/%3E%3Cpath stroke='%23ec8d76' d='M1 2h1'/%3E%3Cpath stroke='%23efa390' d='M2 2h1'/%3E%3Cpath stroke='%23f0a694' d='M3 2h1'/%3E%3Cpath stroke='%23ee9a85' d='M4 2h1'/%3E%3Cpath stroke='%23eb8d75' d='M5 2h1'/%3E%3Cpath stroke='%23ea876e' d='M6 2h1'/%3E%3Cpath stroke='%23ea8168' d='M7 2h1'/%3E%3Cpath stroke='%23e97f66' d='M8 2h1'/%3E%3Cpath stroke='%23e97c62' d='M9 2h1m0 1h1'/%3E%3Cpath stroke='%23e8795f' d='M10 2h1'/%3E%3Cpath stroke='%23e8795e' d='M11 2h1'/%3E%3Cpath stroke='%23e87559' d='M12 2h1'/%3E%3Cpath stroke='%23e77256' d='M13 2h1'/%3E%3Cpath stroke='%23e66e50' d='M14 2h1'/%3E%3Cpath stroke='%23e56849' d='M15 2h1'/%3E%3Cpath stroke='%23e4603f' d='M16 2h1m-2 2h1'/%3E%3Cpath stroke='%23e05532' d='M17 2h1'/%3E%3Cpath stroke='%23d04623' d='M18 2h1'/%3E%3Cpath stroke='%23b64b30' d='M19 2h1'/%3E%3Cpath stroke='%23e97f65' d='M1 3h1'/%3E%3Cpath stroke='%23f0a997' d='M2 3h1'/%3E%3Cpath stroke='%23f1ac9a' d='M3 3h1'/%3E%3Cpath stroke='%23ee9d89' d='M4 3h1M2 4h1'/%3E%3Cpath stroke='%23ec917a' d='M5 3h1'/%3E%3Cpath stroke='%23eb8b72' d='M6 3h1'/%3E%3Cpath stroke='%23ea856d' d='M7 3h1'/%3E%3Cpath stroke='%23e98168' d='M8 3h1M2 7h1'/%3E%3Cpath stroke='%23e87e65' d='M9 3h1'/%3E%3Cpath stroke='%23e97b61' d='M11 3h1'/%3E%3Cpath stroke='%23e8775d' d='M12 3h1M3 9h1'/%3E%3Cpath stroke='%23e87459' d='M13 3h1M2 9h1'/%3E%3Cpath stroke='%23e66f52' d='M14 3h1'/%3E%3Cpath stroke='%23e56a4c' d='M15 3h1'/%3E%3Cpath stroke='%23e46343' d='M16 3h1'/%3E%3Cpath stroke='%23e15937' d='M17 3h1'/%3E%3Cpath stroke='%23d24a28' d='M18 3h1'/%3E%3Cpath stroke='%23aa3315' d='M19 3h1'/%3E%3Cpath stroke='%23e87458' d='M1 4h1'/%3E%3Cpath stroke='%23efa18d' d='M3 4h1'/%3E%3Cpath stroke='%23ed957f' d='M4 4h1'/%3E%3Cpath stroke='%23eb8a71' d='M5 4h1M4 5h1'/%3E%3Cpath stroke='%23ea836a' d='M6 4h1M4 6h1M3 7h1'/%3E%3Cpath stroke='%23e97d64' d='M7 4h1'/%3E%3Cpath stroke='%23e8785e' d='M8 4h1'/%3E%3Cpath stroke='%23e77359' d='M9 4h1'/%3E%3Cpath stroke='%23e76f54' d='M10 4h1'/%3E%3Cpath stroke='%23e66d51' d='M11 4h1'/%3E%3Cpath stroke='%23e5684b' d='M12 4h1'/%3E%3Cpath stroke='%23e5684a' d='M13 4h1'/%3E%3Cpath stroke='%23e35c3a' d='M16 4h1m-7 4h1m-8 7h1'/%3E%3Cpath stroke='%23e05634' d='M17 4h1'/%3E%3Cpath stroke='%23d24c2a' d='M18 4h1'/%3E%3Cpath stroke='%23ac3618' d='M19 4h1'/%3E%3Cpath stroke='%23e76f52' d='M1 5h1m4 6h1m-3 1h1'/%3E%3Cpath stroke='%23ec9179' d='M2 5h1'/%3E%3Cpath stroke='%23ec937c' d='M3 5h1'/%3E%3Cpath stroke='%23f7ccc2' d='M5 5h1'/%3E%3Cpath stroke='%23e77259' d='M7 5h1M5 9h1'/%3E%3Cpath stroke='%23e76d53' d='M8 5h1'/%3E%3Cpath stroke='%23e5684d' d='M9 5h1M8 6h1'/%3E%3Cpath stroke='%23e46446' d='M10 5h1'/%3E%3Cpath stroke='%23e45f41' d='M11 5h1'/%3E%3Cpath stroke='%23e35b3a' d='M12 5h1m-2 1h1'/%3E%3Cpath stroke='%23e35938' d='M13 5h1'/%3E%3Cpath stroke='%23f3bbad' d='M15 5h1'/%3E%3Cpath stroke='%23e25531' d='M16 5h1'/%3E%3Cpath stroke='%23df5330' d='M17 5h1'/%3E%3Cpath stroke='%23d34e2c' d='M18 5h1'/%3E%3Cpath stroke='%23ad3a1d' d='M19 5h1m-1 1h1'/%3E%3Cpath stroke='%23eb876e' d='M2 6h1'/%3E%3Cpath stroke='%23eb8a70' d='M3 6h1'/%3E%3Cpath stroke='%23e46447' d='M9 6h1'/%3E%3Cpath stroke='%23e45f40' d='M10 6h1'/%3E%3Cpath stroke='%23e25634' d='M12 6h1'/%3E%3Cpath stroke='%23e2522d' d='M16 6h1'/%3E%3Cpath stroke='%23df522e' d='M17 6h1'/%3E%3Cpath stroke='%23d34d2c' d='M18 6h1'/%3E%3Cpath stroke='%23e56546' d='M1 7h1M1 8h1'/%3E%3Cpath stroke='%23e97e65' d='M4 7h1'/%3E%3Cpath stroke='%23e8775e' d='M5 7h1'/%3E%3Cpath stroke='%23e46143' d='M9 7h1'/%3E%3Cpath stroke='%23e45d3d' d='M10 7h1'/%3E%3Cpath stroke='%23e35836' d='M11 7h1'/%3E%3Cpath stroke='%23e24e27' d='M15 7h1'/%3E%3Cpath stroke='%23e2502a' d='M16 7h1'/%3E%3Cpath stroke='%23e0512c' d='M17 7h1'/%3E%3Cpath stroke='%23d34d2a' d='M18 7h1'/%3E%3Cpath stroke='%23ad391c' d='M19 7h1'/%3E%3Cpath stroke='%23e87a60' d='M2 8h1m1 0h1'/%3E%3Cpath stroke='%23e87c62' d='M3 8h1'/%3E%3Cpath stroke='%23e8745b' d='M5 8h1'/%3E%3Cpath stroke='%23e76e54' d='M6 8h1'/%3E%3Cpath stroke='%23e24d24' d='M14 8h1'/%3E%3Cpath stroke='%23e24b22' d='M15 8h1'/%3E%3Cpath stroke='%23e24d25' d='M16 8h1'/%3E%3Cpath stroke='%23e05029' d='M17 8h1'/%3E%3Cpath stroke='%23d44c29' d='M18 8h1'/%3E%3Cpath stroke='%23ae391b' d='M19 8h1'/%3E%3Cpath stroke='%23e35d3c' d='M1 9h1'/%3E%3Cpath stroke='%23e8765d' d='M4 9h1'/%3E%3Cpath stroke='%23e66f53' d='M6 9h1'/%3E%3Cpath stroke='%23e56b4e' d='M7 9h1'/%3E%3Cpath stroke='%23e45127' d='M13 9h1'/%3E%3Cpath stroke='%23e44f23' d='M14 9h1'/%3E%3Cpath stroke='%23e34c20' d='M15 9h1'/%3E%3Cpath stroke='%23e34d22' d='M16 9h1'/%3E%3Cpath stroke='%23e14f25' d='M17 9h1'/%3E%3Cpath stroke='%23d54a25' d='M18 9h1'/%3E%3Cpath stroke='%23af3719' d='M19 9h1'/%3E%3Cpath stroke='%23e35937' d='M1 10h1'/%3E%3Cpath stroke='%23e76d51' d='M2 10h1'/%3E%3Cpath stroke='%23e87257' d='M3 10h1'/%3E%3Cpath stroke='%23e87359' d='M4 10h1'/%3E%3Cpath stroke='%23e77157' d='M5 10h1'/%3E%3Cpath stroke='%23e66e52' d='M6 10h1'/%3E%3Cpath stroke='%23e56747' d='M8 10h1'/%3E%3Cpath stroke='%23e5572c' d='M12 10h1'/%3E%3Cpath stroke='%23e55326' d='M13 10h1'/%3E%3Cpath stroke='%23e55022' d='M14 10h1'/%3E%3Cpath stroke='%23e54d1e' d='M15 10h1'/%3E%3Cpath stroke='%23e54d1f' d='M16 10h1'/%3E%3Cpath stroke='%23e24e21' d='M17 10h1'/%3E%3Cpath stroke='%23d64921' d='M18 10h1'/%3E%3Cpath stroke='%23af3516' d='M19 10h1'/%3E%3Cpath stroke='%23e25432' d='M1 11h1'/%3E%3Cpath stroke='%23e5694b' d='M2 11h1'/%3E%3Cpath stroke='%23e77054' d='M3 11h1'/%3E%3Cpath stroke='%23e77156' d='M4 11h1'/%3E%3Cpath stroke='%23e87055' d='M5 11h1'/%3E%3Cpath stroke='%23e66c4d' d='M7 11h1'/%3E%3Cpath stroke='%23e75526' d='M13 11h1'/%3E%3Cpath stroke='%23e75221' d='M14 11h1'/%3E%3Cpath stroke='%23e64e1c' d='M15 11h1'/%3E%3Cpath stroke='%23e64d1c' d='M16 11h1'/%3E%3Cpath stroke='%23e34c1c' d='M17 11h1'/%3E%3Cpath stroke='%23d6461c' d='M18 11h1'/%3E%3Cpath stroke='%23b03312' d='M19 11h1'/%3E%3Cpath stroke='%23e14f2b' d='M1 12h1'/%3E%3Cpath stroke='%23e66b4e' d='M3 12h1'/%3E%3Cpath stroke='%23e76f53' d='M5 12h1'/%3E%3Cpath stroke='%23e66e51' d='M6 12h1'/%3E%3Cpath stroke='%23e7653d' d='M10 12h1'/%3E%3Cpath stroke='%23fef5f1' d='M13 12h1'/%3E%3Cpath stroke='%23e85421' d='M14 12h1'/%3E%3Cpath stroke='%23e8501b' d='M15 12h1'/%3E%3Cpath stroke='%23e74d18' d='M16 12h1'/%3E%3Cpath stroke='%23e44a18' d='M17 12h1'/%3E%3Cpath stroke='%23d74216' d='M18 12h1'/%3E%3Cpath stroke='%23b2310f' d='M19 12h1'/%3E%3Cpath stroke='%23e04b25' d='M1 13h1m0 3h1'/%3E%3Cpath stroke='%23e35e3d' d='M2 13h1'/%3E%3Cpath stroke='%23e56748' d='M3 13h1'/%3E%3Cpath stroke='%23e66c4e' d='M4 13h1'/%3E%3Cpath stroke='%23e66d50' d='M5 13h1'/%3E%3Cpath stroke='%23e76842' d='M9 13h1'/%3E%3Cpath stroke='%23e7653c' d='M10 13h1'/%3E%3Cpath stroke='%23e86236' d='M11 13h1'/%3E%3Cpath stroke='%23e95019' d='M15 13h1m-2 3h1'/%3E%3Cpath stroke='%23e84c16' d='M16 13h1'/%3E%3Cpath stroke='%23e44713' d='M17 13h1'/%3E%3Cpath stroke='%23d83f10' d='M18 13h1'/%3E%3Cpath stroke='%23b12d0a' d='M19 13h1'/%3E%3Cpath stroke='%23df451e' d='M1 14h1'/%3E%3Cpath stroke='%23e25836' d='M2 14h1'/%3E%3Cpath stroke='%23e46242' d='M3 14h1m0 1h1'/%3E%3Cpath stroke='%23e56749' d='M4 14h1'/%3E%3Cpath stroke='%23e66845' d='M8 14h1'/%3E%3Cpath stroke='%23e76741' d='M9 14h1'/%3E%3Cpath stroke='%23e7643b' d='M10 14h1'/%3E%3Cpath stroke='%23e86235' d='M11 14h1'/%3E%3Cpath stroke='%23ea5e2d' d='M12 14h1'/%3E%3Cpath stroke='%23e94a11' d='M16 14h1m-2 2h1'/%3E%3Cpath stroke='%23e6440d' d='M17 14h1'/%3E%3Cpath stroke='%23d73b0b' d='M18 14h1'/%3E%3Cpath stroke='%23b12b06' d='M19 14h1'/%3E%3Cpath stroke='%23de4018' d='M1 15h1'/%3E%3Cpath stroke='%23e1512e' d='M2 15h1'/%3E%3Cpath stroke='%23f5c1b5' d='M5 15h1'/%3E%3Cpath stroke='%23e66543' d='M7 15h1'/%3E%3Cpath stroke='%23e66541' d='M8 15h1'/%3E%3Cpath stroke='%23e6643d' d='M9 15h1'/%3E%3Cpath stroke='%23e76238' d='M10 15h1'/%3E%3Cpath stroke='%23e86032' d='M11 15h1'/%3E%3Cpath stroke='%23e95c2a' d='M12 15h1'/%3E%3Cpath stroke='%23ea5924' d='M13 15h1'/%3E%3Cpath stroke='%23f7b8a1' d='M15 15h1'/%3E%3Cpath stroke='%23e9480e' d='M16 15h1'/%3E%3Cpath stroke='%23e54009' d='M17 15h1'/%3E%3Cpath stroke='%23d73605' d='M18 15h1'/%3E%3Cpath stroke='%23b02702' d='M19 15h1'/%3E%3Cpath stroke='%23dd3c14' d='M1 16h1'/%3E%3Cpath stroke='%23e15431' d='M3 16h1'/%3E%3Cpath stroke='%23e35b39' d='M4 16h1'/%3E%3Cpath stroke='%23e45e3d' d='M5 16h1'/%3E%3Cpath stroke='%23e45f3d' d='M6 16h1'/%3E%3Cpath stroke='%23e45e3b' d='M7 16h1'/%3E%3Cpath stroke='%23e55e39' d='M8 16h1'/%3E%3Cpath stroke='%23e55e37' d='M9 16h1'/%3E%3Cpath stroke='%23e65d32' d='M10 16h1'/%3E%3Cpath stroke='%23e75b2c' d='M11 16h1'/%3E%3Cpath stroke='%23e85725' d='M12 16h1'/%3E%3Cpath stroke='%23e9541f' d='M13 16h1'/%3E%3Cpath stroke='%23e8440b' d='M16 16h1'/%3E%3Cpath stroke='%23e43d05' d='M17 16h1'/%3E%3Cpath stroke='%23d63302' d='M18 16h1'/%3E%3Cpath stroke='%23af2601' d='M19 16h1'/%3E%3Cpath stroke='%23d8370e' d='M1 17h1'/%3E%3Cpath stroke='%23db431c' d='M2 17h1'/%3E%3Cpath stroke='%23dd4c28' d='M3 17h1'/%3E%3Cpath stroke='%23de522f' d='M4 17h1'/%3E%3Cpath stroke='%23df5533' d='M5 17h1'/%3E%3Cpath stroke='%23e05734' d='M6 17h1'/%3E%3Cpath stroke='%23e05531' d='M7 17h1'/%3E%3Cpath stroke='%23e05631' d='M8 17h1'/%3E%3Cpath stroke='%23e1562e' d='M9 17h1'/%3E%3Cpath stroke='%23e2552a' d='M10 17h1'/%3E%3Cpath stroke='%23e45325' d='M11 17h1'/%3E%3Cpath stroke='%23e4501f' d='M12 17h1'/%3E%3Cpath stroke='%23e54c19' d='M13 17h1'/%3E%3Cpath stroke='%23e54813' d='M14 17h1'/%3E%3Cpath stroke='%23e5430d' d='M15 17h1'/%3E%3Cpath stroke='%23e43e07' d='M16 17h1'/%3E%3Cpath stroke='%23e03802' d='M17 17h1'/%3E%3Cpath stroke='%23d12f00' d='M18 17h1'/%3E%3Cpath stroke='%23aa2300' d='M19 17h1'/%3E%3Cpath stroke='%23cd4928' d='M1 18h1'/%3E%3Cpath stroke='%23cc3813' d='M2 18h1'/%3E%3Cpath stroke='%23cc3e1b' d='M3 18h1'/%3E%3Cpath stroke='%23cf4421' d='M4 18h1'/%3E%3Cpath stroke='%23cf4725' d='M5 18h1'/%3E%3Cpath stroke='%23cf4726' d='M6 18h1'/%3E%3Cpath stroke='%23cf4624' d='M7 18h1'/%3E%3Cpath stroke='%23d04723' d='M8 18h1'/%3E%3Cpath stroke='%23d14621' d='M9 18h1'/%3E%3Cpath stroke='%23d2451e' d='M10 18h1'/%3E%3Cpath stroke='%23d5451b' d='M11 18h1'/%3E%3Cpath stroke='%23d54216' d='M12 18h1'/%3E%3Cpath stroke='%23d64013' d='M13 18h1'/%3E%3Cpath stroke='%23d53d0e' d='M14 18h1'/%3E%3Cpath stroke='%23d63909' d='M15 18h1'/%3E%3Cpath stroke='%23d53504' d='M16 18h1'/%3E%3Cpath stroke='%23d13001' d='M17 18h1'/%3E%3Cpath stroke='%23c22a00' d='M18 18h1'/%3E%3Cpath stroke='%23ab3c1f' d='M19 18h1'/%3E%3Cpath stroke='%23eed6d0' d='M1 19h1'/%3E%3Cpath stroke='%23b54428' d='M2 19h1'/%3E%3Cpath stroke='%23a62b0d' d='M3 19h1'/%3E%3Cpath stroke='%23ac3011' d='M4 19h1'/%3E%3Cpath stroke='%23ab3112' d='M5 19h1'/%3E%3Cpath stroke='%23a93214' d='M6 19h1'/%3E%3Cpath stroke='%23a93012' d='M7 19h1'/%3E%3Cpath stroke='%23ac3213' d='M8 19h1'/%3E%3Cpath stroke='%23ad3213' d='M9 19h1'/%3E%3Cpath stroke='%23ae3110' d='M10 19h1'/%3E%3Cpath stroke='%23b1300d' d='M11 19h1'/%3E%3Cpath stroke='%23b22e0a' d='M12 19h1'/%3E%3Cpath stroke='%23b42d08' d='M13 19h1'/%3E%3Cpath stroke='%23b12a06' d='M14 19h1'/%3E%3Cpath stroke='%23b12803' d='M15 19h1'/%3E%3Cpath stroke='%23b42701' d='M16 19h1'/%3E%3Cpath stroke='%23ae2400' d='M17 19h1'/%3E%3Cpath stroke='%23ac3c1f' d='M18 19h1'/%3E%3Cpath stroke='%23ead4cf' d='M19 19h1'/%3E%3C/svg%3E");
     }
-    .live__toggle svg, .content-header__info .etc_control svg
+    .mf-header__menu
+    {
+        width: 20px !important;
+        height: 20px !important;
+    }
+    .mf-header__menu .etc-controls
+    {
+        margin-left: -4px !important;
+        margin-top: -3px !important;
+        background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -0.5 21 21' shape-rendering='crispEdges'%3E%3Cpath stroke='%236696eb' d='M1 0h1m17 0h1'/%3E%3Cpath stroke='%23e5edfb' d='M2 0h1'/%3E%3Cpath stroke='%23fff' d='M3 0h16M0 2h1M0 3h1m19 0h1M0 4h1m19 0h1M0 5h1m19 0h1M0 6h1m19 0h1M0 7h1m19 0h1M0 8h1m19 0h1M0 9h1m19 0h1M0 10h1m19 0h1M0 11h1m19 0h1M0 12h1m19 0h1M0 13h1m4 0h7m8 0h1M0 14h1m4 0h7m8 0h1M0 15h1m4 0h7m8 0h1M0 16h1m19 0h1M0 17h1m19 0h1m-1 1h1M2 20h16'/%3E%3Cpath stroke='%236693e9' d='M0 1h1m19 0h1'/%3E%3Cpath stroke='%23dce5fd' d='M1 1h1'/%3E%3Cpath stroke='%23739af8' d='M2 1h1'/%3E%3Cpath stroke='%23608cf7' d='M3 1h1M2 8h1'/%3E%3Cpath stroke='%235584f6' d='M4 1h1'/%3E%3Cpath stroke='%234d7ef6' d='M5 1h1M1 6h1m5 4h1'/%3E%3Cpath stroke='%23487af5' d='M6 1h1'/%3E%3Cpath stroke='%234276f5' d='M7 1h1M3 14h1'/%3E%3Cpath stroke='%234478f5' d='M8 1h1m5 3h1M2 12h1'/%3E%3Cpath stroke='%233e73f5' d='M9 1h2'/%3E%3Cpath stroke='%233b71f5' d='M11 1h2'/%3E%3Cpath stroke='%23336cf4' d='M13 1h2'/%3E%3Cpath stroke='%23306af4' d='M15 1h1'/%3E%3Cpath stroke='%232864f4' d='M16 1h1'/%3E%3Cpath stroke='%231f5def' d='M17 1h1'/%3E%3Cpath stroke='%233467e0' d='M18 1h1'/%3E%3Cpath stroke='%23d2dbf2' d='M19 1h1'/%3E%3Cpath stroke='%23769cf8' d='M1 2h1'/%3E%3Cpath stroke='%2390aff9' d='M2 2h1'/%3E%3Cpath stroke='%2394b2f9' d='M3 2h1'/%3E%3Cpath stroke='%2385a7f8' d='M4 2h1'/%3E%3Cpath stroke='%23759cf8' d='M5 2h1'/%3E%3Cpath stroke='%236e97f8' d='M6 2h1M2 6h1'/%3E%3Cpath stroke='%236892f7' d='M7 2h1'/%3E%3Cpath stroke='%236690f7' d='M8 2h1'/%3E%3Cpath stroke='%23628ef7' d='M9 2h1m0 1h1'/%3E%3Cpath stroke='%235f8cf7' d='M10 2h1'/%3E%3Cpath stroke='%235e8bf7' d='M11 2h1'/%3E%3Cpath stroke='%235988f6' d='M12 2h1'/%3E%3Cpath stroke='%235685f6' d='M13 2h1'/%3E%3Cpath stroke='%235082f6' d='M14 2h1'/%3E%3Cpath stroke='%23497cf5' d='M15 2h1'/%3E%3Cpath stroke='%233f75f5' d='M16 2h1m-2 2h1'/%3E%3Cpath stroke='%23326bf2' d='M17 2h1'/%3E%3Cpath stroke='%23235ce3' d='M18 2h1'/%3E%3Cpath stroke='%23305cc5' d='M19 2h1'/%3E%3Cpath stroke='%23e5ecfb' d='M20 2h1'/%3E%3Cpath stroke='%236590f7' d='M1 3h1'/%3E%3Cpath stroke='%2397b4f9' d='M2 3h1'/%3E%3Cpath stroke='%239ab7fa' d='M3 3h1'/%3E%3Cpath stroke='%2389aaf9' d='M4 3h1M2 4h1'/%3E%3Cpath stroke='%237aa0f8' d='M5 3h1'/%3E%3Cpath stroke='%23729af8' d='M6 3h1'/%3E%3Cpath stroke='%236d95f8' d='M7 3h1'/%3E%3Cpath stroke='%236892f8' d='M8 3h1M2 7h1'/%3E%3Cpath stroke='%23658ff7' d='M9 3h1'/%3E%3Cpath stroke='%23618df7' d='M11 3h1'/%3E%3Cpath stroke='%235d8af7' d='M12 3h1M3 9h1'/%3E%3Cpath stroke='%235987f6' d='M13 3h1M2 9h1'/%3E%3Cpath stroke='%235283f6' d='M14 3h1'/%3E%3Cpath stroke='%234c7ef6' d='M15 3h1'/%3E%3Cpath stroke='%234377f5' d='M16 3h1'/%3E%3Cpath stroke='%23376ef2' d='M17 3h1'/%3E%3Cpath stroke='%23285fe3' d='M18 3h1'/%3E%3Cpath stroke='%231546b9' d='M19 3h1'/%3E%3Cpath stroke='%235886f6' d='M1 4h1'/%3E%3Cpath stroke='%238dadf9' d='M3 4h1'/%3E%3Cpath stroke='%237fa3f8' d='M4 4h1'/%3E%3Cpath stroke='%237199f8' d='M5 4h1M4 5h1'/%3E%3Cpath stroke='%236a93f8' d='M6 4h1M4 6h1M3 7h1'/%3E%3Cpath stroke='%23648ef7' d='M7 4h1'/%3E%3Cpath stroke='%235e8af7' d='M8 4h1'/%3E%3Cpath stroke='%235986f7' d='M9 4h1M5 9h1m-2 1h1'/%3E%3Cpath stroke='%235482f6' d='M10 4h1'/%3E%3Cpath stroke='%235180f6' d='M11 4h1'/%3E%3Cpath stroke='%234b7cf5' d='M12 4h1'/%3E%3Cpath stroke='%234a7cf5' d='M13 4h1'/%3E%3Cpath stroke='%233a72f4' d='M16 4h1'/%3E%3Cpath stroke='%23346cf2' d='M17 4h1'/%3E%3Cpath stroke='%232a61e3' d='M18 4h1'/%3E%3Cpath stroke='%231848bb' d='M19 4h1'/%3E%3Cpath stroke='%235282f6' d='M1 5h1m4 6h1m-3 1h1'/%3E%3Cpath stroke='%23799ff8' d='M2 5h1'/%3E%3Cpath stroke='%237ca1f8' d='M3 5h1'/%3E%3Cpath stroke='%236791f8' d='M5 5h1'/%3E%3Cpath stroke='%23608bf7' d='M6 5h1M4 8h1'/%3E%3Cpath stroke='%235985f7' d='M7 5h1'/%3E%3Cpath stroke='%235381f6' d='M8 5h1M6 9h1'/%3E%3Cpath stroke='%234d7bf6' d='M9 5h1M8 6h1'/%3E%3Cpath stroke='%234677f5' d='M10 5h1'/%3E%3Cpath stroke='%234173f5' d='M11 5h1'/%3E%3Cpath stroke='%233a6ff4' d='M12 5h1'/%3E%3Cpath stroke='%23386ef4' d='M13 5h1'/%3E%3Cpath stroke='%23346cf4' d='M14 5h1'/%3E%3Cpath stroke='%23326cf4' d='M15 5h1'/%3E%3Cpath stroke='%23316bf4' d='M16 5h1M3 16h1'/%3E%3Cpath stroke='%233069f1' d='M17 5h1'/%3E%3Cpath stroke='%232c62e4' d='M18 5h1'/%3E%3Cpath stroke='%231d4cbc' d='M19 5h1m-1 1h1'/%3E%3Cpath stroke='%237099f8' d='M3 6h1'/%3E%3Cpath stroke='%23628cf8' d='M5 6h1'/%3E%3Cpath stroke='%235b86f7' d='M6 6h1'/%3E%3Cpath stroke='%235480f7' d='M7 6h1'/%3E%3Cpath stroke='%234777f6' d='M9 6h1'/%3E%3Cpath stroke='%234072f5' d='M10 6h1'/%3E%3Cpath stroke='%233a6ff5' d='M11 6h1'/%3E%3Cpath stroke='%23346df4' d='M12 6h1'/%3E%3Cpath stroke='%23306bf4' d='M13 6h1'/%3E%3Cpath stroke='%232d69f4' d='M14 6h1'/%3E%3Cpath stroke='%232c69f5' d='M15 6h1'/%3E%3Cpath stroke='%232d69f5' d='M16 6h1'/%3E%3Cpath stroke='%232e69f2' d='M17 6h1'/%3E%3Cpath stroke='%232c63e5' d='M18 6h1'/%3E%3Cpath stroke='%234679f5' d='M1 7h1M1 8h1'/%3E%3Cpath stroke='%23658ff8' d='M4 7h1'/%3E%3Cpath stroke='%235e89f7' d='M5 7h1'/%3E%3Cpath stroke='%235783f7' d='M6 7h1'/%3E%3Cpath stroke='%23507ef6' d='M7 7h1'/%3E%3Cpath stroke='%234a79f6' d='M8 7h1'/%3E%3Cpath stroke='%234375f5' d='M9 7h1'/%3E%3Cpath stroke='%233d71f5' d='M10 7h1'/%3E%3Cpath stroke='%23366ef4' d='M11 7h1M2 14h1'/%3E%3Cpath stroke='%232f6bf5' d='M12 7h1'/%3E%3Cpath stroke='%232b69f5' d='M13 7h1'/%3E%3Cpath stroke='%232867f5' d='M14 7h1'/%3E%3Cpath stroke='%232766f5' d='M15 7h1'/%3E%3Cpath stroke='%232a68f5' d='M16 7h1'/%3E%3Cpath stroke='%232c69f2' d='M17 7h1'/%3E%3Cpath stroke='%232a62e4' d='M18 7h1'/%3E%3Cpath stroke='%231c4cbd' d='M19 7h1'/%3E%3Cpath stroke='%23628df8' d='M3 8h1'/%3E%3Cpath stroke='%235b87f7' d='M5 8h1'/%3E%3Cpath stroke='%235482f7' d='M6 8h1'/%3E%3Cpath stroke='%234e7cf6' d='M7 8h1'/%3E%3Cpath stroke='%234778f6' d='M8 8h1'/%3E%3Cpath stroke='%234174f5' d='M9 8h1'/%3E%3Cpath stroke='%233a71f5' d='M10 8h1'/%3E%3Cpath stroke='%23346ef4' d='M11 8h1'/%3E%3Cpath stroke='%232d6bf5' d='M12 8h1'/%3E%3Cpath stroke='%232869f5' d='M13 8h1'/%3E%3Cpath stroke='%232467f5' d='M14 8h1'/%3E%3Cpath stroke='%232266f5' d='M15 8h1'/%3E%3Cpath stroke='%232567f5' d='M16 8h1'/%3E%3Cpath stroke='%232968f2' d='M17 8h1'/%3E%3Cpath stroke='%232963e4' d='M18 8h1'/%3E%3Cpath stroke='%231b4bbd' d='M19 8h1'/%3E%3Cpath stroke='%233c72f4' d='M1 9h1'/%3E%3Cpath stroke='%235d89f7' d='M4 9h1'/%3E%3Cpath stroke='%234e7ef6' d='M7 9h1'/%3E%3Cpath stroke='%23477af5' d='M8 9h1'/%3E%3Cpath stroke='%234178f5' d='M9 9h1'/%3E%3Cpath stroke='%233a74f5' d='M10 9h1'/%3E%3Cpath stroke='%233472f5' d='M11 9h1'/%3E%3Cpath stroke='%232c6ff5' d='M12 9h1'/%3E%3Cpath stroke='%23276cf5' d='M13 9h1'/%3E%3Cpath stroke='%23236af6' d='M14 9h1'/%3E%3Cpath stroke='%232069f6' d='M15 9h1'/%3E%3Cpath stroke='%232268f5' d='M16 9h1'/%3E%3Cpath stroke='%232569f2' d='M17 9h1'/%3E%3Cpath stroke='%232562e6' d='M18 9h1'/%3E%3Cpath stroke='%23194bbe' d='M19 9h1'/%3E%3Cpath stroke='%23376ef4' d='M1 10h1'/%3E%3Cpath stroke='%235181f6' d='M2 10h1'/%3E%3Cpath stroke='%235785f7' d='M3 10h1m1 0h1'/%3E%3Cpath stroke='%235281f6' d='M6 10h1'/%3E%3Cpath stroke='%23477bf6' d='M8 10h1'/%3E%3Cpath stroke='%234179f6' d='M9 10h1'/%3E%3Cpath stroke='%233b77f5' d='M10 10h1'/%3E%3Cpath stroke='%233474f5' d='M11 10h1'/%3E%3Cpath stroke='%232c72f6' d='M12 10h1'/%3E%3Cpath stroke='%23266ff6' d='M13 10h1'/%3E%3Cpath stroke='%23226df6' d='M14 10h1'/%3E%3Cpath stroke='%231e6bf6' d='M15 10h1'/%3E%3Cpath stroke='%231f6af6' d='M16 10h1'/%3E%3Cpath stroke='%23216af3' d='M17 10h1'/%3E%3Cpath stroke='%232162e6' d='M18 10h1'/%3E%3Cpath stroke='%231649be' d='M19 10h1'/%3E%3Cpath stroke='%23326bf4' d='M1 11h1'/%3E%3Cpath stroke='%234b7df5' d='M2 11h1'/%3E%3Cpath stroke='%235483f6' d='M3 11h1'/%3E%3Cpath stroke='%235684f7' d='M4 11h1'/%3E%3Cpath stroke='%235583f7' d='M5 11h1'/%3E%3Cpath stroke='%234d80f6' d='M7 11h1'/%3E%3Cpath stroke='%23487df6' d='M8 11h1'/%3E%3Cpath stroke='%23427cf6' d='M9 11h1'/%3E%3Cpath stroke='%233c7af6' d='M10 11h1'/%3E%3Cpath stroke='%233478f6' d='M11 11h1'/%3E%3Cpath stroke='%232d76f6' d='M12 11h1'/%3E%3Cpath stroke='%232673f7' d='M13 11h1'/%3E%3Cpath stroke='%232171f7' d='M14 11h1'/%3E%3Cpath stroke='%231c6ff6' d='M15 11h1'/%3E%3Cpath stroke='%231c6df6' d='M16 11h1'/%3E%3Cpath stroke='%231c6af4' d='M17 11h1'/%3E%3Cpath stroke='%231c61e6' d='M18 11h1'/%3E%3Cpath stroke='%231248bf' d='M19 11h1'/%3E%3Cpath stroke='%232b66f4' d='M1 12h1'/%3E%3Cpath stroke='%234e7ff6' d='M3 12h1'/%3E%3Cpath stroke='%235383f6' d='M5 12h1'/%3E%3Cpath stroke='%235182f6' d='M6 12h1'/%3E%3Cpath stroke='%234d81f7' d='M7 12h1'/%3E%3Cpath stroke='%23487ff6' d='M8 12h1'/%3E%3Cpath stroke='%23437ff6' d='M9 12h1'/%3E%3Cpath stroke='%233d7ef6' d='M10 12h1'/%3E%3Cpath stroke='%23357cf6' d='M11 12h1'/%3E%3Cpath stroke='%232d7af7' d='M12 12h1'/%3E%3Cpath stroke='%232677f7' d='M13 12h1'/%3E%3Cpath stroke='%232174f7' d='M14 12h1'/%3E%3Cpath stroke='%231b71f7' d='M15 12h1'/%3E%3Cpath stroke='%23186ef7' d='M16 12h1'/%3E%3Cpath stroke='%23186af4' d='M17 12h1'/%3E%3Cpath stroke='%23165fe7' d='M18 12h1'/%3E%3Cpath stroke='%230f47c0' d='M19 12h1'/%3E%3Cpath stroke='%232562f3' d='M1 13h1'/%3E%3Cpath stroke='%233d73f4' d='M2 13h1'/%3E%3Cpath stroke='%23487bf5' d='M3 13h1'/%3E%3Cpath stroke='%234e80f6' d='M4 13h1'/%3E%3Cpath stroke='%232d7cf7' d='M12 13h1'/%3E%3Cpath stroke='%232679f8' d='M13 13h1'/%3E%3Cpath stroke='%232077f7' d='M14 13h1'/%3E%3Cpath stroke='%231973f7' d='M15 13h1'/%3E%3Cpath stroke='%23166ff7' d='M16 13h1'/%3E%3Cpath stroke='%231369f4' d='M17 13h1'/%3E%3Cpath stroke='%23105de8' d='M18 13h1'/%3E%3Cpath stroke='%230a44bf' d='M19 13h1'/%3E%3Cpath stroke='%231e5df3' d='M1 14h1'/%3E%3Cpath stroke='%23497bf5' d='M4 14h1'/%3E%3Cpath stroke='%232d7df7' d='M12 14h1'/%3E%3Cpath stroke='%23257af8' d='M13 14h1'/%3E%3Cpath stroke='%231e77f8' d='M14 14h1'/%3E%3Cpath stroke='%231773f8' d='M15 14h1'/%3E%3Cpath stroke='%23116df7' d='M16 14h1'/%3E%3Cpath stroke='%230d66f4' d='M17 14h1m-3 3h1'/%3E%3Cpath stroke='%230b59e7' d='M18 14h1'/%3E%3Cpath stroke='%230641c0' d='M19 14h1m-6 5h1'/%3E%3Cpath stroke='%231859f3' d='M1 15h1'/%3E%3Cpath stroke='%232e68f4' d='M2 15h1'/%3E%3Cpath stroke='%233a71f4' d='M3 15h1'/%3E%3Cpath stroke='%234277f5' d='M4 15h1'/%3E%3Cpath stroke='%232a7cf8' d='M12 15h1'/%3E%3Cpath stroke='%23247af8' d='M13 15h1'/%3E%3Cpath stroke='%231d77f8' d='M14 15h1'/%3E%3Cpath stroke='%231573f8' d='M15 15h1'/%3E%3Cpath stroke='%230e6cf8' d='M16 15h1'/%3E%3Cpath stroke='%230963f4' d='M17 15h1'/%3E%3Cpath stroke='%230556e7' d='M18 15h1'/%3E%3Cpath stroke='%23023fbf' d='M19 15h1'/%3E%3Cpath stroke='%231456f3' d='M1 16h1'/%3E%3Cpath stroke='%232562f4' d='M2 16h1'/%3E%3Cpath stroke='%233971f4' d='M4 16h1'/%3E%3Cpath stroke='%233d74f5' d='M5 16h1'/%3E%3Cpath stroke='%233d74f6' d='M6 16h1'/%3E%3Cpath stroke='%233b75f5' d='M7 16h1'/%3E%3Cpath stroke='%233976f5' d='M8 16h1'/%3E%3Cpath stroke='%233777f5' d='M9 16h1'/%3E%3Cpath stroke='%233278f6' d='M10 16h1'/%3E%3Cpath stroke='%232c78f7' d='M11 16h1'/%3E%3Cpath stroke='%232577f7' d='M12 16h1'/%3E%3Cpath stroke='%231f76f7' d='M13 16h1'/%3E%3Cpath stroke='%231972f7' d='M14 16h1'/%3E%3Cpath stroke='%23116ef8' d='M15 16h1'/%3E%3Cpath stroke='%230b68f7' d='M16 16h1'/%3E%3Cpath stroke='%230560f4' d='M17 16h1'/%3E%3Cpath stroke='%230253e6' d='M18 16h1'/%3E%3Cpath stroke='%23013dbe' d='M19 16h1'/%3E%3Cpath stroke='%230e50ed' d='M1 17h1'/%3E%3Cpath stroke='%231c5bef' d='M2 17h1'/%3E%3Cpath stroke='%232863f0' d='M3 17h1'/%3E%3Cpath stroke='%232f68f0' d='M4 17h1'/%3E%3Cpath stroke='%23336bf1' d='M5 17h1'/%3E%3Cpath stroke='%23346cf1' d='M6 17h1'/%3E%3Cpath stroke='%23316cf2' d='M7 17h1'/%3E%3Cpath stroke='%23316df2' d='M8 17h1'/%3E%3Cpath stroke='%232e6ff2' d='M9 17h1'/%3E%3Cpath stroke='%232a70f2' d='M10 17h1'/%3E%3Cpath stroke='%232570f3' d='M11 17h1'/%3E%3Cpath stroke='%231f6ff3' d='M12 17h1'/%3E%3Cpath stroke='%23196df4' d='M13 17h1'/%3E%3Cpath stroke='%23136af4' d='M14 17h1'/%3E%3Cpath stroke='%230760f3' d='M16 17h1'/%3E%3Cpath stroke='%23025af0' d='M17 17h1'/%3E%3Cpath stroke='%23004de2' d='M18 17h1'/%3E%3Cpath stroke='%23003ab9' d='M19 17h1'/%3E%3Cpath stroke='%23e5eefd' d='M0 18h1'/%3E%3Cpath stroke='%23285edf' d='M1 18h1'/%3E%3Cpath stroke='%23134fdf' d='M2 18h1'/%3E%3Cpath stroke='%231b55df' d='M3 18h1'/%3E%3Cpath stroke='%23215ae2' d='M4 18h1'/%3E%3Cpath stroke='%23255ce1' d='M5 18h1'/%3E%3Cpath stroke='%23265de0' d='M6 18h1'/%3E%3Cpath stroke='%23245ce1' d='M7 18h1'/%3E%3Cpath stroke='%23235ee2' d='M8 18h1'/%3E%3Cpath stroke='%23215ee2' d='M9 18h1'/%3E%3Cpath stroke='%231e5ee2' d='M10 18h1'/%3E%3Cpath stroke='%231b5fe5' d='M11 18h1'/%3E%3Cpath stroke='%23165ee5' d='M12 18h1'/%3E%3Cpath stroke='%23135de6' d='M13 18h1'/%3E%3Cpath stroke='%230e5be5' d='M14 18h1'/%3E%3Cpath stroke='%230958e6' d='M15 18h1'/%3E%3Cpath stroke='%230454e6' d='M16 18h1'/%3E%3Cpath stroke='%23014ee2' d='M17 18h1'/%3E%3Cpath stroke='%230045d3' d='M18 18h1'/%3E%3Cpath stroke='%231f4eb8' d='M19 18h1'/%3E%3Cpath stroke='%23679ef6' d='M0 19h1m19 0h1'/%3E%3Cpath stroke='%23d0daf1' d='M1 19h1'/%3E%3Cpath stroke='%232856c3' d='M2 19h1'/%3E%3Cpath stroke='%230d3fb6' d='M3 19h1'/%3E%3Cpath stroke='%231144bd' d='M4 19h1'/%3E%3Cpath stroke='%231245bb' d='M5 19h1'/%3E%3Cpath stroke='%231445b9' d='M6 19h1'/%3E%3Cpath stroke='%231244b9' d='M7 19h1'/%3E%3Cpath stroke='%231345bc' d='M8 19h1'/%3E%3Cpath stroke='%231346bd' d='M9 19h1'/%3E%3Cpath stroke='%231045be' d='M10 19h1'/%3E%3Cpath stroke='%230d45c0' d='M11 19h1'/%3E%3Cpath stroke='%230a45c1' d='M12 19h1'/%3E%3Cpath stroke='%230844c3' d='M13 19h1'/%3E%3Cpath stroke='%23033fc0' d='M15 19h1'/%3E%3Cpath stroke='%23013fc3' d='M16 19h1'/%3E%3Cpath stroke='%23003bbe' d='M17 19h1'/%3E%3Cpath stroke='%231f4eb9' d='M18 19h1'/%3E%3Cpath stroke='%23cfd8ed' d='M19 19h1'/%3E%3Cpath stroke='%23669bf5' d='M1 20h1m17 0h1'/%3E%3Cpath stroke='%23e5edfd' d='M18 20h1'/%3E%3C/svg%3E");
+        background-size: 25px 25px;
+        background-repeat: no-repeat
+    }
+    .live__toggle
+    {
+        margin: auto 5px auto 160px !important;
+    }
+    .live__toggle svg, .content-header__info .etc_control svg, .mf-header__close svg, .mf-header__menu .etc-controls .icon--toggle-down, .etc-controls__dropdown:before
     {
         /*color: #fff;
         width: 15px !important;
@@ -166,7 +186,7 @@
     {
         margin-top: 15px;
     }
-    .subsite-header
+    .subsite-header, .messenger
     {
         margin-top: 20px;
     }
@@ -187,6 +207,7 @@
     {
         margin-left: auto;
         margin-right: auto;        
+        max-width: 680px;
     }
     .new_entries
     {
@@ -196,7 +217,7 @@
     {
         padding-top: 5px;
     }
-    .content--short figure, .etc_control__item, .item, .table__row--me
+    .content--short figure, .etc_control__item, .item, .table__row--me, .u-notification, .mf-header__user, .etc-controls__dropdownItem
     {
         margin-left: 3px;
         margin-right: 3px;
@@ -216,16 +237,29 @@
     {
         padding: 10px 20px;
     }
+    .ui-sorting--with-tabs
+    {
+        margin-bottom: 10px;
+    }
+    .ui-sorting--with-tags
+    {
+        height: 45px;
+        padding: 5px 5px !important;
+    }
+    .mf-header__close
+    {
+        margin-right: 5px;    
+    }
     
-    .live__caption, .content-header__info time, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .content-header-author__name, .views, .comments__title, .v-island__header, .v-island__counter, .content-header-number, .head-notifies__header-link, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .site-header-user-profile__toggle:hover svg
+    .live__caption, .content-header__info time, .bubble__title, .head-notifies__header, .messenger-panel__down-head, .search-dropdown__title, .content-header-author__name, .views, .comments__title, .v-island__header, .v-island__counter, .content-header-number, .head-notifies__header-link, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .site-header-user-profile__toggle:hover svg, .m-floating__header, .content-header__item .icon
     {
         color: #fff !important;
     }
-    .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon
+    .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .content-header__item .icon
     {
         fill: #fff !important;
     }
-    .v-button, .new_entries, .comments__item__more--root, .ui-button, .thesis__attach_something:hover, .new-entries-horizon, .attachButton:hover
+    .v-button, .new_entries, .comments__item__more--root, .ui-button, .thesis__attach_something:hover, .new-entries-horizon, .attachButton:hover, .etc-controls__dropdown
     {
         color: #000 !important;
     }
@@ -241,7 +275,7 @@
     {
         background-image: none !important;
     }
-    .v-button, .v-tabs-navigation, .sidebar-tree-list-item, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .new_entries, .v-tab:hover .v-tab, .comments__item__more--root, .ui-button, .thesis__attach_something, .comments_updates, .attachButton
+    .v-button, .v-tabs-navigation, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .new_entries, .v-tab:hover .v-tab, .comments__item__more--root, .ui-button, .thesis__attach_something, .comments_updates, .attachButton
     {
         font-family: "Pixelated MS Sans Serif",Arial !important;
         -webkit-font-smoothing: antialiased !important;
@@ -251,7 +285,7 @@
         box-shadow: none;
         border-radius: 3px !important;
     }
-    .v-button:hover, .v-tabs-navigation:hover, .ui-rounded-button__link:hover, .ui-rounded-button__link:hover, .new_entries:hover, .comments__item__more--root--1.comments__item__more--root--hovered, .comments__item__more--root--1:hover, .ui-button--1.ui-button--hovered, .ui-button--1:hover, .thesis__attach_something:hover, .sidebar-tree-list-item:hover, .sidebar-tree-list-item--active, .comments_updates:hover, .attachButton:hover
+    .v-button:hover, .v-tabs-navigation:hover, .ui-rounded-button__link:hover, .ui-rounded-button__link:hover, .new_entries:hover, .comments__item__more--root--1.comments__item__more--root--hovered, .comments__item__more--root--1:hover, .ui-button--1.ui-button--hovered, .ui-button--1:hover, .thesis__attach_something:hover, .comments_updates:hover, .attachButton:hover
     {
         box-shadow: inset -1px 1px #fff0cf, inset 1px 2px #fdd889, inset -2px 2px #fbc761, inset 2px -2px #e5a01a;
     }
