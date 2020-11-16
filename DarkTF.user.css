@@ -220,11 +220,11 @@ html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subsc
 
 /* complex settings */
 @media (min-width: 842px){
-.live__item--notification-comment_voted-positive, .vote--comment .vote--positive .vote__value, .vote--comment.vote--sum-positive .vote__value, .vote .vote__button--plus:hover{
+.live__item--notification-comment_voted-positive, .vote--comment .vote--positive .vote__value, .vote--comment.vote--sum-positive .vote__value{
     background-color:#002f0d !important;
     color:#e3e3e3 !important;
 }
-.live__item--notification-comment_voted-negative, .vote--comment.vote--negative .vote__value, .vote--comment.vote--sum-negative .vote__value, .vote .vote__button--minus:hover{
+.live__item--notification-comment_voted-negative, .vote--comment.vote--negative .vote__value, .vote--comment.vote--sum-negative .vote__value{
     background-color:#562f2f !important;
     color:#e3e3e3 !important;
 }
