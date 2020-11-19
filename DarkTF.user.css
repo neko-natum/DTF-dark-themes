@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.3.13
+@version        1.3.14
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -22,7 +22,7 @@
 
 @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") {
 /* back colors */
-html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subscribe__button, .calendar, .wtf_bc--skin--bg-primary, .wtf_broadcast .wtf_bc--header, .yandex_zen_subscribe, .sidebar, .wtf_bc--skin--bg-gray, .live__content, .layout__column--right .l-h-full, .island__social_links__item, .small-editor__placeholder-photo, .u-notification--unread, .m-floating, .avatar-grid__item, .tab__content, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .neural-tooltip, .neural-tooltip::after, .neural-comment__text:hover::after, .sidebar-tree-list__show-more-button, .subsite-details-mobile-navbar, .subsite-details, body:not(#id), .live__caption, .layout, .vote--content .vote__button
+html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subscribe__button, .calendar, .wtf_bc--skin--bg-primary, .wtf_broadcast .wtf_bc--header, .yandex_zen_subscribe, .sidebar, .wtf_bc--skin--bg-gray, .live__content, .layout__column--right .l-h-full, .island__social_links__item, .small-editor__placeholder-photo, .u-notification--unread, .m-floating, .avatar-grid__item, .tab__content, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .neural-tooltip, .neural-tooltip::after, .neural-comment__text:hover::after, .sidebar-tree-list__show-more-button, .subsite-details-mobile-navbar, .subsite-details, body:not(#id), .live__caption, .layout, .v-shares-mobile-popover__item
 {
 	background-color:#1b1b1b !important;
 }
