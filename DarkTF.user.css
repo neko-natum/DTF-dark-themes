@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.3.16
+@version        1.3.17
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -613,6 +613,13 @@ if v-header
 
 }
 
+/*Для плагинов*/
+.tjnames__list, .tjnames__list.active {
+    background-color: #000; /*другой цвет*/
+    border: 1px solid var(--site_specific_1); /*другой цвет*/
+    /*box-shadow: 0 1px 6px 0 white; /*другой цвет или вообще убрать тень к хуям*/
+    /*к хуям так к хуям*/
+}
 @-moz-document domain("dtf.ru") {
     if brand{
         :root {
