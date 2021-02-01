@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.2.13
+@version        1.3.0
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -220,6 +220,38 @@ a:hover, .u-notification__content__button:hover, .andropov_telegram__text__more:
 }
 }
 
+/*hooeerjaa*/
+.s42-stonks-popup{
+    background-color: #000 !important;
+    color: #f90 !important;
+}
+.s42-stonks-popup__text-regular{
+    color: #bfbfbf !important;
+}
+.s42-stonks-popup__text-marked{
+    color: #f90 !important;
+}
+.s42-stonks-popup__text-marked:hover{
+    text-decoration: underline !important;
+}
+.s42-stonks-popup__head{
+    border-color: #f90!important;
+}
+.s42-stonks-popup__footer__button{
+    border: 1px solid #f90 !important;
+    background-color: #000;
+    color: #f90;
+}
+.s42-stonks-popup__footer__button:hover{
+    background-color:  #f90 !important;
+    color: #000 !important;
+}
+.s42-stonks-popup__footer__button .s42-stonks-popup__footer__logo{
+    filter: invert(59%) sepia(70%) saturate(830%) hue-rotate(359deg) brightness(102%) contrast(77%);
+}
+.s42-stonks-popup__footer__button:hover .s42-stonks-popup__footer__logo{
+    filter: none !important;
+}
 @-moz-document domain("instagram.com") {
 /*время сломать всё к хуям*/
 html[stylus-iframe*="dtf.ru"] body,html[stylus-iframe*="dtf.ru"] .PrimaryCTA, html[stylus-iframe*="dtf.ru"] .HoverCard .HoverCardRoot, html[stylus-iframe*="dtf.ru"] .HoverCardUserName .Username{
