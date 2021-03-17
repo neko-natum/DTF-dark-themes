@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           PornTF
 @namespace      github.com/openstyles/stylus
-@version        1.3.2
+@version        1.3.3
 @description    Твой любимый порносайт :^)
 @author         Neko Natum
 ==/UserStyle== */
@@ -11,7 +11,7 @@ body, .search__field, .block-incut, .content-image--with_background, .main_menu_
     {
     background: #000 !important;
 }
-.main_menu, .live_head, .comments__item__space--new, .comments__item__space--highlighted, .comments__item__space--pinned, .table__row--me, .vacancies_widget__new:hover, .etc-controls__dropdownItem:hover, .popup__container__window--styled .popup__container__window__tpl, .editor__header, .notify__item, .andropov_preview, .comments__link_to_all, .contentFiltersDropdown .dropdown__input, .dropdown__found__item, .dropdown__found__list, .inline-dropdown, .vacancy_footer, .header, .ce-settings, .gallery-image--with-background .gallery-image__media, .tab__content, .emoji-picker__panel, .emoji-picker__tabs, .emoji-picker__panel-list-section-name, .emoji-picker__panel::after, .daily-promo-form__center form, .input-select__options-item:hover, .input-select__options-item--highlighted, .notification, .auth-form, .daily-promo-unit-label__inner, .v-island__header:after, .v-popup-window__content, .site-header, .reposters_list, .v-shares-popover
+.main_menu, .live_head, .comments__item__space--new, .comments__item__space--highlighted, .comments__item__space--pinned, .table__row--me, .vacancies_widget__new:hover, .etc-controls__dropdownItem:hover, .popup__container__window--styled .popup__container__window__tpl, .editor__header, .notify__item, .andropov_preview, .comments__link_to_all, .contentFiltersDropdown .dropdown__input, .dropdown__found__item, .dropdown__found__list, .inline-dropdown, .vacancy_footer, .header, .ce-settings, .gallery-image--with-background .gallery-image__media, .tab__content, .emoji-picker__panel, .emoji-picker__tabs, .emoji-picker__panel-list-section-name, .emoji-picker__panel::after, .daily-promo-form__center form, .input-select__options-item:hover, .input-select__options-item--highlighted, .notification, .auth-form, .daily-promo-unit-label__inner, .v-island__header:after, .v-popup-window__content, .site-header, .reposters_list, .v-shares-popover, .header, .header__content::before
     {
     background: #1b1b1b !important;
 }

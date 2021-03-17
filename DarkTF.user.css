@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.4.3
+@version        1.4.4
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -22,7 +22,7 @@
 
 @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") {
 /* back colors */
-html, body, .comments__item__space--pinned,.push_subscribe__content, .push_subscribe__button, .calendar, .wtf_bc--skin--bg-primary, .wtf_broadcast .wtf_bc--header, .yandex_zen_subscribe, .sidebar, .wtf_bc--skin--bg-gray, .live__content, .layout__column--right .l-h-full, .island__social_links__item, .small-editor__placeholder-photo, .u-notification--unread, .m-floating, .avatar-grid__item, .tab__content, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .neural-tooltip, .neural-tooltip::after, .neural-comment__text:hover::after, .sidebar-tree-list__show-more-button, .subsite-details-mobile-navbar, .subsite-details, body:not(#id), .live__caption, .layout, .v-shares-mobile-popover__item
+tml, body, .comments__item__space--pinned,.push_subscribe__content, .push_subscribe__button, .calendar, .wtf_bc--skin--bg-primary, .wtf_broadcast .wtf_bc--header, .yandex_zen_subscribe, .sidebar, .wtf_bc--skin--bg-gray, .live__content, .layout__column--right .l-h-full, .island__social_links__item, .small-editor__placeholder-photo, .u-notification--unread, .m-floating, .avatar-grid__item, .tab__content, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .neural-tooltip, .neural-tooltip::after, .neural-comment__text:hover::after, .sidebar-tree-list__show-more-button, .subsite-details-mobile-navbar, .subsite-details, body:not(#id), .live__caption, .layout, .v-shares-mobile-popover__item
 {
 	background-color:#1b1b1b !important;
 }
@@ -34,7 +34,7 @@ background:#292929 !important;
 {
     background: #000 !important;
 }
-.notification--unread, .b-article-quote-small, .ui_navigation__item--active,.comments__item--author>.comments__item__self .comments__item__user__name:after,.feed__load_more,.live__item--notification-comment_replied, .ui_sub_menu__item:hover, .live__item--notification-entry_commented, .comments__item__space--new, .comments__updates, .island__hashtags__item, .notify-new-items-label, .vote__users, .comments_form__reply, .updown:hover, .etc_control__item:hover, .vacancy_edit__form__salary_from:before, .vacancy_edit__form__salary_to:before, .vacancy_edit__form__company_image, .dropdown2, .dropdown__found__item:hover, .comments__item--highlighted>.comments__item__self:after,.comments__item--new>.comments__item__self:after,.comments__item--pinned>.comments__item__self:after, .subsite_subscribe_button,.ui-checkbox--checked, .input-date .date, .comments__reply_form__textarea-holder, .comments_form__textarea-holder, .gsc-input-box, .form2__field--text .text, .form2__field--list .list__item, .form2__inline-editor, .b-link-widget, .notification--read:hover, .comments__item__space--highlighted, .andropov_preview--image,.possessed_user_list__item:hover, .input-suggestion__item:hover, .hljs, .block-code, .form-picture, .form2__field--image .image, .quote-tool__photo-wrapper, .channel-item--current, .v-list-tab:hover, .ui-filters--responsive .ui-filters__inner, .contacts__item:hover, .ui-dropdown__item:hover, .v-shares-popover__item:hover
+.notification--unread, .b-article-quote-small, .ui_navigation__item--active,.comments__item--author>.comments__item__self .comments__item__user__name:after,.feed__load_more,.live__item--notification-comment_replied, .ui_sub_menu__item:hover, .live__item--notification-entry_commented, .comments__item__space--new, .comments__updates, .island__hashtags__item, .notify-new-items-label, .vote__users, .comments_form__reply, .updown:hover, .etc_control__item:hover, .vacancy_edit__form__salary_from:before, .vacancy_edit__form__salary_to:before, .vacancy_edit__form__company_image, .dropdown2, .dropdown__found__item:hover, .comments__item--highlighted>.comments__item__self:after,.comments__item--new>.comments__item__self:after,.comments__item--pinned>.comments__item__self:after, .subsite_subscribe_button,.ui-checkbox--checked, .input-date .date, .comments__reply_form__textarea-holder, .comments_form__textarea-holder, .gsc-input-box, .form2__field--text .text, .form2__field--list .list__item, .form2__inline-editor, .b-link-widget, .notification--read:hover, .comments__item__space--highlighted, .andropov_preview--image,.possessed_user_list__item:hover, .input-suggestion__item:hover, .hljs, .block-code, .form-picture, .form2__field--image .image, .quote-tool__photo-wrapper, .channel-item--current, .v-list-tab:hover, .ui-filters--responsive .ui-filters__inner, .contacts__item:hover, .ui-dropdown__item:hover, .v-shares-popover__item:hover, .header, .header__content::before
 {
     background-color:#3e3e3e !important;
 }
@@ -363,7 +363,7 @@ background:#292929 !important;
 }
 
 /*Редактор*/
-.ce-toolbar__plus, .ce-toolbar__toolbox-button, .ce-toolbar__actions, .ce-settings, .ce-toolbar__remove-confirmation, .quote-tool__photo-wrapper:hover::after, .adviser__container, .adviser__items, .advice, .adviser__container::after, .ce-toolbar__tools, .ce-toolbar__tools-search-input, .ce-toolbar__tools-item--selected, .ce-toolbar__tools-item:hover, .media-tool-settings__item:hover, .media-tool-settings__item--active, .gallery-image--with-background .gallery-image__media, .cdx-inline-toolbar, .header{
+.ce-toolbar__plus, .ce-toolbar__toolbox-button, .ce-toolbar__actions, .ce-settings, .ce-toolbar__remove-confirmation, .quote-tool__photo-wrapper:hover::after, .adviser__container, .adviser__items, .advice, .adviser__container::after, .ce-toolbar__tools, .ce-toolbar__tools-search-input, .ce-toolbar__tools-item--selected, .ce-toolbar__tools-item:hover, .media-tool-settings__item:hover, .media-tool-settings__item--active, .gallery-image--with-background .gallery-image__media, .cdx-inline-toolbar{
     background-color: black !important;
 }
 .advice__list li::before{
