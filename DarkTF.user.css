@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.4.5
+@version        1.4.6
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -671,6 +671,14 @@ if swapHeader{
     .page--editor .wrapper .l-editor
     {
         padding-top: 10px !important;
+    }
+    .page--editor .tab__content {
+        bottom: auto !important;
+    }
+        
+    .tab--active .tab__label:after {
+        bottom: 0 !important;
+        top: auto !important;
     }
 }
 }
