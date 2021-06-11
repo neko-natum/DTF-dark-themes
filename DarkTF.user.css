@@ -297,7 +297,7 @@ background:#292929 !important;
     stroke: #000 !important;
 }
 .entry_header__archive .icon, .error__ico, .comments_updates .icon, .search_bar__button .icon, .icon--site_logo, .chat__header-back svg g path, .v-list-tab__icon svg{
-    fill: #bfbfbf !important;
+    fill: #a3daee !important;
 }
 
 .quiz__state-buttons svg, .icon--quiz-results{
@@ -363,7 +363,52 @@ background:#292929 !important;
 .restriction{
     border-radius: 0px;
 }
+	
+/* Убрать границу у комментов в ленте */
+.live__item--comment {
+	border: 0px solid var(--color-border);
+}
+	
+/* Убрать границу вокруг постов из соц. сетей, и немного закруглить края постов */
+.andropov_telegram, .andropov_tweet {
+	border: 0px solid #dedede;
+border-radius: 5px;
+}
+	
+/* Затемнить обновленный блок снизу-слева, и отключить эффект его выпрыгивания */
+.sidebar__footer[data-v-48f6e1e3] {
+	background-color: #1b1b1b;
+-webkit-transition: none;
+transition: none;
+}
+.sidebar__footer[data-v-48f6e1e3]::before {
+	background-color: #1b1b1b;
+	background-image: url("")!important;
+}
+	
+/* Коррекция под темную тему элементов написания новой записи в профиле */
+.mini-editor__button {
+	--background-color: #000;
+	color: #a3daee;
+}
+.mini-editor__placeholder {
+	color: #bfbfbf;
+}
 
+/* Ослабление резкости границы меню профиля, в шапке (цвет, яркость, толщина) */
+.subsites_tune_widget_mobile, .list-editable__item, .ui-button--11, .new_entries__counter, .club_dummy__button--pay, .bubble, .bubble[arrow-alignment^="top"]::before, .navigationDropdown__menu--shown, .herzen__command_list, .search-dropdown, .push_offer__content, .block-special-button a, .vue-slider-dot-handle, .ui-limited-input::after, .attacher .ui-button, .v-create-button__dropdown, .v-split-button__dropdown {
+	border: 2px solid #a3daee82;
+}
+	
+/* Доработка цвета врезок-ссылок на другие статьи, в тексте записи */
+.audio, .island--vacancies_entry, .island--vacancies_recent, .google_search_wrapper .gsc-cursor-box, .form2__field--select .dropdown2, .form2__field--suggest .dropdown2, .form2__field--image .image, .vacancy_edit__mode, .ui_sub_menu--bordered, .ui_sub_menu--shown .ui_sub_menu--bordered::before, .editor__author .dropdown__found__list, .editor__header-select .dropdown__found__list, .comments_updates, .shares_popup, .shares_popup::before, .page--subsite .subsite__user__avatar, .andropov_preview--image, .ui_modal_window__footer, .form2__field--select .dropdown2__found, .form2__field--suggest .dropdown2__found, .b-article .image-wrapper-2--with_border, .comments_form__possessed .possessed_user_list, .subsites_catalog__label--bordered, .page--search .search_results__header, .subsite_card_short_with_content, .subsite_card_short_with_content__content, .status_panel--state-archived, .company_card, .subsites_tune__header, .ui_tabs--with_border, .head-notifies__header, .notification:not(:last-of-type), .head-notifies__footer, .live__item--comment, .ui-feed-header, .best_entries--entry, .page--subsite .subsite__settings__section, .subsites_tune__panel, .best_comments__header, .live, .sidebar, .ui-border--top, .subsites_catalog__search, .subsite_settings__section, .vb-content, .hljs, .content-image--with_border > div, .block-audio, .block-code, .u-notification--border, .ui_modal_window__header--border, .messenger-panel__down-head, .messenger-panel__down-footer, .content-header-note, .aside__header, .aside, .chat-header, .chat-bottom-actions, .chat-form, .message--selected .message__actions-select, .chat-bottom-actions__right-button, .messenger-panel .channel-item__info, .vote .vote__users .icon, .vote .vote__users, .yap-inventory__item::before, .yap-keeper-popup__bubble, .igrozhur-sidebar__container, .igrozhur-sidebar__button, .reposters_list, .attacher__form, .form2__field--advanced_list .text__input, .form2__field--advanced_list .advanced_list__list, .form2__field--sticky, .v-table__row:not(:last-child), .chat-info__bottom, .chat__header, .table__row:not(:last-child):not(.table__row--header), .andropov_link, .ui-border--bottom, .select__current {
+	border-color: #3c3c3c !important;
+}
+.andropov_link {
+	border: 3px solid #3c3c3c !important;
+	background-color: #3c3c3c;
+}
+	
 /*Редактор*/
 .ce-toolbar__plus, .ce-toolbar__toolbox-button, .ce-toolbar__actions, .ce-settings, .ce-toolbar__remove-confirmation, .quote-tool__photo-wrapper:hover::after, .adviser__container, .adviser__items, .advice, .adviser__container::after, .ce-toolbar__tools, .ce-toolbar__tools-search-input, .ce-toolbar__tools-item--selected, .ce-toolbar__tools-item:hover, .media-tool-settings__item:hover, .media-tool-settings__item--active, .gallery-image--with-background .gallery-image__media, .cdx-inline-toolbar{
     background-color: black !important;
@@ -687,8 +732,8 @@ if swapHeader{
 @-moz-document domain("dtf.ru") {
     if brand{
         :root {
-            --site_specific_1: #fef7cf;
-            --site_specific_2: #c9e7f2;
+            --site_specific_1: #a3daee;
+            --site_specific_2: #a3daee;
         }
         .icon--quiz-tick, .comments_updates:hover .icon, .small-editor__gofull:hover::before, .etc-controls__dropdownIcon .icon--toggle-down, .etc-controls__dropdownIcon .icon--maximize, .s42-stonks-popup__footer__button .s42-stonks-popup__footer__logo .cdx-plugin-settings__item:hover svg{
             filter: invert(87%) sepia(20%) saturate(352%) hue-rotate(353deg) brightness(108%) contrast(102%) !important;
