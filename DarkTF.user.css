@@ -732,8 +732,8 @@ if swapHeader{
 @-moz-document domain("dtf.ru") {
     if brand{
         :root {
-            --site_specific_1: #a3daee;
-            --site_specific_2: #a3daee;
+            --site_specific_1: #fef7cf;
+            --site_specific_2: #c9e7f2;
         }
         .icon--quiz-tick, .comments_updates:hover .icon, .small-editor__gofull:hover::before, .etc-controls__dropdownIcon .icon--toggle-down, .etc-controls__dropdownIcon .icon--maximize, .s42-stonks-popup__footer__button .s42-stonks-popup__footer__logo .cdx-plugin-settings__item:hover svg{
             filter: invert(87%) sepia(20%) saturate(352%) hue-rotate(353deg) brightness(108%) contrast(102%) !important;
@@ -741,8 +741,8 @@ if swapHeader{
     }
     else{
         :root {
-            --site_specific_1: #4da0da;
-            --site_specific_2: #c9e7f2;
+            --site_specific_1: #a3daee;
+            --site_specific_2: #a3daee;
         }
         .icon--quiz-tick, .comments_updates:hover .icon, .small-editor__gofull:hover::before, .etc-controls__dropdownIcon .icon--toggle-down, .etc-controls__dropdownIcon .icon--maximize, .s42-stonks-popup__footer__button .s42-stonks-popup__footer__logo, .cdx-plugin-settings__item:hover svg{
             filter: invert(77%) sepia(40%) saturate(5182%) hue-rotate(177deg) brightness(90%) contrast(90%);
