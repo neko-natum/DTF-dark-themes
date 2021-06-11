@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.4.10
+@version        1.4.11
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -297,7 +297,7 @@ background:#292929 !important;
     stroke: #000 !important;
 }
 .entry_header__archive .icon, .error__ico, .comments_updates .icon, .search_bar__button .icon, .icon--site_logo, .chat__header-back svg g path, .v-list-tab__icon svg{
-    fill: #a3daee !important;
+    fill: #bfbfbf !important;
 }
 
 .quiz__state-buttons svg, .icon--quiz-results{
