@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.6.1
+@version        1.6.2
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -151,6 +151,19 @@ if back
         background-size: cover !important;
         background-repeat: no-repeat !important;
         background-attachment: fixed !important;
+    }
+}
+if glass
+{
+    .l-page__content .ui-sorting .ui-rounded-button
+    {
+        background-color: var(--back_dark_1);
+        border-radius: 15px;
+    }
+    .page--index .ui-sorting .v-tab
+    {
+        text-shadow: 0px 0px 5px var(--back_dark_3);
+        color: white !important;
     }
 }
 
