@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.6.0
+@version        1.6.1
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -19,6 +19,7 @@
 @var            checkbox  v-header  "Убрать фиксированный хедер в профилях" 0
 @var            range     margining "Сдвиг в шапке для Прижать" [240, 10, 500, 10, "px"]
 @var            checkbox  swapHeader "Переместить шапку в редакторе" 0
+@var            checkbox  noEditor "Снести кабину мини-редактору" 0
 @var            checkbox  glass "Остекление" 0
 @var            checkbox    back  "Фон" 0
 @var            text     backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'"
@@ -448,6 +449,13 @@ border-radius: 5px;
 }
 .sidebar__footer::before {
 	display:none;
+}
+if noEditor
+{
+    .page--index > .mini-editor
+    {
+        display: none;
+    }
 }
 
 	
