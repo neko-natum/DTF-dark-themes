@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.6.9
+@version        1.7.0
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -16,6 +16,7 @@
 ]
 @var            checkbox  brand  "Золотой цвет брендирования DTF" 1
 @var            checkbox  comments  "Показывать блок комментариев" 1
+@var            checkbox  squareGang  "Раскруглить аватарки" 0
 @var            checkbox  v-header  "Убрать фиксированный хедер в профилях" 0
 @var            range     margining "Сдвиг в шапке для Прижать" [240, 10, 500, 10, "px"]
 @var            checkbox  swapHeader "Переместить шапку в редакторе" 0
@@ -356,6 +357,13 @@ if back
 .comment__space--pinned::before, .comment__space--with-donate::before
 {
     box-shadow 0 0 0 2px var(--site_specific_1);
+}
+if squareGang
+{
+    .comment__avatar
+    {
+        border-radius: 6px!important;            
+    }
 }
 
 /* complex settings */
