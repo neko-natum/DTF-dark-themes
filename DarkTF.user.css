@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        1.8.0
+@version        1.8.1
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -937,8 +937,11 @@ if schema == glass
 @-moz-document domain("dtf.ru") {
     if schema == darker
     {
-        --site_specific_1: #699abf;
-        --site_specific_2: #699abf;
+        :root
+        {
+            --site_specific_1: #699abf;
+            --site_specific_2: #699abf;
+        }
     }
     else
     {
