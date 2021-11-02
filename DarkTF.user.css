@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        2.0.3
+@version        2.0.4
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -143,7 +143,7 @@
         }
     }
     
-    .site-header, .new_entries__counter, .new_entries:hover, .reposters_list, .spotify-sidebar-button:hover, .popover, .head-notifies__panel, .u-notification__content__reply-text, .mini-editor__button, .live-stream, .andropov_telegram, .andropov_tweet, .v-split-button__dropdown, .content-image--with_background, .v-button, .comment-more--root, .comment-more--root--5, .ui-button--5, .widget_wrapper--type-blue, .content-header-label, .v-plus-badge, .plus-badge, .page--plus .plus-features, .page--plus .plus-buy, .content mark, .ui_sub_menu, .ui_sub_menu--center-arrow:before, .ui_sub_menu--left-arrow:before, .ui_sub_menu--right-arrow:before, .vacancies_widget, .vacancies_widget__new, .comments_pseudo_form, .comment__space--pinned::before, .comments_form:hover, .comment__self--author .comment-user__name, .comment__space--highlighted::before, .comment__space--new::before, .comment__self--author .comment-user__name, .comment__space--with-donate::before, .block-incut, .block-quote--centered, .block-quote--default, .block-code, .quiz, .block-number, .comments_updates, .notification, .ce-popover, .gallery-image--with-background .gallery-image__media, .cdx-input, .form-text-input, .quiz-tool-input, .editor-cp-tab__content, .audio_player__control__slider__bg, .floating_screen_film--fixed, .events_widget, .island--company_entries, .widget_wrapper--type-pink, .events_widget__new, .notify-new-items-label, .block-warning, .dstr-fl__outer, .v-checkbox--checked .v-checkbox__control, .v-etc__dropdown, .v-etc__item:first-child::before, .herzen__command_list, .channel-item__unread-count
+    .site-header, .new_entries__counter, .new_entries:hover, .reposters_list, .spotify-sidebar-button:hover, .popover, .head-notifies__panel, .u-notification__content__reply-text, .mini-editor__button, .live-stream, .andropov_telegram, .andropov_tweet, .v-split-button__dropdown, .content-image--with_background, .v-button, .comment-more--root, .comment-more--root--5, .ui-button--5, .widget_wrapper--type-blue, .content-header-label, .v-plus-badge, .plus-badge, .page--plus .plus-features, .page--plus .plus-buy, .content mark, .ui_sub_menu, .ui_sub_menu--center-arrow:before, .ui_sub_menu--left-arrow:before, .ui_sub_menu--right-arrow:before, .vacancies_widget, .vacancies_widget__new, .comments_pseudo_form, .comment__space--pinned::before, .comments_form:hover, .comment__self--author .comment-user__name, .comment__space--highlighted::before, .comment__space--new::before, .comment__self--author .comment-user__name, .comment__space--with-donate::before, .block-incut, .block-quote--centered, .block-quote--default, .block-code, .quiz, .block-number, .comments_updates, .notification, .ce-popover, .gallery-image--with-background .gallery-image__media, .cdx-input, .form-text-input, .quiz-tool-input, .editor-cp-tab__content, .audio_player__control__slider__bg, .floating_screen_film--fixed, .events_widget, .island--company_entries, .widget_wrapper--type-pink, .events_widget__new, .notify-new-items-label, .block-warning, .dstr-fl__outer, .v-checkbox--checked .v-checkbox__control, .v-etc__dropdown, .v-etc__item:first-child::before, .herzen__command_list, .channel-item__unread-count, .head-notifies__header, .head-notifies__items-wrapper, .head-notifies__footer
     {
         background: var(--accent_back_color);
         if schema == glass || schema == custom_glass
@@ -151,7 +151,7 @@
             backdrop-filter: blur(10px) !important;
         }
     }
-    .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .messenger-panel__down, .v-tabs-navigation, .social-links__item, .comment-more--root--1, .ui-button--1, .item:hover .item__badge, .code-tool, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .bubble[arrow-alignment^="top"]:before, .bubble, .contacts .searched, .ui-input, .chat-info-form__picture, .b--submit, .user, .contacts__item--selected .contacts__item-checkbox::after, .chat-messages__day span, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .v-hashtag, .chat-messages__unread-label span, .chat-messages__unread-label
+    .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .messenger-panel__down, .v-tabs-navigation, .social-links__item, .comment-more--root--1, .ui-button--1, .item:hover .item__badge, .code-tool, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .bubble[arrow-alignment^="top"]:before, .bubble, .contacts .searched, .ui-input, .chat-info-form__picture, .b--submit, .user, .contacts__item--selected .contacts__item-checkbox::after, .chat-messages__day span, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .v-hashtag, .chat-messages__unread-label span, .chat-messages__unread-label, .messenger-panel__down-head, .messenger-panel__down-list, .messenger-panel__down-footer, .bubble__container
     {
         background: var(--accent_back_color) !important;
         if schema == glass || schema == custom_glass
@@ -542,9 +542,13 @@
         {
             border-radius: 8px 8px 8px 8px !important;
         }
-        .messenger, .subsite_head, .m-floating, .sidebar__footer
+        .messenger, .subsite_head, .m-floating, .sidebar__footer, .head-notifies__header, .messenger-panel__down-head
         {
             border-radius: 8px 8px 0px 0px !important;
+        }
+        .head-notifies__footer, .messenger-panel__down-footer
+        {
+            border-radius: 0px 0px 8px 8px !important;
         }
         .new_entries, .page>.l-island-round:last-child, .site-header, .sidebar, .live, .l-entry, .l-island-round:not(:last-of-type), .special-job-teaser, .v-header:first-child, .miniEditor, .attachButton, .v-island, .v-button, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-tabs-navigation, .v-list__image, .sidebar-tree-list-item__image, .ui-rounded-button--active a, .ui-rounded-button:hover a, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .messenger, .subsite_head, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .sidebar-tree-list-item:hover, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .m-floating, .ui-rounded-button--active .ui-rounded-button__link, .site-header-user-profile__avatar-image, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .live .u-notification__link, .head-notifies__badge, .new-entries-horizon, .layout__right-column > div
         {
