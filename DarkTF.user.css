@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      github.com/openstyles/stylus
-@version        2.0.2
+@version        2.0.3
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -15,7 +15,8 @@
     "glass:Glass DarkTF",
     "darker:DarkerTF",
     "porn:PornTF",
-    "custom:Свой стиль"
+    "custom:Свой стиль",
+    "custom_glass:Свой стиль + стекло"
 ]
 @var    checkbox  golden  "Золотой цвет DarkTF" 1
 @var    checkbox  shadow  "Затемнение изображений" 0
@@ -71,7 +72,7 @@
             --main_text_color:      #cacaca;
             --alter_text_color:     #000;
         }
-        else if schema == custom
+        else if schema == custom || schema == custom_glass
         {
             --base_back_color:      baseBackColor;
             --block_back_color:     blockBackColor;
@@ -103,7 +104,7 @@
     .sidebar, .layout__right-column > div, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover), .search__field .v-field--focused .v-field__wrapper, .u-notification--hover:hover, .channel-item:hover, .channel-item--focused, .v-split-button, .v-field__wrapper, .v-field--focused .v-field__wrapper, .v-ui-checkbox, .avatar-grid__item, .comments_form, .comments_updates:hover, .u-notification--unread, .editor-cp, .editor__actions, .message--selected
     {
         background: var(--base_back_color);
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -111,7 +112,7 @@
     .sidebar__footer, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover
     {
         background: var(--base_back_color) !important;
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -119,7 +120,7 @@
     .v-header-avatar
     {
         background-color: var(--base_back_color);
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -128,7 +129,7 @@
     .l-island-bg, .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .ui-filters__inner, .chat-info__bottom, .v-checkbox__control, .search__field, .updown:after
     {
         background: var(--block_back_color);
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -136,7 +137,7 @@
     .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner
     {
         background: var(--block_back_color) !important;
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -145,7 +146,7 @@
     .site-header, .new_entries__counter, .new_entries:hover, .reposters_list, .spotify-sidebar-button:hover, .popover, .head-notifies__panel, .u-notification__content__reply-text, .mini-editor__button, .live-stream, .andropov_telegram, .andropov_tweet, .v-split-button__dropdown, .content-image--with_background, .v-button, .comment-more--root, .comment-more--root--5, .ui-button--5, .widget_wrapper--type-blue, .content-header-label, .v-plus-badge, .plus-badge, .page--plus .plus-features, .page--plus .plus-buy, .content mark, .ui_sub_menu, .ui_sub_menu--center-arrow:before, .ui_sub_menu--left-arrow:before, .ui_sub_menu--right-arrow:before, .vacancies_widget, .vacancies_widget__new, .comments_pseudo_form, .comment__space--pinned::before, .comments_form:hover, .comment__self--author .comment-user__name, .comment__space--highlighted::before, .comment__space--new::before, .comment__self--author .comment-user__name, .comment__space--with-donate::before, .block-incut, .block-quote--centered, .block-quote--default, .block-code, .quiz, .block-number, .comments_updates, .notification, .ce-popover, .gallery-image--with-background .gallery-image__media, .cdx-input, .form-text-input, .quiz-tool-input, .editor-cp-tab__content, .audio_player__control__slider__bg, .floating_screen_film--fixed, .events_widget, .island--company_entries, .widget_wrapper--type-pink, .events_widget__new, .notify-new-items-label, .block-warning, .dstr-fl__outer, .v-checkbox--checked .v-checkbox__control, .v-etc__dropdown, .v-etc__item:first-child::before, .herzen__command_list, .channel-item__unread-count
     {
         background: var(--accent_back_color);
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -153,7 +154,7 @@
     .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .messenger-panel__down, .v-tabs-navigation, .social-links__item, .comment-more--root--1, .ui-button--1, .item:hover .item__badge, .code-tool, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .bubble[arrow-alignment^="top"]:before, .bubble, .contacts .searched, .ui-input, .chat-info-form__picture, .b--submit, .user, .contacts__item--selected .contacts__item-checkbox::after, .chat-messages__day span, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .v-hashtag, .chat-messages__unread-label span, .chat-messages__unread-label
     {
         background: var(--accent_back_color) !important;
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -162,7 +163,7 @@
     .new_entries:hover .new_entries__counter, .reposters_list__item:after, .v-tab--active .v-tab__label::after, .popover-item:hover, .popover-item--focused, .u-notification--blue .u-notification__avatar-icon, .v-split-button:hover, .v-button:hover, .popover-item--selected, .ui-tab--active .ui-tab__label:after, .site-header-progressbar__runner, .comment-more--root--5.comment-more--root--active, .comment-more--root--5:hover, .comment-more--root.comment-more--root--active, .comment-more--root:hover, .ui-button--5.ui-button--active, .ui-button--5:hover, .subsites_catalog_item:before, .v-list-tab--active, .v-list-tab:hover, .page--plus .plus-buy:hover, .donate-display, .quiz__item__progressbar, .quiz__item__progressbar__runner, .comments_updates__counter, .audio_player__control__slider__bar, .thesis__attach_something:hover, .sidebar-tree-list-item--active .sidebar-tree-list-item__badge, .message--selected .message__actions-select, .channel-item--current, .v-checkbox:hover .v-checkbox__control, .v-hashtag__close-button::before, .v-etc__item:hover, .herzen__command_list__item--selected, .herzen__command_list__item:hover, .content__thanks
     {
         background: var(--branding_accent_color);
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -170,7 +171,7 @@
     .ui-rounded-button__indicator, .social-links__item--active, .comment-more--root--1.comment-more--root--hovered, .comment-more--root--1:hover, .ui-button--1.ui-button--hovered, .ui-button--1:hover, .thesis__attach_something:hover .icon, .item:hover, .item--focused, .item + .item--selected, .item + .item--focused, .item + .item:hover, .commercial-list__item:hover, .commercial-list__item--active, .attacher__button:hover, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active) .sidebar-tree-list-item__badge, .item__badge, .aside-placeholder__picture, .aside-placeholder__line1, .aside-placeholder__line2, .b--submit:hover, .v-etc__item:first-child:hover::before, .sidebar-tree-list-item:not(.sidebar-tree-list-item--active) .sidebar-tree-list-item__badge
     {
         background: var(--branding_accent_color) !important;
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {
             backdrop-filter: blur(10px) !important;
         }
@@ -346,7 +347,7 @@
     
     .comment__children>.comment:not(.comment--level-last):last-child
     {
-        if schema == glass
+        if schema == glass || schema == custom_glass
         {   
             box-shadow: calc(var(--offset-branch) * -1 - 1px) 0 0 0 transparent;
         }
@@ -531,7 +532,7 @@
         }
     }
 
-    if schema == glass
+    if schema == glass || schema == custom_glass
     {
         .site-header
         {
@@ -676,7 +677,7 @@
             --brand_1: #ff9900a3;
             --brand_2: #f90;
         }
-        else if schema == custom
+        else if schema == custom || schema == custom_glass
         {
             --brand_1: brand1; 
             --brand_2: brand2;
