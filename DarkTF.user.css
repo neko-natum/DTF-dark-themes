@@ -482,7 +482,7 @@
         {
             width: 0px;
         }
-        .content-header__title, .content-header__info, .andropov_image, .andropov_video 
+        .content-header__title, .content-header__info
         {
             margin: auto;
         }
@@ -498,6 +498,10 @@
         {
             margin-left:auto;
             margin-right:auto;
+        }
+        .comment__media
+        {
+            display: block;
         }
     }
 
