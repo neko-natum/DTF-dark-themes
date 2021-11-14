@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.4
+@version        2.1.5
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -31,6 +31,7 @@
 @var    checkbox  noEditor "Снести кабину мини-редактору" 0
 @var    checkbox  back  "Фон" 0
 @var    text      backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'" 
+@var    checkbox  masonry "Masonry-вёрстка" 0
 
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
 @var            color   blockBackColor  "Свой основной цвет блоков"     #292929
@@ -627,6 +628,39 @@
         {
             text-shadow: 0px 0px 5px var(--accent_back_color);
             color: white !important;
+        }
+    }
+    if masonry
+    {
+        .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper, .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog, .mini-editor, .news_widget
+        {
+            max-width: none !important;
+            width: inherit !important;
+            margin: 0px 28px;
+        }
+        .page--index
+        {
+            width: inherit !important;
+        }
+        .page--index .ui-sorting
+        {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .feed__chunk
+        {
+            column-count: 3;
+            column-gap: 28px;
+        }
+        .feed__item
+        {
+            break-inside: avoid;
+            max-width: 100% !important;
+            height: 100% !important;
+        }
+        .new-entries-horizon
+        {
+            max-height: 100px;
         }
     }
     
