@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.6
+@version        2.1.7
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -33,6 +33,7 @@
 @var    checkbox  back  "Фон" 0
 @var    text      backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'" 
 @var    checkbox  masonry "Masonry-вёрстка" 0
+@var    checkbox  letitsnow "Снегопад" 0
 
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
 @var            color   blockBackColor  "Свой основной цвет блоков"     #292929
@@ -745,6 +746,33 @@
         .new-entries-horizon
         {
             max-height: 100px;
+        }
+    }
+    if letitsnow
+    {
+        .main 
+        {
+            background-image: url('https://leonardo.osnova.io/5b271ae9-265c-514d-906b-5f41352195df'), url('https://leonardo.osnova.io/b88d8f54-7d8d-56c3-8ece-35f39026a92d'), url('https://leonardo.osnova.io/da5405da-6951-50d5-926d-b1ba038b55c7') !important;
+            -webkit-animation: isnow 20s linear infinite;
+            -moz-animation: isnow 20s linear infinite;
+            -ms-animation: isnow 20s linear infinite;
+            animation: isnow 20s linear infinite;
+        }
+
+        @keyframes isnow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+        }
+
+        @-moz-keyframes isnow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            100% {background-position: 500px 1000px, 400px 400px, 300px 300px;}
+        }
+
+        @-webkit-keyframes isnow {
+            0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+            50% {background-color:#d9f5ff;}
+            100% {background-position: 500px 1000px, 400px 400px, 300px 300px; background-color:#d9f5ff;}
         }
     }
     
