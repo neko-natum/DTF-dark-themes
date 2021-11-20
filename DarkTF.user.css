@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.7
+@version        2.1.8
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -33,6 +33,7 @@
 @var    checkbox  back  "Фон" 0
 @var    text      backimg "Картинка для бекграунда" "'https://pbs.twimg.com/media/DrrF0cRX4AAWjDx.jpg'" 
 @var    checkbox  masonry "Masonry-вёрстка" 0
+@var    number    masonryCols "Число колонок Masonry" [3, 2, 6, 1]
 @var    checkbox  letitsnow "Снегопад" 0
 
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
@@ -717,7 +718,7 @@
     }
     if masonry
     {
-        .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper, .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog, .mini-editor, .news_widget
+        .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper, .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog, .mini-editor, .news_widget, .app--content-feed.app--left-column-off.app--right-column-on #page_wrapper
         {
             max-width: none !important;
             width: inherit !important;
@@ -734,7 +735,7 @@
         }
         .feed__chunk, .search_results__content
         {
-            column-count: 3;
+            column-count: masonryCols;
             column-gap: 28px;
         }
         .feed__item, .search_results__chunk
