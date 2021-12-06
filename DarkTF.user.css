@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.8
+@version        2.1.9
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -19,6 +19,7 @@
     "custom:Свой стиль",
     "custom_glass:Свой стиль + стекло"
 ]
+@var    range     glassBlur "Степень блюра стекла" [10, 1, 20, 1, "px"]
 @var    checkbox  golden  "Золотой цвет DarkTF" 1
 @var    checkbox  shadow  "Затемнение изображений" 0
 @var    select    size  "Изменение размеров" [
@@ -119,7 +120,7 @@
         background: var(--base_back_color);
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     .sidebar__footer, .contacts:not(.contacts--disabled) .contacts__item:hover, .aside__button:hover
@@ -127,7 +128,7 @@
         background: var(--base_back_color) !important;
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     .v-header-avatar
@@ -135,16 +136,16 @@
         background-color: var(--base_back_color);
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     
-    .l-island-bg, .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .ui-filters__inner, .chat-info__bottom, .v-checkbox__control, .search__field, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon
+    .page--entry .l-island-bg, .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .ui-filters__inner, .chat-info__bottom, .v-checkbox__control, .search__field, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon
     {
         background: var(--block_back_color);
-        if schema == glass || schema == custom_glass
+        if (schema == glass || schema == custom_glass)
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner, .m-floating
@@ -152,7 +153,25 @@
         background: var(--block_back_color) !important;
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
+        }
+    }
+    if (schema == glass || schema == custom_glass) && masonry
+    {
+        .content-feed, .l-island-bg
+        {
+            background: var(--block_back_color);
+        }
+    }
+    else
+    {
+        .l-island-bg
+        {
+            background: var(--block_back_color);
+            if (schema == glass || schema == custom_glass)
+            {
+                backdrop-filter: blur(glassBlur) !important;
+            }
         }
     }
     
@@ -161,7 +180,7 @@
         background: var(--accent_back_color);
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .messenger-panel__down, .v-tabs-navigation, .social-links__item, .comment-more--root--1, .ui-button--1, .item:hover .item__badge, .code-tool, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .bubble[arrow-alignment^="top"]:before, .bubble, .contacts .searched, .ui-input, .chat-info-form__picture, .b--submit, .user, .contacts__item--selected .contacts__item-checkbox::after, .chat-messages__day span, .emoji-picker__panel, .emoji-picker__panel::after, .emoji-picker__panel-list-section-name, .v-hashtag, .chat-messages__unread-label span, .chat-messages__unread-label, .messenger-panel__down-head, .messenger-panel__down-list, .messenger-panel__down-footer, .bubble__container, .m-floating__header:hover, .upload-button, .audio-tool-cover, .search-filters-footer
@@ -169,25 +188,25 @@
         background: var(--accent_back_color) !important;
         if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
+            backdrop-filter: blur(glassBlur) !important;
         }
     }
     
     .new_entries:hover .new_entries__counter, .reposters_list__item:after, .v-tab--active .v-tab__label::after, .popover-item:hover, .popover-item--focused, .u-notification--blue .u-notification__avatar-icon, .v-split-button:hover, .v-button:hover, .popover-item--selected, .ui-tab--active .ui-tab__label:after, .site-header-progressbar__runner, .comment-more--root--5.comment-more--root--active, .comment-more--root--5:hover, .comment-more--root.comment-more--root--active, .comment-more--root:hover, .ui-button--5.ui-button--active, .ui-button--5:hover, .subsites_catalog_item:before, .v-list-tab--active, .v-list-tab:hover, .page--plus .plus-buy:hover, .donate-display, .quiz__item__progressbar, .quiz__item__progressbar__runner, .comments_updates__counter, .audio_player__control__slider__bar, .thesis__attach_something:hover, .sidebar-tree-list-item--active .sidebar-tree-list-item__badge, .message--selected .message__actions-select, .channel-item--current, .v-checkbox:hover .v-checkbox__control, .v-hashtag__close-button::before, .v-etc__item:hover, .herzen__command_list__item--selected, .herzen__command_list__item:hover, .content__thanks, .cdx-plugin-settings__item--active, .cdx-plugin-settings__item--selected, .cdx-plugin-settings__item:not(.no-hover):hover, .ad-user::after, .booster-promo__button:hover
     {
         background: var(--branding_accent_color);
-        if schema == glass || schema == custom_glass
+        /*if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
-        }
+            backdrop-filter: blur(glassBlur) !important;
+        }*/
     }
     .ui-rounded-button__indicator, .social-links__item--active, .comment-more--root--1.comment-more--root--hovered, .comment-more--root--1:hover, .ui-button--1.ui-button--hovered, .ui-button--1:hover, .thesis__attach_something:hover .icon, .item:hover, .item--focused, .item + .item--selected, .item + .item--focused, .item + .item:hover, .commercial-list__item:hover, .commercial-list__item--active, .attacher__button:hover, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active) .sidebar-tree-list-item__badge, .item__badge, .aside-placeholder__picture, .aside-placeholder__line1, .aside-placeholder__line2, .b--submit:hover, .v-etc__item:first-child:hover::before, .sidebar-tree-list-item:not(.sidebar-tree-list-item--active) .sidebar-tree-list-item__badge
     {
         background: var(--branding_accent_color) !important;
-        if schema == glass || schema == custom_glass
+        /*if schema == glass || schema == custom_glass
         {
-            backdrop-filter: blur(10px) !important;
-        }
+            backdrop-filter: blur(glassBlur) !important;
+        }*/
     }
     
     .reposters_list:before, .subsites_catalog__search__bar, .editor__authors, .editor-title, .anchor-tool__input, .aside-search input, .aside__list-heading, .aside-search input, .chat-info__search, .chat-form__textarea, .emoji-picker__tabs, .ui-filters--responsive, .comment__expand, .cdx-inline-toolbar__link-back:hover
@@ -215,7 +234,7 @@
     
     if !back
     {
-        .layout, body:not(#id) 
+        .layout, body 
         //какого-то чёрта на вц и тж при "прижать" белый фон. очоба сосёт петухов
         {
             background-color: var(--base_back_color) !important;
@@ -223,7 +242,7 @@
     }
     
     /*text colors*/
-    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon
+    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon, .v-repost__button
     {
         color: var(--main_text_color);
     }
@@ -250,7 +269,7 @@
         color: var(--branding_base_color) !important; 
     }
     
-    .content-header-author__name:hover, .new_entries:hover, .audit_log__item__log a:hover, .profile_comment_favorite__title:hover, .profile_comment_favorite__title:hover time, .profile_comment_favorite__user:hover, .profile_comment_favorite__user:hover time, .profile_comment_self__title:hover, .profile_comment_self__title:hover time, .t-link-hovered, .t-link:hover, .t-link:hover time, a.content-header-author:hover, a.content-header-author:hover time, a.content-header-number:hover, a.content-header-number:hover time, .repost_button__button--active, .repost_button__button:hover, .v-shares__button:hover, .layout__right-column a:hover, .layout__right-column span:hover, .v-tab:hover, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .v-text-input__input, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .u-notification__content__button:hover, .u-notification__content a:hover, .ui_toggle:hover, .content__thanks a:hover span, .subsites_tune__select-all:hover, .t-link-inline:hover, .mini-editor__button, .mini-editor__button svg, .andropov_telegram__date:hover time, .andropov_telegram__user:hover .andropov_telegram__user__name, .andropov_telegram__user:hover .andropov_tweet__user__name, .andropov_telegram__user:hover .andropov_tweet__user__nickname, .andropov_tweet__date:hover time, .andropov_tweet__user:hover .andropov_telegram__user__name, .andropov_tweet__user:hover .andropov_tweet__user__name, .andropov_tweet__user:hover .andropov_tweet__user__nickname, .v-button, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .ui-tab--active .ui-tab__label, .ui-tab:hover, .comment-more--root, .comment-more--root--5, .ui-button--5, .subsites_catalog__open_wrapped:hover, .widget_wrapper--type-blue .widget_wrapper__title, .v-list__more:hover, a.v-list__item:hover, a.v-list-subsites-item__main:hover, .etc_control:hover, .v-tabs-navigation, .content-header-label, .v-list-subsites__more:hover, .social-links__item, .v-plus-badge, .comment-more--root--1, .ui-button--1, .plus-badge, .page--plus .plus-features__item .icon, .page--plus .plus-buy, .live-stream__control:hover, .content mark, .navigationDropdown__current--active .navigationDropdown__current__button, .navigationDropdown__current:hover .navigationDropdown__current__button, .content-editorial-tick, .vacancies_widget__item__city:hover, .vacancies_widget__item__company:hover, .vacancies_widget__item__title:hover, .vacancies_widget__title:hover, .vacancies_widget__new, .comments_counter--has_new, .comment .comment__copy-link:hover, .comments__subscribe--active, .comment__reply:hover, .hljs-keyword, .hljs-selector-tag, .hljs-type, .quiz__panel__button, .comments_updates, .site-header-user-login:hover, .subsites_tune__item__check--active .icon, .subsites_tune__close:hover, .ce-block-indicator--active, .ui-limited-input::after, .gallery-image__media-settings .media-tool-settings__item--active .icon, .editor-cp-tab__label:hover, .audio_player__control__fwd:hover, .audio_player__control__mute:hover, .audio_player__control__pause:hover, .audio_player__control__play:hover, .audio_player__control__rate:hover, .audio_player__control__rwd:hover, .with-icon:hover, .with-icon-gray:hover, .floating_player__close:hover, .audio_player__control__rate[data-current="0"]:hover, .audio_player__control__volume:hover, .floating_screen_film__title:hover, .floating_screen_film__control:hover, .events_widget__new, .notify-new-items-label, .chat-info-form__picture, .message__content-text a:hover, .message__status--read, .v-header-description a:not(.t-link-inline):hover, .v-checkbox__icon, .v-hashtag, .v-hashtag__close-button, .search__button:hover, .herzen .content_editable ce-command, .subsite__cover__add__button:hover, .updown__icons, .comment__expand:hover, .comment__avatar:hover~.comment__author a.comment-user, .editor-subsite-select__current:hover, .cdx-inline-toolbar__button, .cdx-inline-toolbar__link-remover, .editor .marked-text, .miniEditor .marked-text, .profile_comment_favorite__text mark, .profile_comment_self__text mark, .subsite_card_simple__description mark, .block-hidden__button:hover, .entry_stub__button:hover, .v-list__label a:hover, .andropov_telegram__text__more:hover, .andropov_tweet__text__more:hover, .rolled-up-text__label:hover, .t-link-site:hover, .booster-promo__button
+    .content-header-author__name:hover, .new_entries:hover, .audit_log__item__log a:hover, .profile_comment_favorite__title:hover, .profile_comment_favorite__title:hover time, .profile_comment_favorite__user:hover, .profile_comment_favorite__user:hover time, .profile_comment_self__title:hover, .profile_comment_self__title:hover time, .t-link-hovered, .t-link:hover, .t-link:hover time, a.content-header-author:hover, a.content-header-author:hover time, a.content-header-number:hover, a.content-header-number:hover time, .repost_button__button--active, .repost_button__button:hover, .v-shares__button:hover, .layout__right-column a:hover, .layout__right-column span:hover, .v-tab:hover, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .v-text-input__input, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .u-notification__content__button:hover, .u-notification__content a:hover, .ui_toggle:hover, .content__thanks a:hover span, .subsites_tune__select-all:hover, .t-link-inline:hover, .mini-editor__button, .mini-editor__button svg, .andropov_telegram__date:hover time, .andropov_telegram__user:hover .andropov_telegram__user__name, .andropov_telegram__user:hover .andropov_tweet__user__name, .andropov_telegram__user:hover .andropov_tweet__user__nickname, .andropov_tweet__date:hover time, .andropov_tweet__user:hover .andropov_telegram__user__name, .andropov_tweet__user:hover .andropov_tweet__user__name, .andropov_tweet__user:hover .andropov_tweet__user__nickname, .v-button, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .ui-tab--active .ui-tab__label, .ui-tab:hover, .comment-more--root, .comment-more--root--5, .ui-button--5, .subsites_catalog__open_wrapped:hover, .widget_wrapper--type-blue .widget_wrapper__title, .v-list__more:hover, a.v-list__item:hover, a.v-list-subsites-item__main:hover, .etc_control:hover, .v-tabs-navigation, .content-header-label, .v-list-subsites__more:hover, .social-links__item, .v-plus-badge, .comment-more--root--1, .ui-button--1, .plus-badge, .page--plus .plus-features__item .icon, .page--plus .plus-buy, .live-stream__control:hover, .content mark, .navigationDropdown__current--active .navigationDropdown__current__button, .navigationDropdown__current:hover .navigationDropdown__current__button, .content-editorial-tick, .vacancies_widget__item__city:hover, .vacancies_widget__item__company:hover, .vacancies_widget__item__title:hover, .vacancies_widget__title:hover, .vacancies_widget__new, .comments_counter--has_new, .comment .comment__copy-link:hover, .comments__subscribe--active, .comment__reply:hover, .hljs-keyword, .hljs-selector-tag, .hljs-type, .quiz__panel__button, .comments_updates, .site-header-user-login:hover, .subsites_tune__item__check--active .icon, .subsites_tune__close:hover, .ce-block-indicator--active, .ui-limited-input::after, .gallery-image__media-settings .media-tool-settings__item--active .icon, .editor-cp-tab__label:hover, .audio_player__control__fwd:hover, .audio_player__control__mute:hover, .audio_player__control__pause:hover, .audio_player__control__play:hover, .audio_player__control__rate:hover, .audio_player__control__rwd:hover, .with-icon:hover, .with-icon-gray:hover, .floating_player__close:hover, .audio_player__control__rate[data-current="0"]:hover, .audio_player__control__volume:hover, .floating_screen_film__title:hover, .floating_screen_film__control:hover, .events_widget__new, .notify-new-items-label, .chat-info-form__picture, .message__content-text a:hover, .message__status--read, .v-header-description a:not(.t-link-inline):hover, .v-checkbox__icon, .v-hashtag, .v-hashtag__close-button, .search__button:hover, .herzen .content_editable ce-command, .subsite__cover__add__button:hover, .updown__icons, .comment__expand:hover, .comment__avatar:hover~.comment__author a.comment-user, .editor-subsite-select__current:hover, .cdx-inline-toolbar__button, .cdx-inline-toolbar__link-remover, .editor .marked-text, .miniEditor .marked-text, .profile_comment_favorite__text mark, .profile_comment_self__text mark, .subsite_card_simple__description mark, .block-hidden__button:hover, .entry_stub__button:hover, .v-list__label a:hover, .andropov_telegram__text__more:hover, .andropov_tweet__text__more:hover, .rolled-up-text__label:hover, .t-link-site:hover, .booster-promo__button, .v-repost:hover .v-repost__button, .v-repost--active .v-repost__button
     {
         color: var(--branding_accent_color);
     }
@@ -333,7 +352,7 @@
         border-color: var(--accent_back_color) !important;
     }
     
-    .head-notifies__panel, .messenger-panel__down, .page--plus .plus-buy, .v-button--blue, .chat-info-form__picture, .v-button, .v-hashtag, .anchor-tool__input
+    .head-notifies__panel, .messenger-panel__down, .page--plus .plus-buy, .v-button--blue, .chat-info-form__picture, .v-button, .v-hashtag, .anchor-tool__input, .content--embed
     {
         border: 1px solid var(--branding_accent_color);
     }
@@ -356,7 +375,7 @@
     {
         box-shadow: 0 0 0 4px var(--branding_accent_color);
     }
-    .v-button--blue, .popover__header, .page--plus .plus-buy, .comments_form--focused, .comment__space--highlighted::before, .comment__space--new::before, .editor-cp-tab__content, .emoji-picker__panel-list-section-name, .v-checkbox:hover .v-checkbox__control
+    .v-button--blue, .popover__header, .page--plus .plus-buy, .comments_form--focused, .comment__space--highlighted::before, .comment__space--new::before, .editor-cp-tab__content, .emoji-picker__panel-list-section-name, .v-checkbox:hover .v-checkbox__control, .content--embed
     {
         box-shadow: none !important;
     }
@@ -392,6 +411,23 @@
 
     if back
     {
+        body
+        {
+            background: url(backimg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .l-page__content .ui-sorting .ui-rounded-button, .new-entries-horizon
+        {
+            background-color: var(--base_back_color);
+            border-radius: 15px;
+        }
+        .page--index .ui-sorting .v-tab
+        {
+            text-shadow: 0px 0px 5px var(--accent_back_color);
+            color: white !important;
+        }
         .page--index .v-tabs
         {
             background: var(--block_back_color) !important;
@@ -696,26 +732,6 @@
         }
     }
     
-    if back
-    {
-        body
-        {
-            background: url(backimg) !important;
-            background-size: cover !important;
-            background-repeat: no-repeat !important;
-            background-attachment: fixed !important;
-        }
-        .l-page__content .ui-sorting .ui-rounded-button, .new-entries-horizon
-        {
-            background-color: var(--base_back_color);
-            border-radius: 15px;
-        }
-        .page--index .ui-sorting .v-tab
-        {
-            text-shadow: 0px 0px 5px var(--accent_back_color);
-            color: white !important;
-        }
-    }
     if masonry
     {
         .app--content-feed.app--left-column-on.app--right-column-on #page_wrapper, .special-job-teaser--entry, .l-entry, .special-job-teaser--index, .app--content-2cols-entry #page_wrapper, .app--content-2cols-fixed #page_wrapper, .messenger, .subsite_head, .subsites_catalog, .mini-editor, .news_widget, .app--content-feed.app--left-column-off.app--right-column-on #page_wrapper
@@ -751,13 +767,27 @@
     }
     if letitsnow
     {
-        .main 
+        if !back
         {
-            background-image: url('https://leonardo.osnova.io/5b271ae9-265c-514d-906b-5f41352195df'), url('https://leonardo.osnova.io/b88d8f54-7d8d-56c3-8ece-35f39026a92d'), url('https://leonardo.osnova.io/da5405da-6951-50d5-926d-b1ba038b55c7') !important;
-            -webkit-animation: isnow 20s linear infinite;
-            -moz-animation: isnow 20s linear infinite;
-            -ms-animation: isnow 20s linear infinite;
-            animation: isnow 20s linear infinite;
+            body 
+            {
+                background-image: url('https://leonardo.osnova.io/5b271ae9-265c-514d-906b-5f41352195df'), url('https://leonardo.osnova.io/b88d8f54-7d8d-56c3-8ece-35f39026a92d'), url('https://leonardo.osnova.io/da5405da-6951-50d5-926d-b1ba038b55c7') !important;
+                -webkit-animation: isnow 20s linear infinite;
+                -moz-animation: isnow 20s linear infinite;
+                -ms-animation: isnow 20s linear infinite;
+                animation: isnow 20s linear infinite;
+            } 
+        }
+        else
+        {
+            .main 
+            {
+                background-image: url('https://leonardo.osnova.io/5b271ae9-265c-514d-906b-5f41352195df'), url('https://leonardo.osnova.io/b88d8f54-7d8d-56c3-8ece-35f39026a92d'), url('https://leonardo.osnova.io/da5405da-6951-50d5-926d-b1ba038b55c7') !important;
+                -webkit-animation: isnow 20s linear infinite;
+                -moz-animation: isnow 20s linear infinite;
+                -ms-animation: isnow 20s linear infinite;
+                animation: isnow 20s linear infinite;
+            }
         }
 
         @keyframes isnow {
