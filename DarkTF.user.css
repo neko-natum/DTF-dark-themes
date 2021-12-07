@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.10
+@version        2.1.11
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -242,13 +242,13 @@
         }
     }
     
-    .comment--highlighted, .comment--new, .comment--with-donate
+    .comment--highlighted, .comment--new, .comment--with-donate, .comment--pinned
     {
-        --background-color: var(--block_back_color);
+        --background-color: var(--base_back_color);
     }
     
     /*text colors*/
-    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon, .v-repost__button, .comment__action, .comment__detail, .comment__icon-action
+    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon, .v-repost__button, .comment__action, .comment__detail, .comment__icon-action, .content__updating
     {
         color: var(--main_text_color);
     }
