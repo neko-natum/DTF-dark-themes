@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.12
+@version        2.1.13
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -46,7 +46,7 @@
 @var            color   brand2          "Свой акцентный цвет ссылок"    #fef7cf
 ==/UserStyle== */
 
-@-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") 
+@-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru"), domain("instagram.com"), domain("tiktok.com") 
 {
     :root
     {
@@ -114,7 +114,9 @@
         --branding_accent_color:  var(--brand_2);
         
     }
-    
+}
+ @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") 
+ {  
     /*backgrounds*/
     .sidebar, .layout__right-column > div, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover), .search__field .v-field--focused .v-field__wrapper, .u-notification--hover:hover, .channel-item:hover, .channel-item--focused, .v-split-button, .v-field__wrapper, .v-field--focused .v-field__wrapper, .v-ui-checkbox, .avatar-grid__item, .comments_form, .comments_updates:hover, .u-notification--unread, .editor-cp, .editor__actions, .message--selected, .cdx-inline-toolbar__input, .ce-toolbox-search, #jfContent, .wrapper, .error
     {
@@ -270,7 +272,7 @@
         color: var(--alter_text_color) !important;
     }
     
-    .u-notification__content__button, .u-notification__content a, .subsites_tune__select-all, .t-link-inline, #notify .notify__item p a, .advice__caption a, .advice__list a, .andropov_telegram__text a, .andropov_tweet__text a, .island__container--with_links a, .island__info a, .island__list__link, .subsite_about__text a, .block-person a, .block-quote a, .block-warning a, .comment__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .content-description a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .v-list__more, .v-list-subsites__more, .page--plus p a, .vacancies_widget__title, .hljs-string, .hljs-number, .inline-search-item, .message__content-text a, .v-header-description a:not(.t-link-inline), .comment__expand, .block-hidden__button, .entry_stub__button, .v-list__label a, .andropov_telegram__text__more, .andropov_tweet__text__more, .t-link-site, .league-block a, .comment__inline-action
+    .u-notification__content__button, .u-notification__content a, .subsites_tune__select-all, .t-link-inline, #notify .notify__item p a, .advice__caption a, .advice__list a, .andropov_telegram__text a, .andropov_tweet__text a, .island__container--with_links a, .island__info a, .island__list__link, .subsite_about__text a, .block-person a, .block-quote a, .block-warning a, .comment__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .content-description a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .v-list__more, .v-list-subsites__more, .page--plus p a, .vacancies_widget__title, .hljs-string, .hljs-number, .inline-search-item, .message__content-text a, .v-header-description a:not(.t-link-inline), .comment__expand, .block-hidden__button, .entry_stub__button, .v-list__label a, .andropov_telegram__text__more, .andropov_tweet__text__more, .t-link-site, .league-block a, .comment__inline-action, .restriction a, .profile_comment_favorite__expand
     {
         color: var(--branding_base_color);
     }
@@ -279,7 +281,7 @@
         color: var(--branding_base_color) !important; 
     }
     
-    .content-header-author__name:hover, .new_entries:hover, .audit_log__item__log a:hover, .profile_comment_favorite__title:hover, .profile_comment_favorite__title:hover time, .profile_comment_favorite__user:hover, .profile_comment_favorite__user:hover time, .profile_comment_self__title:hover, .profile_comment_self__title:hover time, .t-link-hovered, .t-link:hover, .t-link:hover time, a.content-header-author:hover, a.content-header-author:hover time, a.content-header-number:hover, a.content-header-number:hover time, .repost_button__button--active, .repost_button__button:hover, .v-shares__button:hover, .layout__right-column a:hover, .layout__right-column span:hover, .v-tab:hover, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .v-text-input__input, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .u-notification__content__button:hover, .u-notification__content a:hover, .ui_toggle:hover, .content__thanks a:hover span, .subsites_tune__select-all:hover, .t-link-inline:hover, .mini-editor__button, .mini-editor__button svg, .andropov_telegram__date:hover time, .andropov_telegram__user:hover .andropov_telegram__user__name, .andropov_telegram__user:hover .andropov_tweet__user__name, .andropov_telegram__user:hover .andropov_tweet__user__nickname, .andropov_tweet__date:hover time, .andropov_tweet__user:hover .andropov_telegram__user__name, .andropov_tweet__user:hover .andropov_tweet__user__name, .andropov_tweet__user:hover .andropov_tweet__user__nickname, .v-button, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .ui-tab--active .ui-tab__label, .ui-tab:hover, .comment-more--root, .comment-more--root--5, .ui-button--5, .subsites_catalog__open_wrapped:hover, .widget_wrapper--type-blue .widget_wrapper__title, .v-list__more:hover, a.v-list__item:hover, a.v-list-subsites-item__main:hover, .etc_control:hover, .v-tabs-navigation, .content-header-label, .v-list-subsites__more:hover, .social-links__item, .v-plus-badge, .comment-more--root--1, .ui-button--1, .plus-badge, .page--plus .plus-features__item .icon, .page--plus .plus-buy, .live-stream__control:hover, .content mark, .navigationDropdown__current--active .navigationDropdown__current__button, .navigationDropdown__current:hover .navigationDropdown__current__button, .content-editorial-tick, .vacancies_widget__item__city:hover, .vacancies_widget__item__company:hover, .vacancies_widget__item__title:hover, .vacancies_widget__title:hover, .vacancies_widget__new, .comments_counter--has_new, .comment .comment__copy-link:hover, .comments__subscribe--active, .comment__reply:hover, .hljs-keyword, .hljs-selector-tag, .hljs-type, .quiz__panel__button, .comments_updates, .site-header-user-login:hover, .subsites_tune__item__check--active .icon, .subsites_tune__close:hover, .ce-block-indicator--active, .ui-limited-input::after, .gallery-image__media-settings .media-tool-settings__item--active .icon, .editor-cp-tab__label:hover, .audio_player__control__fwd:hover, .audio_player__control__mute:hover, .audio_player__control__pause:hover, .audio_player__control__play:hover, .audio_player__control__rate:hover, .audio_player__control__rwd:hover, .with-icon:hover, .with-icon-gray:hover, .floating_player__close:hover, .audio_player__control__rate[data-current="0"]:hover, .audio_player__control__volume:hover, .floating_screen_film__title:hover, .floating_screen_film__control:hover, .events_widget__new, .notify-new-items-label, .chat-info-form__picture, .message__content-text a:hover, .message__status--read, .v-header-description a:not(.t-link-inline):hover, .v-checkbox__icon, .v-hashtag, .v-hashtag__close-button, .search__button:hover, .herzen .content_editable ce-command, .subsite__cover__add__button:hover, .updown__icons, .comment__expand:hover, .comment__avatar:hover~.comment__author a.comment-user, .editor-subsite-select__current:hover, .cdx-inline-toolbar__button, .cdx-inline-toolbar__link-remover, .editor .marked-text, .miniEditor .marked-text, .profile_comment_favorite__text mark, .profile_comment_self__text mark, .subsite_card_simple__description mark, .block-hidden__button:hover, .entry_stub__button:hover, .v-list__label a:hover, .andropov_telegram__text__more:hover, .andropov_tweet__text__more:hover, .rolled-up-text__label:hover, .t-link-site:hover, .booster-promo__button, .v-repost:hover .v-repost__button, .v-repost--active .v-repost__button, .league-block a:hover, .start, .comment__action:hover, .comment__detail:hover, .comment__icon-action:hover, a.comment__author:hover, a.comment__avatar:hover+a.comment__author, .comment__inline-action:hover, .comment__icon, #notify .notify__item p a:hover, .advice__caption a:hover, .advice__list a:hover, .andropov_telegram__text a:hover, .andropov_tweet__text a:hover, .island__container--with_links a:hover, .island__info a:hover, .island__list__link:hover, .subsite_about__text a:hover, .shares__open
+    .content-header-author__name:hover, .new_entries:hover, .audit_log__item__log a:hover, .profile_comment_favorite__title:hover, .profile_comment_favorite__title:hover time, .profile_comment_favorite__user:hover, .profile_comment_favorite__user:hover time, .profile_comment_self__title:hover, .profile_comment_self__title:hover time, .t-link-hovered, .t-link:hover, .t-link:hover time, a.content-header-author:hover, a.content-header-author:hover time, a.content-header-number:hover, a.content-header-number:hover time, .repost_button__button--active, .repost_button__button:hover, .v-shares__button:hover, .layout__right-column a:hover, .layout__right-column span:hover, .v-tab:hover, .ui-rounded-button--active .ui-rounded-button__link, .ui-rounded-button__link:hover, .sidebar-tree-list-item--active, .sidebar-tree-list-item:not(.sidebar-tree-list-item--hover-disabled):hover:not(.sidebar-tree-list-item--active), .v-text-input__input, .head-notifies--showed .head-notifies__toggler .icon, .head-notifies__toggler:hover .icon, .u-notification__content__button:hover, .u-notification__content a:hover, .ui_toggle:hover, .content__thanks a:hover span, .subsites_tune__select-all:hover, .t-link-inline:hover, .mini-editor__button, .mini-editor__button svg, .andropov_telegram__date:hover time, .andropov_telegram__user:hover .andropov_telegram__user__name, .andropov_telegram__user:hover .andropov_tweet__user__name, .andropov_telegram__user:hover .andropov_tweet__user__nickname, .andropov_tweet__date:hover time, .andropov_tweet__user:hover .andropov_telegram__user__name, .andropov_tweet__user:hover .andropov_tweet__user__name, .andropov_tweet__user:hover .andropov_tweet__user__nickname, .v-button, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .ui-tab--active .ui-tab__label, .ui-tab:hover, .comment-more--root, .comment-more--root--5, .ui-button--5, .subsites_catalog__open_wrapped:hover, .widget_wrapper--type-blue .widget_wrapper__title, .v-list__more:hover, a.v-list__item:hover, a.v-list-subsites-item__main:hover, .etc_control:hover, .v-tabs-navigation, .content-header-label, .v-list-subsites__more:hover, .social-links__item, .v-plus-badge, .comment-more--root--1, .ui-button--1, .plus-badge, .page--plus .plus-features__item .icon, .page--plus .plus-buy, .live-stream__control:hover, .content mark, .navigationDropdown__current--active .navigationDropdown__current__button, .navigationDropdown__current:hover .navigationDropdown__current__button, .content-editorial-tick, .vacancies_widget__item__city:hover, .vacancies_widget__item__company:hover, .vacancies_widget__item__title:hover, .vacancies_widget__title:hover, .vacancies_widget__new, .comments_counter--has_new, .comment .comment__copy-link:hover, .comments__subscribe--active, .comment__reply:hover, .hljs-keyword, .hljs-selector-tag, .hljs-type, .quiz__panel__button, .comments_updates, .site-header-user-login:hover, .subsites_tune__item__check--active .icon, .subsites_tune__close:hover, .ce-block-indicator--active, .ui-limited-input::after, .gallery-image__media-settings .media-tool-settings__item--active .icon, .editor-cp-tab__label:hover, .audio_player__control__fwd:hover, .audio_player__control__mute:hover, .audio_player__control__pause:hover, .audio_player__control__play:hover, .audio_player__control__rate:hover, .audio_player__control__rwd:hover, .with-icon:hover, .with-icon-gray:hover, .floating_player__close:hover, .audio_player__control__rate[data-current="0"]:hover, .audio_player__control__volume:hover, .floating_screen_film__title:hover, .floating_screen_film__control:hover, .events_widget__new, .notify-new-items-label, .chat-info-form__picture, .message__content-text a:hover, .message__status--read, .v-header-description a:not(.t-link-inline):hover, .v-checkbox__icon, .v-hashtag, .v-hashtag__close-button, .search__button:hover, .herzen .content_editable ce-command, .subsite__cover__add__button:hover, .updown__icons, .comment__expand:hover, .comment__avatar:hover~.comment__author a.comment-user, .editor-subsite-select__current:hover, .cdx-inline-toolbar__button, .cdx-inline-toolbar__link-remover, .editor .marked-text, .miniEditor .marked-text, .profile_comment_favorite__text mark, .profile_comment_self__text mark, .subsite_card_simple__description mark, .block-hidden__button:hover, .entry_stub__button:hover, .v-list__label a:hover, .andropov_telegram__text__more:hover, .andropov_tweet__text__more:hover, .rolled-up-text__label:hover, .t-link-site:hover, .booster-promo__button, .v-repost:hover .v-repost__button, .v-repost--active .v-repost__button, .league-block a:hover, .start, .comment__action:hover, .comment__detail:hover, .comment__icon-action:hover, a.comment__author:hover, a.comment__avatar:hover+a.comment__author, .comment__inline-action:hover, .comment__icon, #notify .notify__item p a:hover, .advice__caption a:hover, .advice__list a:hover, .andropov_telegram__text a:hover, .andropov_tweet__text a:hover, .island__container--with_links a:hover, .island__info a:hover, .island__list__link:hover, .subsite_about__text a:hover, .shares__open, .profile_comment_favorite__expand:hover
     {
         color: var(--branding_accent_color);
     }
@@ -372,7 +374,7 @@
         border: 1px solid var(--branding_accent_color);
     }
     
-    #notify .notify__item p a, .advice__caption a, .advice__list a, .andropov_telegram__text a, .andropov_tweet__text a, .island__container--with_links a, .island__info a, .island__list__link, .subsite_about__text a, .block-person a, .block-quote a, .block-warning a, .comment__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .content-description a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .page--plus p a, .quiz__panel__button__label, .editor .ce-redactor a, .miniEditor .ce-redactor a, .chat-bottom-actions__right-button, .v-header-description a:not(.t-link-inline), .v-header-description a:not(.t-link-inline):hover, .v-list__label a, .v-list__label a:hover, .league-block a
+    #notify .notify__item p a, .advice__caption a, .advice__list a, .andropov_telegram__text a, .andropov_tweet__text a, .island__container--with_links a, .island__info a, .island__list__link, .subsite_about__text a, .block-person a, .block-quote a, .block-warning a, .comment__text a, .content figcaption a, .content h2 a, .content h3 a, .content h4 a, .content ol a, .content p a, .content ul a, .content-description a, .page--error .error__message a, .profile_comment_favorite__text a, .profile_comment_self__text a, .sitemap a, .subsite_card_simple__description a, .subsite_head__description a, .t-link-classic, .block-person a:hover, .block-quote a:hover, .block-warning a:hover, .comment__text a:hover, .content figcaption a:hover, .content h2 a:hover, .content h3 a:hover, .content h4 a:hover, .content ol a:hover, .content p a:hover, .content ul a:hover, .content-description a:hover, .page--error .error__message a:hover, .profile_comment_favorite__text a:hover, .profile_comment_self__text a:hover, .sitemap a:hover, .subsite_card_simple__description a:hover, .subsite_head__description a:hover, .t-link-classic:hover, .page--plus p a, .quiz__panel__button__label, .editor .ce-redactor a, .miniEditor .ce-redactor a, .chat-bottom-actions__right-button, .v-header-description a:not(.t-link-inline), .v-header-description a:not(.t-link-inline):hover, .v-list__label a, .v-list__label a:hover, .league-block a, .profile_comment_favorite__expand
     {
         border: none !important;
     }
@@ -976,48 +978,22 @@
     /*время сломать всё к хуям*/
     html[stylus-iframe*="tjournal.ru"] body,  html[stylus-iframe*="vc.ru"] body,html[stylus-iframe*="dtf.ru"] body, html[stylus-iframe*="tjournal.ru"] .PrimaryCTA,  html[stylus-iframe*="vc.ru"] .PrimaryCTA,html[stylus-iframe*="dtf.ru"] .PrimaryCTA, html[stylus-iframe*="tjournal.ru"] .HoverCard .HoverCardRoot,  html[stylus-iframe*="vc.ru"] .HoverCard .HoverCardRoot ,html[stylus-iframe*="dtf.ru"] .HoverCard .HoverCardRoot, html[stylus-iframe*="tjournal.ru"] .HoverCardUserName .Username,  html[stylus-iframe*="vc.ru"] .HoverCardUserName .Username,html[stylus-iframe*="dtf.ru"] .HoverCardUserName .Username
     {
-        background: var(--accent_back_color) !important;
+        background: var(--block_back_color) !important;
         color: var(--main_text_color) !important;
     }
-    html[stylus-iframe*="tjournal.ru"] body a
+    html[stylus-iframe*="tjournal.ru"] body a, html[stylus-iframe*="vc.ru"] body a, html[stylus-iframe*="dtf.ru"] body a
     {
         color: var(--brand_1);
     }
-    html[stylus-iframe*="vc.ru"] body a
-    {
-        color: var(--brand_1);
-    }
-    html[stylus-iframe*="dtf.ru"] body a
-    {
-        color: var(--brand_1);
-    }
-    html[stylus-iframe*="tjournal.ru"] #react-root, html[stylus-iframe*="tjournal.ru"] article, html[stylus-iframe*="tjournal.ru"] div, html[stylus-iframe*="tjournal.ru"] footer, html[stylus-iframe*="tjournal.ru"] header, html[stylus-iframe*="tjournal.ru"] main, html[stylus-iframe*="tjournal.ru"] nav, html[stylus-iframe*="tjournal.ru"] section
-    {
-        border-color: var(--brand_2);
-    }
-    html[stylus-iframe*="dtf.ru"] #react-root, html[stylus-iframe*="dtf.ru"] article, html[stylus-iframe*="dtf.ru"] div, html[stylus-iframe*="dtf.ru"] footer, html[stylus-iframe*="dtf.ru"] header, html[stylus-iframe*="dtf.ru"] main, html[stylus-iframe*="dtf.ru"] nav, html[stylus-iframe*="dtf.ru"] section
-    {
-        border-color: var(--brand_2);
-    }
-    html[stylus-iframe*="vc.ru"] #react-root, html[stylus-iframe*="vc.ru"] article, html[stylus-iframe*="vc.ru"] div, html[stylus-iframe*="vc.ru"] footer, html[stylus-iframe*="vc.ru"] header, html[stylus-iframe*="vc.ru"] main, html[stylus-iframe*="vc.ru"] nav, html[stylus-iframe*="vc.ru"] section
+    html[stylus-iframe*="tjournal.ru"] #react-root, html[stylus-iframe*="tjournal.ru"] article, html[stylus-iframe*="tjournal.ru"] div, html[stylus-iframe*="tjournal.ru"] footer, html[stylus-iframe*="tjournal.ru"] header, html[stylus-iframe*="tjournal.ru"] main, html[stylus-iframe*="tjournal.ru"] nav, html[stylus-iframe*="tjournal.ru"] section, html[stylus-iframe*="dtf.ru"] #react-root, html[stylus-iframe*="dtf.ru"] article, html[stylus-iframe*="dtf.ru"] div, html[stylus-iframe*="dtf.ru"] footer, html[stylus-iframe*="dtf.ru"] header, html[stylus-iframe*="dtf.ru"] main, html[stylus-iframe*="dtf.ru"] nav, html[stylus-iframe*="dtf.ru"] section, html[stylus-iframe*="vc.ru"] #react-root, html[stylus-iframe*="vc.ru"] article, html[stylus-iframe*="vc.ru"] div, html[stylus-iframe*="vc.ru"] footer, html[stylus-iframe*="vc.ru"] header, html[stylus-iframe*="vc.ru"] main, html[stylus-iframe*="vc.ru"] nav, html[stylus-iframe*="vc.ru"] section
     {
         border-color: var(--brand_2);
     }
 
-    html[stylus-iframe*="tjournal.ru"] a.ViewProfileButton, html[stylus-iframe*="tjournal.ru"] a.FollowButton
+    html[stylus-iframe*="tjournal.ru"] a.ViewProfileButton, html[stylus-iframe*="tjournal.ru"] a.FollowButton, html[stylus-iframe*="dtf.ru"] a.ViewProfileButton, html[stylus-iframe*="dtf.ru"] a.FollowButton, html[stylus-iframe*="vc.ru"] a.ViewProfileButton, html[stylus-iframe*="vc.ru"] a.FollowButton
     {
         background-color: var(--brand_2);
-        color: var(--alter_text_color) !important;
-    }
-    html[stylus-iframe*="dtf.ru"] a.ViewProfileButton, html[stylus-iframe*="dtf.ru"] a.FollowButton
-    {
-        background-color: var(--brand_2);
-        color: var(--alter_text_color) !important;
-    }
-    html[stylus-iframe*="vc.ru"] a.ViewProfileButton, html[stylus-iframe*="vc.ru"] a.FollowButton
-    {
-        background-color: var(--brand_2);
-        color: var(--alter_text_color) !important;
+        color: var(--brand_2) !important;
     }
 }
 @-moz-document domain("tiktok.com")
@@ -1028,27 +1004,11 @@
         background: var(--accent_back_color) !important;
         color: var(--main_text_color) !important;
     }
-    html[stylus-iframe*="tjournal.ru"] ._embed_video_card-info a
+    html[stylus-iframe*="tjournal.ru"] ._embed_video_card-info a, html[stylus-iframe*="vc.ru"] ._embed_video_card-info a, html[stylus-iframe*="dtf.ru"] ._embed_video_card-info a, html[stylus-iframe*="tjournal.ru"] a.ViewProfileButton
     {
-        color: var(--brand_1);
+        color: var(--brand_1) !important;
     }
-    html[stylus-iframe*="vc.ru"] ._embed_video_card-info a
-    {
-        color: var(--brand_1);
-    }
-    html[stylus-iframe*="dtf.ru"] ._embed_video_card-info a
-    {
-        color: var(--brand_1);
-    }
-    html[stylus-iframe*="tjournal.ru"] div
-    {
-        border-color: var(--brand_2);
-    }
-    html[stylus-iframe*="dtf.ru"] div
-    {
-        border-color: var(--brand_2);
-    }
-    html[stylus-iframe*="vc.ru"] div
+    html[stylus-iframe*="tjournal.ru"] div, html[stylus-iframe*="dtf.ru"] div, html[stylus-iframe*="vc.ru"] div
     {
         border-color: var(--brand_2);
     }
@@ -1061,30 +1021,12 @@
     {
         color: var(--alter_text_color) !important;
     }
-    html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link
+    html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link, html[stylus-iframe*="dtf.ru"] ._embed_video_button-link, html[stylus-iframe*="vc.ru"] ._embed_video_button-link
     {
         color: var(--brand_2);
         border: 1px solid var(--brand_2); 
     }
-    html[stylus-iframe*="dtf.ru"] ._embed_video_button-link
-    {
-        color: var(--brand_2);
-        border: 1px solid var(--brand_2); 
-    }
-    html[stylus-iframe*="vc.ru"] ._embed_video_button-link
-    {
-        color: var(--brand_2);
-        border: 1px solid var(--brand_2); 
-    }
-    html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link:hover
-    {
-        background-color: var(--brand_2) !important;
-    }
-    html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover
-    {
-        background-color: var(--brand_2) !important;
-    }
-    html[stylus-iframe*="vc.ru"] ._embed_video_button-link:hover
+    html[stylus-iframe*="tjournal.ru"] ._embed_video_button-link:hover, html[stylus-iframe*="dtf.ru"] ._embed_video_button-link:hover, html[stylus-iframe*="vc.ru"] ._embed_video_button-link:hover
     {
         background-color: var(--brand_2) !important;
     }
