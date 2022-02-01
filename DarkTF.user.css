@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.16
+@version        2.1.17
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -17,7 +17,8 @@
     "porn:PornTF",
     "terminal:DTerminalF",
     "custom:Свой стиль",
-    "custom_glass:Свой стиль + стекло"
+    "custom_glass:Свой стиль + стекло",
+    "no:Я просто хочу фиксы без тёмной темы"
 ]
 @var    range     glassBlur "Степень блюра стекла" [10, 1, 20, 1, "px"]
 @var    checkbox  golden  "Золотой цвет DarkTF" 1
@@ -118,6 +119,9 @@
 }
  @-moz-document domain("dtf.ru"), domain("tjournal.ru"), domain("vc.ru") 
  {  
+    if schema != no
+    {
+         
     /*backgrounds*/
     .sidebar, .layout__right-column > div, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover), .search__field .v-field--focused .v-field__wrapper, .u-notification--hover:hover, .channel-item:hover, .channel-item--focused, .v-split-button, .v-field__wrapper, .v-field--focused .v-field__wrapper, .v-ui-checkbox, .avatar-grid__item, .comments_form, .comments_updates:hover, .u-notification--unread, .editor-cp, .editor__actions, .message--selected, .cdx-inline-toolbar__input, .ce-toolbox-search, #jfContent, .wrapper, .error, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select
     {
@@ -447,7 +451,14 @@
     {
         font-size: fontSize;        
     }
-
+    }
+    if schema == no
+    {
+        .layout__right-column
+        {
+            background: #f2f2f2;
+        }
+    }
     if back
     {
         body
