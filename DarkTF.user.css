@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.17
+@version        2.1.18
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -37,7 +37,7 @@
 @var    checkbox  masonry "Masonry-вёрстка" 0
 @var    number    masonryCols "Число колонок Masonry" [3, 2, 6, 1]
 @var    checkbox  letitsnow "Снегопад" 0
-@var    range     fontSize  "Размер шрифта в статьях" [16, 13, 25, 1, "px"]
+@var    range     fontSize  "Размер шрифта в статьях" [17, 13, 25, 1, "px"]
 
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
 @var            color   blockBackColor  "Свой основной цвет блоков"     #292929
