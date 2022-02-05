@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.19
+@version        2.1.20
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -96,6 +96,12 @@
                         
             --main_text_color:      #4af626;
             --alter_text_color:     #4af626;
+        }
+        else if schema == no
+        {
+            --block_back_color:      #fff;
+            
+            --main_text_color:       #000;
         }
         else
         {
@@ -487,7 +493,7 @@
         .page--index .ui-sorting .v-tab
         {
             text-shadow: 0px 0px 5px var(--accent_back_color);
-            color: white !important;
+            color: var(--main_text_color) !important;
         }
         .page--index .v-tabs
         {
