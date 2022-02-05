@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.18
+@version        2.1.19
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -148,7 +148,7 @@
         }
     }
     
-    .page--entry .l-island-bg, .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .ui-filters__inner, .chat-info__bottom, .v-checkbox__control, .search__field, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon, .league-block, .popup__container__window--styled .popup__container__window__tpl, .v-popup-header, .comments_form:hover
+    .page--entry .l-island-bg, .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .ui-filters__inner, .chat-info__bottom, .v-checkbox__control, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon, .league-block, .popup__container__window--styled .popup__container__window__tpl, .v-popup-header, .comments_form:hover
     {
         background: var(--block_back_color);
         if (schema == glass || schema == custom_glass)
@@ -174,6 +174,17 @@
     else
     {
         .l-island-bg
+        {
+            background: var(--block_back_color);
+            if (schema == glass || schema == custom_glass)
+            {
+                backdrop-filter: blur(glassBlur) !important;
+            }
+        }
+    }
+    @media (max-width: 719px) 
+    {
+        .search__field
         {
             background: var(--block_back_color);
             if (schema == glass || schema == custom_glass)
@@ -268,7 +279,7 @@
     }
     
     /*text colors*/
-    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon, .v-repost__button, .comment__action, .comment__detail, .comment__icon-action, .content__updating, .v-split-button .v-split-button__dropdown:hover, .v-tab__counter, .popup__container__window--styled .popup__container__window__tpl, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select, .v-select__placeholder, .v-popup-header__btn, .v-field__caption
+    html, .new_entries, .content-header-number, .content-header-repost, .reposters_list__item, .layout__right-column > div, .sidebar-tree-list-item__icon, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:not(:hover) .v-field__icon, .v-field__icon, .popover, .site-header-burger, .head-notifies, .head-notifies__panel, .layout__right-column > div > div > div:nth-of-type(2) > div > div:nth-child(2) > div > div[class]:not([class=""]) > a:nth-child(1) > div:nth-child(2), .v-split-button, .v-list-tab__icon, .v-list-tab__comment, .ui_modal_window, .ui_modal_window__title, .ui_modal_window__content, .navigationDropdown__current__button, .navigationDropdown__current__link, .vacancies_widget__item__city, .vacancies_widget__item__company, .vacancies_widget__item__salary, .comments_pseudo_form__text, .hljs, .quiz__item__voted__count, .site-header-user-profile__toggle, .site-header__item, .v-popup-window__close--inside, .subsites_tune__header, .subsites_tune__item__name, .editor-title, .with-icon, .audio_player__control__rwd, .audio_player__control__fwd, .audio_player__control__play, .audio_player__control__pause, .audio_player__control__rate, .audio_player__control__mute, .new-entries-horizon, .news_item .time, .news_widget__toggle, .message__status, .v-island__counter, .content-info__item, .comments_counter, .v-shares__button, .search__button, .repost_button__button, .thesis__custom_button, .comment__date, .comment__reply, .etc_control, .v-island__grayed, .profile_comment_favorite time, .profile_comment_self time, .profile_comment_favorite__footer__reply, .cdx-inline-toolbar, .ce-toolbox-search-icon, .ad-user__position, .ad-contacts__title, .contentFilter__title, .contentFilter--checkbox .contentFilterCheckbox__counter, .v-field--select:hover .v-field__icon--right, .gl__container, .gl__author, .gl__counter, #jfContent .k, .content-header-promoted, .booster-promo__hide, .news_widget__toggle .icon, .v-repost__button, .comment__action, .comment__detail, .comment__icon-action, .content__updating, .v-split-button .v-split-button__dropdown:hover, .v-tab__counter, .popup__container__window--styled .popup__container__window__tpl, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select, .v-select__placeholder, .v-popup-header__btn, .v-field__caption, .v-text-area textarea
     {
         color: var(--main_text_color);
     }
