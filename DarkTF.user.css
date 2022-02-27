@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.24
+@version        2.1.25
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -165,7 +165,7 @@
         }
     }
     
-    .page--entry .l-island-bg:not(.comments__navigation):not(.ui-tabs), .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .chat-info__bottom, .v-checkbox__control, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon, .league-block, .popup__container__window--styled .popup__container__window__tpl, .v-popup-header, .comments_form:hover, .msngrConfirmWindow, .u-notification--unread, .notifications__footer-link
+    .page--entry .l-island-bg:not(.comments__navigation):not(.ui-tabs), .new_entries, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .v-field__wrapper:hover, .captcha_wall__box, .ui_modal_window, .ui_sub_menu__item:hover, .v-popup-window__content, .subsites_tune__panel, .andropov_preview, .u-notification--unread.u-notification--hover:hover, .feed__horizon, .ce-block-settings__item--selected, .ce-block-settings__item:not(.no-hover):hover, .audio_player__control__panel, .floating_player, .notify-new-items-label:hover, .chat-info__bottom, .v-checkbox__control, .updown:after, .widget_wrapper--type-yellow, .gl__container, .bp-unit, .search_results__horizon, .league-block, .popup__container__window--styled .popup__container__window__tpl, .v-popup-header, .comments_form:hover, .msngrConfirmWindow, .u-notification--unread, .notifications__footer-link, #page_wrapper > .ui-tabs--default
     {
         background: var(--block_back_color);
         if (schema == glass || schema == custom_glass)
@@ -698,11 +698,11 @@
         {
             border-radius: 8px 8px 0px 0px !important;
         }
-        .head-notifies__footer, .messenger-panel__down-footer
+        .head-notifies__footer, .messenger-panel__down-footer, #page_wrapper > .ui-tabs--default
         {
             border-radius: 0px 0px 8px 8px !important;
         }
-        .new_entries, .page>.l-island-round:last-child, .site-header, .sidebar, .live, .l-entry, .special-job-teaser, .v-header:first-child, .miniEditor, .attachButton, .v-island, .v-button, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-tabs-navigation, .v-list__image, .sidebar-tree-list-item__image, .ui-rounded-button--active a, .ui-rounded-button:hover a, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .messenger, .subsite_head, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .sidebar-tree-list-item:hover, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .m-floating, .ui-rounded-button--active .ui-rounded-button__link, .site-header-user-profile__avatar-image, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .live .u-notification__link, .head-notifies__badge, .new-entries-horizon, .layout__right-column > div, .content-feed, .site-names__list
+        .new_entries, .page>.l-island-round:last-child, .site-header, .sidebar, .live, .l-entry, .special-job-teaser, .v-header:first-child, .miniEditor, .attachButton, .v-island, .v-button, .head-notifies--showed .head-notifies__panel, .messenger-panel__down, .bubble__container, .audio_player__control__panel, .v-tabs-navigation, .v-list__image, .sidebar-tree-list-item__image, .ui-rounded-button--active a, .ui-rounded-button:hover a, .reposters_list, .vote .vote__users, .comments_form, .comments_pseudo_form, .comments_pseudo_form__button, .thesis__attach_something, .messenger, .subsite_head, .ui-button, .subsite__avatar, .live__item--comment .live__item__user__image, .sidebar-tree-list-item:hover, .v-header-avatar, .content-header-author__avatar, .miniEditor__avatar, .shares--desktop .shares__close, .shares--desktop .shares__item, .shares--desktop .shares__open, .authorCard, .l-island-bg[air-module="module.subsites_rating"], .subsites_catalog, .andropov_link, .comments__item__space--highlighted, .comments__item__space--new, .comments__item__space--pinned, .vote--comment .vote__value, .comments__item__self--major .comments__item__user__image, .block-quote, .andropov_image, .andropov_video, .sidebar-tree-list-item--active, .comments_updates, .vacancies_widget__new, .v-split-button, .search, .search-dropdown, .andropov_video__container, .block-incut, .message__picture, .m-photo, .m-floating, .ui-rounded-button--active .ui-rounded-button__link, .site-header-user-profile__avatar-image, .block-code, .block-audio, .quiz, .block-number, .comments__item__self--author .comments__item__user__name .user_name, .live .u-notification__link, .head-notifies__badge, .new-entries-horizon, .layout__right-column > div, .content-feed, .site-names__list, #page_wrapper > .ui-tabs--default
         {
             box-shadow: 1px 1px 9px 0px rgba(0, 0, 0, .7) !important;
         }
