@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.25
+@version        2.1.26
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -249,7 +249,7 @@
         background: var(--branding_base_color);
     }
     
-    .reposters_list:before, .subsites_catalog__search__bar, .editor__authors, .editor-title, .anchor-tool__input, .aside-search input, .aside__list-heading, .aside-search input, .chat-info__search, .chat-form__textarea, .emoji-picker__tabs, .ui-filters--responsive, .comment__expand, .cdx-inline-toolbar__link-back:hover, .comments__navigation, .l-island-bg .ui-tabs
+    .reposters_list:before, .subsites_catalog__search__bar, .editor__authors, .editor-title, .anchor-tool__input, .aside-search input, .aside__list-heading, .aside-search input, .chat-info__search, .chat-form__textarea, .emoji-picker__tabs, .ui-filters--responsive, .comment__expand, .cdx-inline-toolbar__link-back:hover, .comments__navigation, .l-island-bg .ui-tabs, .site-header-container
     {
         background: transparent !important;
     }
