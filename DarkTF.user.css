@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.30
+@version        2.1.31
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -174,7 +174,7 @@
             backdrop-filter: blur(glassBlur) !important;
         }
     }
-    .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner, .m-floating, .notify-item
+    .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner, .m-floating, .notify-item, .comment-form
     {
         background: var(--block_back_color) !important;
         if schema == glass || schema == custom_glass 
@@ -403,16 +403,16 @@
     }
     
     /*borders*/
-    .reposters_list, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .search__field .v-field--focused .v-field__wrapper, .head-notifies__header, .andropov_telegram, .andropov_tweet, .v-field__wrapper:hover, .v-field--focused .v-field__wrapper, .v-ui-checkbox--checked:before, .v-ui-checkbox:hover, .subsites_catalog__search, .comment-more--root, .comment-more--root--5, .ui-button--5, .comment-more--root--5.comment-more--root--active, .comment-more--root--5:hover, .comment-more--root.comment-more--root--active, .comment-more--root:hover, .ui-button--5.ui-button--active, .ui-button--5:hover, .subsites_catalog__label--bordered, .u-notification--border, .ui_modal_window__header--border, .ui_modal_window__footer, .vacancies_widget__new, .comments_pseudo_form, .comments_form, .comments_form:hover, .ui-border--bottom, .quiz__item__check, .subsites_tune__header, .subsites_tune__item__check, .subsites_tune__panel, .cdx-input, .form-text-input, .quiz-tool-input, .events_widget__new, .head-notifies__footer, .v-checkbox__control, .v-checkbox--checked .v-checkbox__control, .v-checkbox:hover .v-checkbox__control, .ce-toolbox-search, .site-names__list, .comment__branch--highlighted:not(.comment__branch--max-level):last-child::before, .comment__branch--highlighted:not(.comment__branch--no-border), .v-form-input input, .v-form-input input:focus, .ui_form input[type="text"]:focus, .ui_form input[type="password"]:focus, .ui_form input[type="email"]:focus, .ui_form input[type="name"]:focus, .ui_form textarea:focus, .ui_form select:focus, .comments__content_wrapper__button, .wtf_broadcast .wtf_bc-feed .wtf_bc--feed-item.wtf_bc--hot .wtf_bc--feed-item--user-n-time, .share_button
+    .reposters_list, .search__field .v-field:not(.v-field--focused) .v-field__wrapper:hover, .search__field .v-field--focused .v-field__wrapper, .head-notifies__header, .andropov_telegram, .andropov_tweet, .v-field__wrapper:hover, .v-field--focused .v-field__wrapper, .v-ui-checkbox--checked:before, .v-ui-checkbox:hover, .subsites_catalog__search, .comment-more--root, .comment-more--root--5, .ui-button--5, .comment-more--root--5.comment-more--root--active, .comment-more--root--5:hover, .comment-more--root.comment-more--root--active, .comment-more--root:hover, .ui-button--5.ui-button--active, .ui-button--5:hover, .subsites_catalog__label--bordered, .u-notification--border, .ui_modal_window__header--border, .ui_modal_window__footer, .vacancies_widget__new, .comments_pseudo_form, .comments_form, .comments_form:hover, .ui-border--bottom, .quiz__item__check, .subsites_tune__header, .subsites_tune__item__check, .subsites_tune__panel, .cdx-input, .form-text-input, .quiz-tool-input, .events_widget__new, .head-notifies__footer, .v-checkbox__control, .v-checkbox--checked .v-checkbox__control, .v-checkbox:hover .v-checkbox__control, .ce-toolbox-search, .site-names__list, .comment__branch--highlighted:not(.comment__branch--max-level):last-child::before, .comment__branch--highlighted:not(.comment__branch--no-border), .v-form-input input, .v-form-input input:focus, .ui_form input[type="text"]:focus, .ui_form input[type="password"]:focus, .ui_form input[type="email"]:focus, .ui_form input[type="name"]:focus, .ui_form textarea:focus, .ui_form select:focus, .comments__content_wrapper__button, .wtf_broadcast .wtf_bc-feed .wtf_bc--feed-item.wtf_bc--hot .wtf_bc--feed-item--user-n-time, .share_button, .comment-form:hover
     {
         border-color: var(--branding_accent_color);
     }
-    .messenger-panel__down-head, .messenger-panel__down-footer, .andropov_link, .comments_form--focused, .ui-dotted-button span, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .messenger-panel .channel-item__info, .ui-input, .contacts__item--selected .contacts__item-checkbox, .audio-tool-cover:after, .select__current, .wtf_broadcast .wtf_bc-feed .wtf_bc--feed-item .wtf_bc--feed-item--bg, .notifications--is-watch-scroll .notifications__header, .get-api-token__text--token, .uploader__inner
+    .messenger-panel__down-head, .messenger-panel__down-footer, .andropov_link, .comments_form--focused, .ui-dotted-button span, .audio-tool-title, .audio-tool-uploader, html body .ce-redactor a.andropov_link, .messenger-panel .channel-item__info, .ui-input, .contacts__item--selected .contacts__item-checkbox, .audio-tool-cover:after, .select__current, .wtf_broadcast .wtf_bc-feed .wtf_bc--feed-item .wtf_bc--feed-item--bg, .notifications--is-watch-scroll .notifications__header, .get-api-token__text--token, .uploader__inner, .comment-form--focused
     {
         border-color: var(--branding_accent_color) !important;
     }
     
-    .ui_sub_menu, .ui_sub_menu--bordered:before, .ui_sub_menu--shown .ui_sub_menu--bordered:before, .aside, .gall--5 .gall__item--1, .gall--5 .gall__item--3, .gall--5 .gall__item--0, .gall--5 .gall__item--2, .gall--4 .gall__item--0, .gall--3 .gall__item--0, .gall--2 .gall__item--1, .gall--2 .gall__item--0, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select, .block-audio, .v-popup-header
+    .ui_sub_menu, .ui_sub_menu--bordered:before, .ui_sub_menu--shown .ui_sub_menu--bordered:before, .aside, .gall--5 .gall__item--1, .gall--5 .gall__item--3, .gall--5 .gall__item--0, .gall--5 .gall__item--2, .gall--4 .gall__item--0, .gall--3 .gall__item--0, .gall--2 .gall__item--1, .gall--2 .gall__item--0, .ui_form input[type="text"], .ui_form input[type="password"], .ui_form input[type="email"], .ui_form input[type="name"], .ui_form textarea, .ui_form select, .block-audio, .v-popup-header, .comment-form
     {
         border-color: var(--accent_back_color);
     }
@@ -456,7 +456,7 @@
     {
         box-shadow: 0 0 0 4px var(--branding_accent_color);
     }
-    .v-button--blue, .popover__header, .page--plus .plus-buy, .comments_form--focused, .comment__space--highlighted::before, .comment__space--new::before, .editor-cp-tab__content, .emoji-picker__panel-list-section-name, .v-checkbox:hover .v-checkbox__control, .content--embed, .attacher__form
+    .v-button--blue, .popover__header, .page--plus .plus-buy, .comments_form--focused, .comment__space--highlighted::before, .comment__space--new::before, .editor-cp-tab__content, .emoji-picker__panel-list-section-name, .v-checkbox:hover .v-checkbox__control, .content--embed, .attacher__form, .comment-form:hover, .comment-form:focus, .comment-form--focused
     {
         box-shadow: none !important;
     }
