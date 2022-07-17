@@ -1,11 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-<<<<<<< Updated upstream
-@version        2.1.31
-=======
 @version        2.1.32
->>>>>>> Stashed changes
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -178,11 +174,7 @@
             backdrop-filter: blur(glassBlur) !important;
         }
     }
-<<<<<<< Updated upstream
-    .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner, .m-floating, .notify-item, .comment-form
-=======
     .sidebar-tree-list__show-more-button, .messenger, .ui-filters--responsive .ui-filters__inner, .m-floating, .notify-item, .comment-form, .account-menu-root, .account-menu
->>>>>>> Stashed changes
     {
         background: var(--block_back_color) !important;
         if schema == glass || schema == custom_glass 
