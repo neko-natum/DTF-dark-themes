@@ -886,17 +886,6 @@
         {
             max-height: 100px;
         }
-        
-		// .feed__item div[class*="content--embed"] 
-		// {
-		//     max-width: 100% !important;
-		// }
-        
-        .vote 
-        {
-            height: 30px !important;
-            width: 90px !important;
-        }
     }
     if letitsnow
     {
