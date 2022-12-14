@@ -9,7 +9,6 @@
 @supportURL     https://t.me/nekonatum
 @homepageURL    https://dtf.ru/u/2819-neko-natum/99819-nekonatum-navigation
 @updateURL      https://github.com/neko-natum/DTF-dark-themes/raw/master/DarkTF.user.css
-
 @var    select    schema  "Цветовая схема стиля" [
     "classic:DarkTF",
     "glass:Glass DarkTF",
@@ -40,7 +39,6 @@
 @var    range     fontSize  "Размер шрифта в статьях" [17, 13, 25, 1, "px"]
 @var    checkbox  fuckRec   "Убрать рекомендации" 0
 @var    checkbox  oldRating   "Вернуть старый вид оценок в комментах" 0
-
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
 @var            color   blockBackColor  "Свой основной цвет блоков"     #292929
 @var            color   accentBackColor "Свой акцентный цвет блоков"    #000
@@ -888,10 +886,12 @@
         {
             max-height: 100px;
         }
-		.feed__item div[class*="content--embed"] 
-        {
-            max-width: 100% !important;
-        }
+        
+		// .feed__item div[class*="content--embed"] 
+		// {
+		//     max-width: 100% !important;
+		// }
+        
         .vote 
         {
             height: 30px !important;
@@ -1047,7 +1047,7 @@
         }
         .comment__content .like-button--action-like::before
         {
-            content: " ˄" !important;
+            content: " ˄" !important;
             margin-bottom: 4px;
             opacity: 0.5;
         }
@@ -1059,7 +1059,7 @@
         }
         .comment__content .like-button--action-dislike::before
         {
-            content: " ˅" !important;
+            content: " ˅" !important;
             margin-bottom: 4px;
             opacity: 0.5;
         }   
