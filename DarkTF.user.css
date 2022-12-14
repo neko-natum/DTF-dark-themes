@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           DarkTF
 @namespace      http://dtf.ru/
-@version        2.1.32
+@version        2.1.33
 @description    Нелегитимная тёмная тема для сайтов Комитета
 @author         Neko Natum
 @author         Pegasus Plus
@@ -39,6 +39,7 @@
 @var    checkbox  letitsnow "Снегопад" 0
 @var    range     fontSize  "Размер шрифта в статьях" [17, 13, 25, 1, "px"]
 @var    checkbox  fuckRec   "Убрать рекомендации" 0
+@var    checkbox  oldRating   "Вернуть старый вид оценок в комментах" 0
 
 @var            color   baseBackColor   "Свой цвет фона"                #1b1b1b
 @var            color   blockBackColor  "Свой основной цвет блоков"     #292929
@@ -887,7 +888,7 @@
         {
             max-height: 100px;
         }
-        .feed__item div[class*="content--embed"] 
+		.feed__item div[class*="content--embed"] 
         {
             max-width: 100% !important;
         }
@@ -1000,6 +1001,76 @@
     .s42-stonks-popup__footer__button:hover .s42-stonks-popup__footer__logo{
         filter: none !important;
     }
+    
+    if oldRating
+    {
+        .comment__content
+        {
+            position: relative;
+        }
+        .comment__content .like-button__count
+        {
+            position: absolute;
+            right: 1.8 em;
+            font-size: 16px;
+            width: 50px !important;
+            background-color: var(--plus_back_color) !important;
+            color: var(--plus_text_color) !important;
+            padding: 5px 0 5px 0;
+            border-radius: 5px;
+        }
+        .comment__content .like-button--action-dislike
+        {
+            position: absolute;
+            right: 5.9 em;
+            top: 1.5 em;
+        }
+        .comment__content .like-button--action-like
+        {
+            position: absolute;
+            right: 1em;
+            top: 1.5 em;
+        }
+        .comment__content .like-button__icon
+        {
+            display: none;
+        }
+        .comment__content .like-button
+        {
+            color: var(--main_text_color);
+            width: 25px;
+            height: 25px;
+            font-size: 20px !important;
+            font-weight: lighter;
+            text-align: top !important;
+            border-radius: 50px;
+        }
+        .comment__content .like-button--action-like::before
+        {
+            content: " ˄" !important;
+            margin-bottom: 4px;
+            opacity: 0.5;
+        }
+        .comment__content .like-button--action-like:hover
+        {
+            background-color: var(--plus_back_color) !important;
+            color: var(--plus_text_color);
+            opacity: 1 !important;
+        }
+        .comment__content .like-button--action-dislike::before
+        {
+            content: " ˅" !important;
+            margin-bottom: 4px;
+            opacity: 0.5;
+        }   
+        .comment__content .like-button--action-dislike:hover
+        {
+            background-color: var(--minus_back_color) !important;
+            color: var(--minus_text_color);
+            opacity: 1 !important;
+        }
+    }
+    
 }
 
 @-moz-document domain("dtf.ru")
